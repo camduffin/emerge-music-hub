@@ -1,0 +1,59 @@
+@import './partials/setup';
+@import './partials/variables';
+
+body {
+    background-color: $offwhite;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.4rem;
+}
+
+h1 {
+    @include monoFont(4.5rem);
+    margin: 0;
+    padding: 5%;
+
+    span {
+        display: block;
+        border-right: 2px solid $darkbrown;
+        padding: 10px 0;
+    }
+
+    span:last-of-type {
+        border-bottom: 3px solid $darkbrown;
+        padding: 10px 0;
+        box-shadow: 10px 10px 10px $darkbrown;
+    }
+
+}
+
+.home-header {
+    display: flex;
+
+}
+
+.landing-image {
+    background-image: url(../src/images/zealand.jpg);
+    width: 60%;
+    background-size: cover;
+    height: 100vh;
+}
+
+.landing-header-container {
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    text-align: left;
+
+    li {
+        padding: 10px;
+
+        &:hover, &:focus {
+            color: grey;
+            cursor: pointer;
+        }
+    }
+
+}

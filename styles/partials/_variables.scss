@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+$darkbrown: #2b2121;
+$offwhite: #f7f7ee;
+
+// fonts
+
+@mixin monoFont($sizeValue) {
+    font-size: $sizeValue;
+    color: $darkbrown;
+    font-family: 'Major Mono Display', monospace;
+}
