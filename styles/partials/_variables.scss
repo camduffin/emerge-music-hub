@@ -1,13 +1,21 @@
+// fonts
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+// variables
 $darkbrown: #2b2121;
 $offwhite: #f7f7ee;
 
-// fonts
-
+// mixins
 @mixin monoFont($sizeValue) {
     font-size: $sizeValue;
     color: $darkbrown;
     font-family: 'Major Mono Display', monospace;
+}
+
+@mixin paragraph($sizeValue) {
+    font-size: $sizeValue;
+    color: $darkbrown;
+    font-family: 'Inter', sans-serif;
 }

@@ -3,6 +3,7 @@ module.exports = {
     title: "emerge-music-hub",
   },
   plugins: [
+    "gatsby-plugin-scroll-reveal",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",

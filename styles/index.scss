@@ -28,7 +28,6 @@ h1 {
 
 .home-header {
     display: flex;
-
 }
 
 .landing-image {
@@ -46,14 +45,32 @@ h1 {
     align-items: center;
     width: 40%;
     text-align: left;
+    margin-top: 100px;
+
+    nav {
+        text-align: left;
+        width: 50%;
+    }
 
     li {
-        padding: 10px;
-
-        &:hover, &:focus {
-            color: grey;
-            cursor: pointer;
+        padding: 10px 0;
+        a {
+            color: $darkbrown;
+            transition: all .2s ease-in-out;
+            
+            &:hover, &:focus {
+                color: grey;
+                cursor: pointer;
+                position: relative;
+                right: 5px;
+            }
         }
     }
+}
+
+// Finance Section
+
+p {
+    @include paragraph(2rem);
 
 }
