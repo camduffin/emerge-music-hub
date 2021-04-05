@@ -1,7 +1,6 @@
 import * as React from "react";
 import '../../styles/index.scss';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
-// import NavMain from '../components/NavHome';
 import emergeLogo from '../images/emerge-logo.png';
 import { FaArrowCircleRight } from 'react-icons/fa';
 
@@ -19,9 +18,8 @@ const IndexPage = () => {
               </div>
             </h1>
             <p data-sal="slide-left" data-sal-duration="1000">A professional development online hub for emerging artists</p>
-            {/* <NavMain /> */}
           <nav>
-            <AniLink swipe direction="left" to="/musicians">
+            <AniLink swipe direction="left" to="/home">
               <button>
                 Enter Site
                 <FaArrowCircleRight/>
