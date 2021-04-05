@@ -7,6 +7,34 @@ body {
     font-size: 2.4rem;
 }
 
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 200vh;
+    min-width: 100%;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+footer {
+    width: 100%;
+    background-color: aliceblue;
+    height: 20vh;
+
+    .footer-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    p {
+        @include paragraph(1.4rem);
+    }
+}
+
 h1 {
     @include monoFont(4.5rem);
     margin: 0;
@@ -23,7 +51,6 @@ h1 {
         padding: 10px 0;
         box-shadow: 10px 10px 10px $darkbrown;
     }
-
 }
 
 .home-header {
@@ -70,14 +97,29 @@ h1 {
 
 header {
     display: flex;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    margin: 10px 0 0 40px;
+
+    h2 {
+        @include monoFont(3rem);
+        span {
+            display: block;
+        }
+    }
+
+    a {
+        color: $darkbrown;
+    }
 }
 
 // Nav Bar
 
 .nav-bar {
     margin: 0 auto;
+    overflow: hidden;
+    position: fixed;
+    left: 40%;
     
     ul {
         display: flex;
@@ -87,6 +129,19 @@ header {
             padding: 10px;
             @include paragraph(1.7rem);
         }
+
+        a {
+            color: $darkbrown;
+
+            &:hover, &:focus {
+                color: $lightblue;
+            }
+        }
+
+        .nav-active {
+            color: grey;
+        }
+        
     }
 }
 
