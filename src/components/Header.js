@@ -2,12 +2,15 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import '../../styles/index.scss';
+import emergeLogo from '../images/emerge-logo.png';
 
 const Header = () => {
     return (
         <header>
             <AniLink fade to="/">
-                <h2>Emerge<span>Music</span>Hub</h2>
+                <h2>
+                    <img src={emergeLogo} alt=""/>
+                </h2>
             </AniLink>
             <NavBar />
         </header>

@@ -1,16 +1,36 @@
 import * as React from "react";
 import '../../styles/index.scss';
-import NavMain from '../components/NavHome';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+// import NavMain from '../components/NavHome';
+import emergeLogo from '../images/emerge-logo.png';
+import { FaArrowCircleRight } from 'react-icons/fa';
 
 const IndexPage = () => {
   return (
-      <div className="home-header">
-        <div className="landing-image" data-sal="fade" data-sal-duration="1000"></div>
-        <div className="landing-header-container">
-          <h1 data-sal="slide-up" data-sal-duration="1000">Emerge<span>Music</span><span>Hub</span></h1>
-          <NavMain />
+      <header className="home-header">
+        <div className="landing-image" data-sal="fade" data-sal-duration="1000">
+          <div className="landing-header-container">
+            <h1>
+              <div className="sr-only">
+                Emerge Music Hub
+              </div>
+              <div className="emerge-main-logo">
+                <img data-sal="slide-right" data-sal-duration="1000" src={emergeLogo} alt=""/>
+              </div>
+            </h1>
+            <p data-sal="slide-left" data-sal-duration="1000">A professional development online hub for emerging artists</p>
+            {/* <NavMain /> */}
+          <nav>
+            <AniLink swipe direction="left" to="/musicians">
+              <button>
+                Enter Site
+                <FaArrowCircleRight/>
+              </button>
+            </AniLink>
+          </nav>
+          </div>
         </div>
-      </div>
+      </header>
   )
 }
 

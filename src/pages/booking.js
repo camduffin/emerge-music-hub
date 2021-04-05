@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 const Booking = () => {
     return (
         <Layout>
-            <h1>Booking</h1>
+            <h2>Booking</h2>
         </Layout>
     )
 }

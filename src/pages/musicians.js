@@ -5,7 +5,7 @@ const Musicians = () => {
     return(
         <Layout>
             <section>
-                <h1>musicians</h1>
+                <h2>musicians</h2>
             </section>
         </Layout>
     )

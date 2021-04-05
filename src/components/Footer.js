@@ -1,7 +1,15 @@
 import React from 'react';
 import '../../styles/index.scss';
+import { FiInstagram } from 'react-icons/fi';
+import { FaFacebookF, FaRegPaperPlane } from 'react-icons/fa';
+
 
 const Footer = () => {
+
+    const instagram = "https://www.instagram.com/emergemusichub/";
+    const facebook = "https://www.facebook.com/";
+    const email = "mailto:camduffin@gmail.com";
+
     return (
         <footer>
             <div className="footer-container">
@@ -10,9 +18,30 @@ const Footer = () => {
                 </div>
                 <div className="footer-socials">
                     <nav>
-                        <ul>
-                            <li>Instagram</li>
-                            <li>Facebook</li>
+                        <ul className="social-container">
+                            <li>
+                                <a 
+                                href={instagram}
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                >
+                                    <FiInstagram/>
+                                </a>
+                            </li>
+                            <li>
+                                <a 
+                                href={facebook}
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                >
+                                    <FaFacebookF/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href={email}>
+                                    <FaRegPaperPlane/>
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>

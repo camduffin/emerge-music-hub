@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 const Royalties = () => {
     return (
         <Layout>
-            <h1>Royalties</h1>
+            <h2>Royalties</h2>
         </Layout>
     )
 }

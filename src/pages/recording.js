@@ -5,7 +5,7 @@ const Recording = () => {
     return (
         <Layout>
             <section>
-                <h1>First Recording</h1>
+                <h2>First Recording</h2>
             </section>
         </Layout>
     )
