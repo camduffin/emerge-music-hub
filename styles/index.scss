@@ -59,11 +59,33 @@ h1 {
             transition: all .2s ease-in-out;
             
             &:hover, &:focus {
-                color: grey;
+                color: $lightblue;
                 cursor: pointer;
                 position: relative;
                 right: 5px;
             }
+        }
+    }
+}
+
+header {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+// Nav Bar
+
+.nav-bar {
+    margin: 0 auto;
+    
+    ul {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            padding: 10px;
+            @include paragraph(1.7rem);
         }
     }
 }
