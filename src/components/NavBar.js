@@ -6,7 +6,7 @@ const NavBar = () => {
     return (
         <nav className="nav-bar">
             <ul>
-                <li><AniLink fade to="/" duration={2}>Home</AniLink></li> 
+                <li><AniLink fade to="/home" duration={2}>Home</AniLink></li> 
                 <li><AniLink activeClassName="nav-active" fade to="/musicians" duration={.8}>Musicians</AniLink></li>
                 <li><AniLink activeClassName="nav-active" fade to="/finance" duration={.8}>Finance</AniLink></li>
                 <li><AniLink activeClassName="nav-active" fade to="/recording" duration={.8}>First Recording</AniLink></li>
