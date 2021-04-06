@@ -6,7 +6,7 @@ import emergeLogo from '../images/emerge-logo.png';
 
 const Header = () => {
     return (
-        <header>
+        <header className="wrapper">
             <AniLink fade to="/">
                 <h2>
                     <img src={emergeLogo} alt=""/>

@@ -3,9 +3,13 @@ import Layout from '../components/Layout';
 
 const Booking = () => {
     return (
-        <Layout>
-            <h2>Booking</h2>
-        </Layout>
+        <div className="booking">
+            <Layout>
+                <section className="wrapper">
+                    <h2>Booking</h2>
+                </section>
+            </Layout>
+        </div>
     )
 }
 

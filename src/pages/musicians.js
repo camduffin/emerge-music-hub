@@ -3,11 +3,13 @@ import Layout from '../components/Layout';
 
 const Musicians = () => {
     return(
-        <Layout>
-            <section>
-                <h2>musicians</h2>
-            </section>
-        </Layout>
+        <div className="musicians">
+            <Layout>
+                <section className="wrapper">
+                    <h2>musicians</h2>
+                </section>
+            </Layout>  
+        </div>
     )
 }
 

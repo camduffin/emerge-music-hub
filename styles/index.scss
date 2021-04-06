@@ -143,9 +143,14 @@ header {
     margin: 0 auto;
 
     h2 {
+        margin: 0;
+        position: relative;
+        bottom: 45px;
+        overflow: hidden;
 
         img {
             width: 20%;
+            min-width: 200px;
         }
 
     }
@@ -156,19 +161,27 @@ header {
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url(../src/images/bottom-border.png);
-    background-size: contain;
+    background-size: cover;
     position: relative;
     bottom: 0;
     top: 0;
+}
+
+.nav-home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-home-flex {
     display: grid;
     grid-template-columns: 250px 300px 300px;
     text-align: center;
+    margin: 0 auto;
     
     li {
         padding: 40px 0;
@@ -194,6 +207,7 @@ header {
     overflow: hidden;
     position: fixed;
     left: 40%;
+    z-index: 100;
     
     ul {
         display: flex;
@@ -201,7 +215,7 @@ header {
 
         li {
             padding: 10px;
-            @include paragraph(1.7rem);
+            @include paragraph(2rem);
         }
 
         a {
@@ -221,26 +235,199 @@ header {
 
 // Finance Section
 
+.finance {
+
+    &::after {
+        content: "";
+        background: url(../src/images/emerge-bg.png);
+        background-size: cover;
+        content: ""; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -100;
+        opacity: .8;
+    }
+}
+
 p {
     @include paragraph(2rem);
 }
 
 .finance-video-list {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 56.25%;
+    max-width: 900px;
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    
+    .video {
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        position: relative;
+        margin: 100px 0;
 
-    iframe {
+        iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
+
+// Recording 
+
+.recording {
+
+    &::after {
+        content: "";
+        background: url(../src/images/emerge-bg.png);
+        background-size: cover;
+        content: ""; 
         position: absolute;
         top: 0;
         left: 0;
-        bottom: 0;
-        right: 0;
         width: 100%;
         height: 100%;
+        z-index: -100;
+    }
+}
+
+.first-recording-container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    
+    &::after {
+        content: ""; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        opacity: .4;
+        z-index: -23;
+    }
+
+    h2 {
+        @include subHeading(5rem);
+        text-transform: uppercase;
+
+        span {
+            display: block;
+        }
+    }
+
+    .recording-artist-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        z-index: 1;
+
+        li {
+            transition: all .2s ease-in-out;
+            opacity: .8;
+        }
+
+        li:hover, li:focus {
+            transform: scale(1.07);
+            opacity: 1;
+            cursor: pointer;
+        }
+        
+        img {
+            width: 100%;
+            min-width: 200px;
+            padding: 20px;
+            border-radius: 40px;
+        }
+
+    }
+}
+
+
+// Musicians 
+
+.musicians {
+    
+    &::after {
+        content: "";
+        background: url(../src/images/emerge-bg.png);
+        background-size: cover;
+        content: ""; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -100;
+        opacity: .8;
+    }
+}
+
+// Exports
+
+.exports {
+
+    &::after {
+        content: "";
+        background: url(../src/images/emerge-bg.png);
+        background-size: cover;
+        content: ""; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -100;
+        opacity: .8;
+    }
+}
+
+// Booking 
+
+.booking {
+
+    &::after {
+        content: "";
+        background: url(../src/images/emerge-bg.png);
+        background-size: cover;
+        content: ""; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -100;
+        opacity: .8;
+    }
+}
+
+// Royalties
+
+.royalties {
+
+    &::after {
+        content: "";
+        background: url(../src/images/emerge-bg.png);
+        background-size: cover;
+        content: ""; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -100;
+        opacity: .8;
     }
 }

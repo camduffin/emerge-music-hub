@@ -8,7 +8,7 @@ const IndexPage = () => {
   return (
       <header className="home-header">
         <div className="landing-image" data-sal="fade" data-sal-duration="1000">
-          <div className="landing-header-container">
+          <div className="landing-header-container wrapper">
             <h1>
               <div className="sr-only">
                 Emerge Music Hub
