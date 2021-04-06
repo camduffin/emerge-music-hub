@@ -20,7 +20,7 @@ const IndexPage = () => {
             <p data-sal="slide-left" data-sal-duration="1000">A professional development online hub for emerging artists</p>
           <nav>
             <AniLink swipe direction="left" to="/home">
-              <button>
+              <button data-sal="slide-right">
                 Enter Site
                 <FaArrowCircleRight/>
               </button>
