@@ -13,15 +13,19 @@ const Recording = () => {
                         <ul className="recording-artist-container">
                             <li>
                                 <img src={artistImage1} alt=""/>
+                                <h5>Lloyd McArton</h5>
                             </li>
                             <li>
                                 <img src={artistImage2} alt=""/>
+                                <h5>Tim Dashney</h5>
                             </li>
                             <li>
                                 <img src={artistImage3} alt=""/>
+                                <h5>Donald Drumpft</h5>
                             </li>
                             <li>
                                 <img src={artistImage3} alt=""/>
+                                <h5>Carley Rae Jepson</h5>
                             </li>
                             <li>
                                 <img src={artistImage3} alt=""/>

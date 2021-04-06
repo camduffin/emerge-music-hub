@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import '../../styles/index.scss';
 
 // styles
 const pageStyles = {
@@ -16,20 +17,13 @@ const headingStyles = {
 const paragraphStyles = {
   marginBottom: 48,
 }
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
 
 // markup
 const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
       <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
+      <h1 style={headingStyles}>Oh no!</h1>
       <p style={paragraphStyles}>
         Sorry{" "}
         <span role="img" aria-label="Pensive emoji">
@@ -44,6 +38,7 @@ const NotFoundPage = () => {
         <br />
         <Link to="/">Go home</Link>.
       </p>
+      <div className="four-oh-four"></div>
     </main>
   )
 }

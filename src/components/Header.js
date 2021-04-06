@@ -1,6 +1,5 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import '../../styles/index.scss';
 
 
