@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import artistImage1 from '../images/artists/artist1.jpg';
 import artistImage2 from '../images/artists/artist2.jpg';
 import artistImage3 from '../images/artists/artist3.jpg';
+// import { StaticImage } from 'gatsby-plugin-image';
 
 const Recording = () => {
     return (
@@ -12,6 +13,7 @@ const Recording = () => {
                 <section className="first-recording-container">
                         <ul className="recording-artist-container">
                             <li>
+                                {/* <StaticImage src="../images/artists/artist1.jpg" alt="Lloyd McArton" /> */}
                                 <img src={artistImage1} alt=""/>
                                 <h5>Lloyd McArton</h5>
                             </li>

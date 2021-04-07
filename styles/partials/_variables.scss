@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=DM+Sans:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100;0,200;0,400;0,700;1,400&display=swap');
 
 // variables
-$darkbrown: #2b2121;
+$darkbrown: #523e3e;
 $offwhite: #f7f7ee;
 $darkblue: #0A2F58;
 $lightblue: #94CFE3;
@@ -13,13 +13,15 @@ $red: #F4856F;
 $darkred: #ED5848;
 $lightyellow: #F7E9A0;
 $grey: #4F5353;
+$transblue: rgba(49, 68, 85, 0.7);
 
 
 // mixins
-@mixin monoFont($sizeValue) {
+
+@mixin videoHeading($sizeValue) {
     font-size: $sizeValue;
-    color: $darkbrown;
-    font-family: 'Major Mono Display', monospace;
+    color: $darkblue;
+    font-family: 'DM Sans', sans-serif;
 }
 
 @mixin subHeading($sizeValue) {
