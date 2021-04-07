@@ -13,7 +13,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-scroll-indicator`,
       options: {
-        color: "#FBBEB4",
+        color: "#ED5848",
         height: "3px",
         zIndex: `9999`,
       },

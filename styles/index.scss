@@ -190,6 +190,20 @@ header {
     top: 0;
 }
 
+.hidden-home-h1 {
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.home-nav-header {
+    height: 8vh;
+    img {
+        cursor: pointer;
+    }
+}
+
 .nav-home-container {
     display: flex;
     justify-content: center;
