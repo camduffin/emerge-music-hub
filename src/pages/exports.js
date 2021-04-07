@@ -6,7 +6,7 @@ const Exports = () => {
         <div className="exports">
             <Layout>
                 <section className="wrapper">
-                    <h2></h2>
+                
                 </section>
             </Layout>
         </div>

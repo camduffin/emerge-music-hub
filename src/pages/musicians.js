@@ -6,7 +6,7 @@ const Musicians = () => {
         <div className="musicians">
             <Layout>
                 <section className="wrapper">
-                    <h2></h2>
+                    
                 </section>
             </Layout>  
         </div>

@@ -12,7 +12,7 @@ const NavBar = () => {
         <nav className="nav-bar">
             <Link fade to="/">
                 <h2>
-                    <img src={emergeLogo} alt=""/>
+                    <img src={emergeLogo} alt="Emerge Music Hub logo"/>
                 </h2>
             </Link>
             <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>

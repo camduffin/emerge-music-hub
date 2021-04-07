@@ -6,7 +6,7 @@ const Royalties = () => {
         <div className="royalties">
             <Layout>
                 <section className="wrapper">
-                    <h2></h2>
+                    
                 </section>
             </Layout>
         </div>

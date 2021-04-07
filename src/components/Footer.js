@@ -2,6 +2,8 @@ import React from 'react';
 import '../../styles/index.scss';
 import { FiInstagram } from 'react-icons/fi';
 import { FaFacebookF, FaRegPaperPlane } from 'react-icons/fa';
+import { IoIosArrowDropup } from 'react-icons/io';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 
 const Footer = () => {
@@ -13,6 +15,10 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer-container">
+                <div className="to-top">
+                    <IoIosArrowDropup  onClick={() => scrollTo('#header')} />
+                    <p>back to top</p>
+                </div>
                 <div className="footer-copyright">
                     <p>Emerge Music Hub ©2021</p>
                 </div>

@@ -6,7 +6,7 @@ const Booking = () => {
         <div className="booking">
             <Layout>
                 <section className="wrapper">
-                    <h2></h2>
+                    
                 </section>
             </Layout>
         </div>

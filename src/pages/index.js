@@ -14,7 +14,7 @@ const IndexPage = () => {
                 Emerge Music Hub
               </div>
               <div className="emerge-main-logo">
-                <img data-sal="slide-right" data-sal-duration="1000" src={emergeLogo} alt=""/>
+                <img data-sal="slide-right" data-sal-duration="1000" src={emergeLogo} alt="Emerge Music Hub logo"/>
               </div>
             </h1>
             <p data-sal="slide-left" data-sal-duration="1000">A professional development online hub for emerging artists</p>

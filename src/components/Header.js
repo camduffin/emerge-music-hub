@@ -5,12 +5,7 @@ import '../../styles/index.scss';
 
 const Header = () => {
     return (
-        <header>
-            {/* <AniLink fade to="/">
-                <h2>
-                    <img src={emergeLogo} alt=""/>
-                </h2>
-            </AniLink> */}
+        <header id="header">
             <NavBar />
         </header>
     )
