@@ -6,8 +6,10 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const NavBar = () => {
 
+    // images
     const emergeLogo = "../images/emerge-logo.png";
 
+    // hamburger state
     const [open, setOpen] = useState(false);
 
     return (
@@ -18,7 +20,7 @@ const NavBar = () => {
                 </h2>
             </Link>
             <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>
-                <li><Link to="/">Home</Link></li> 
+                <li><Link activeClassName="nav-active" to="/">Home</Link></li> 
                 <li><Link activeClassName="nav-active" to="/musicians">Musicians</Link></li>
                 <li><Link activeClassName="nav-active" to="/finance">Finance</Link></li>
                 <li><Link activeClassName="nav-active" to="/recording">Recording</Link></li>

@@ -6,7 +6,7 @@ const Recording = () => {
     return (
     <div className="recording">
         <Layout>
-            <section className="wrapper">
+            <div className="wrapper">
                 <section className="first-recording-container">
                         <ul className="recording-artist-container">
                             <li>
@@ -34,7 +34,7 @@ const Recording = () => {
                         </ul>
                     <h2>Your First<span>Recording</span></h2>
                 </section>
-            </section>
+            </div>
         </Layout>
     </div>    
     )
