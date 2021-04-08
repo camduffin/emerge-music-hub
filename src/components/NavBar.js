@@ -1,11 +1,12 @@
 import React, { useState} from 'react';
 import '../../styles/index.scss';
-// import AniLink from 'gatsby-plugin-transition-link/AniLink';
-import emergeLogo from '../images/emerge-logo.png';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const NavBar = () => {
+
+    const emergeLogo = "../images/emerge-logo.png";
 
     const [open, setOpen] = useState(false);
 
@@ -13,7 +14,7 @@ const NavBar = () => {
         <nav className="nav-bar">
             <Link to="/">
                 <h2>
-                    <img src={emergeLogo} alt="Emerge Music Hub logo"/>
+                    <StaticImage src={emergeLogo} alt="Emerge Music Hub logo" placeholder="blurred"/>
                 </h2>
             </Link>
             <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>
