@@ -1,9 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import artistImage1 from '../images/artists/artist1.jpg';
-import artistImage2 from '../images/artists/artist2.jpg';
-import artistImage3 from '../images/artists/artist3.jpg';
-// import { StaticImage } from 'gatsby-plugin-image';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Recording = () => {
     return (
@@ -13,27 +10,26 @@ const Recording = () => {
                 <section className="first-recording-container">
                         <ul className="recording-artist-container">
                             <li>
-                                {/* <StaticImage src="../images/artists/artist1.jpg" alt="Lloyd McArton" /> */}
-                                <img src={artistImage1} alt=""/>
-                                <h5>Lloyd McArton</h5>
+                                <StaticImage src="../images/artists/josh-korody.jpg" alt="Picture of Josh Korody" placeholder="blurred"/>
+                                <h5>Josh Korody</h5>
                             </li>
                             <li>
-                                <img src={artistImage2} alt=""/>
+                            <StaticImage src="../images/artists/artist2.jpg" alt="Tim Dashney" placeholder="blurred"/>
                                 <h5>Tim Dashney</h5>
                             </li>
                             <li>
-                                <img src={artistImage3} alt=""/>
+                                <StaticImage src="../images/artists/artist3.jpg" alt="Tim Dashney" placeholder="blurred"/>
                                 <h5>Donald Drumpft</h5>
                             </li>
                             <li>
-                                <img src={artistImage3} alt=""/>
+                                <StaticImage src="../images/artists/artist2.jpg" alt="Tim Dashney" placeholder="blurred"/>
                                 <h5>Carley Rae Jepson</h5>
                             </li>
                             <li>
-                                <img src={artistImage3} alt=""/>
+                                <StaticImage src="../images/artists/artist2.jpg" alt="Tim Dashney" placeholder="blurred"/>
                             </li>
                             <li>
-                                <img src={artistImage3} alt=""/>
+                                <StaticImage src="../images/artists/artist2.jpg" alt="Tim Dashney" placeholder="blurred"/>
                             </li>
                         </ul>
                     <h2>Your First<span>Recording</span></h2>

@@ -5,7 +5,6 @@ module.exports = {
   plugins: [
     "gatsby-plugin-smoothscroll",
     "react-icons",
-    "gatsby-plugin-transition-link",
     "gatsby-plugin-scroll-reveal",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
@@ -40,6 +39,13 @@ module.exports = {
     "gatsby-plugin-offline",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {

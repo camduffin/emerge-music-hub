@@ -10,13 +10,16 @@ body {
 .layout-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
     min-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .main-content {
     flex-grow: 1;
-    padding: 100px 0;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
@@ -75,10 +78,14 @@ footer {
 h1 {
     margin: 0;
     width: 100%;
-
+    
+    
     img {
         width: 100%;
         min-width: 400px;
+        display: inline-block;
+        position: relative;
+        bottom: 150px;
     }
 }
 
@@ -113,15 +120,23 @@ h1 {
 .landing-header-container {
     display: flex;
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     width: 50%;
     margin: 0 auto;
+    padding-top: 200px;
+    position: relative;
+    text-align: center;
+
+
+    .main-header-text {
+        position: absolute;
+        top: 500px;
+    }
 
     p {
         @include subHeading(3rem);
-        position: relative;
         bottom: 200px;
         width: 700px;
         min-width: 500px;
@@ -130,19 +145,12 @@ h1 {
 
     button {
         @include subHeading(3rem);
-        padding-bottom: 100px;
         border: none;
         background-color: transparent;
-        padding: 10px;
         cursor: pointer;
-        position: relative;
-        bottom: 50px;
-
-
+        transform: rotate(90deg);
+        padding-left: 200px;
         svg {
-            position: relative;
-            left: 50px;
-            top: 6px;
             animation: bounceRight 3s infinite;
             color: $red;
         }
@@ -174,66 +182,26 @@ header {
 
 }
 
+
+
 // HOME nav bar
 
-.choose-nav-page {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../src/images/bottom-border.png);
-    background-size: cover;
-    position: relative;
-    bottom: 0;
-    top: 0;
-}
+// .choose-nav-page {
+//     height: 100vh;
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     background-image: url(../src/images/bottom-border.png);
+//     background-size: cover;
+//     position: relative;
+//     bottom: 0;
+//     top: 0;
+// }
 
-.hidden-home-h1 {
-    height: 0;
-    width: 0;
-    margin: 0;
-    padding: 0;
-}
 
-.home-nav-header {
-    height: 8vh;
-    img {
-        cursor: pointer;
-    }
-}
-
-.nav-home-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-home-flex {
-    display: grid;
-    grid-template-columns: 250px 300px 300px;
-    text-align: center;
-    margin: 0 auto;
-    
-    li {
-        padding: 40px 0;
-        margin: 0;
-    }
-
-    a {
-        color: $darkblue;
-        text-align: center;
-        transition: all .2s ease-in-out;
-
-        &:hover, &:focus{
-            color: $lightblue;
-            transform: scale(0.3);
-        }
-    }
-}
-
-// Nav Bar ******
+// Nav Bar 
 
 .nav-bar {
     margin: 0 auto;
@@ -242,8 +210,7 @@ header {
     background-color:  rgba(49, 68, 85, 0.7);
     display: flex;
     align-items: center;
-    min-height: 14vh;
-    height: 14vh;
+    height: 100px;
 
     @include tabletMQ {
         background-color: transparent;
@@ -252,6 +219,7 @@ header {
     h2 {
         margin-top: 110px;
         margin-left: 100px;
+        color: $offwhite;
 
         img {
             color: $offwhite;
@@ -321,6 +289,35 @@ header {
     }
 }
 
+.who-we-are {
+    height: 100vh;
+    background-image: url(../src/images/yellow-bg1.jpg);
+    background-size: cover;
+    font-family: $josefin;
+
+    .question-one-container {
+        height: 70vh;
+        padding: 200px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        h2 {
+            margin: 0;
+        }
+
+        h3 {
+            
+        }
+
+        p {
+            @include paragraphDM(2.6rem);
+        }
+    }
+
+    
+}
+
 // Finance Section
 
 .finance {
@@ -382,7 +379,6 @@ h4 {
         content: "";
         background: url(../src/images/emerge-bg.png);
         background-size: cover;
-        content: ""; 
         position: absolute;
         top: 0;
         left: 0;
@@ -462,10 +458,14 @@ h4 {
         }
         
         img {
-            width: 100%;
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
             min-width: 200px;
             padding: 20px;
             border-radius: 40px;
+            object-fit: cover;
+            display: inline-block;
         }
 
     }
