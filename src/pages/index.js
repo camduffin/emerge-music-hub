@@ -1,10 +1,11 @@
 import * as React from "react";
 import '../../styles/index.scss';
-import { FaArrowCircleRight } from 'react-icons/fa';
+import { FaArrowCircleRight, FaRegLightbulb } from 'react-icons/fa';
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import Layout from '../components/Layout';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { StaticImage } from 'gatsby-plugin-image';
+import { Link } from 'gatsby';
 
 
 const IndexPage = () => {
@@ -47,17 +48,14 @@ const IndexPage = () => {
                       title="Tame Impala - InnerSpeaker Memories"
                   ></iframe>
                 </div>
-                <button onClick={() => scrollTo('#question-one')}>
-                  <FaArrowCircleRight/>
-                </button>
               </div>
             </section>
             <section className="home-question-one" id="question-one">
               <div className="wrapper">
                 <div className="question-one-container">
-                  <h3>Question 1/2</h3>
-                  <h2>What is <span>Emerge Music Hub's</span> mission?</h2>
-                  <ul>
+                  <h3 data-sal="slide-left" data-sal-duration="1000">Question 1/2</h3>
+                  <h2 data-sal="slide-left" data-sal-duration="1000">What is <span>Emerge Music Hub's</span> mission?</h2>
+                  <ul data-sal="slide-right" data-sal-duration="1000">
                     <li>
                       <IoMdCheckmarkCircleOutline />
                       <p>To help young musicians and emerging artists navigate the <span>business</span> of music.</p>
@@ -71,18 +69,15 @@ const IndexPage = () => {
                       <p>To provide tools and information about how the Canadian Music Industry operates, on every level.</p>
                     </li>
                   </ul>
-                  <button onClick={() => scrollTo('#question-two')}>
-                          <FaArrowCircleRight/>
-                </button>
                 </div>
               </div>
             </section>
             <section className="home-question-two" id="question-two">
               <div className="wrapper">
-              <div className="question-two-container">
-                  <h3>Question 2/2</h3>
-                  <h2>What can I learn from <span>Emerge Music Hub?</span></h2>
-                  <ul>
+                <div className="question-two-container">
+                  <h3 data-sal="slide-left" data-sal-duration="1000">Question 2/2</h3>
+                  <h2 data-sal="slide-left" data-sal-duration="1000">What can I learn from <span>Emerge Music Hub?</span></h2>
+                  <ul data-sal="slide-right" data-sal-duration="1000">
                     <li>
                       <IoMdCheckmarkCircleOutline />
                       <p>The real-life sacrifices it takes to make music my career.</p>
@@ -96,6 +91,13 @@ const IndexPage = () => {
                       <p>How to put myself and my music out there!</p>
                     </li>
                   </ul>
+                  <div>
+                    <p className="get-started" data-sal="slide-left" data-sal-duration="2000">Get started with
+                    <Link to="/musicians">
+                      <button>Tips from the Pros <FaRegLightbulb/></button>
+                    </Link>
+                    </p>
+                  </div>
                 </div>
               </div>
             </section>

@@ -2,7 +2,7 @@
 @import './partials/variables';
 
 body {
-    background-color: $offwhite;
+    background-color: $transoffwhite;
     font-family: 'DM Sans', sans-serif;
     font-size: 2.4rem;
 }
@@ -24,45 +24,45 @@ body {
 
 footer {
     width: 100%;
-    background-color: aliceblue;
-    height: 20vh;
+    background-color: $transblue;
+    height: 30vh;
 
     .footer-container {
         display: flex;
         width: 100%;
         justify-content: space-around;
         align-items: center;
-        height: 20vh;
+        height: 30vh;
     }
 
     .to-top {
         cursor: pointer;
 
         svg {
-            width: 60px;
-            height: 140px;
+            font-size: 7rem;
             padding: 10px;
         }
 
         p {
             position: relative;
-            bottom: 60px;
-            right: 12px;
+            bottom: 20px;
+            right: 8px;
             font-size: 1.6rem;
         }
     }
     
     p {
         @include paragraph(2rem);
+        color: $lightblue;
     }
 
     svg {
-        color: $darkbrown;
+        color: $lightblue;
         transition: all .2s ease-in-out;
     }
 
     svg:hover {
-        color: $lightblue;
+        color: $red;
         transform: scale(1.3);
     }
 
@@ -71,12 +71,18 @@ footer {
 
         li {
             padding: 10px;
+            font-size: 3rem;
+        }
+
+        li:hover, li:focus {
+            color: $red;
         }
     }
 }
 
 .landing-image {
-    background-image: url(../src/images/emerge-bg.png);
+    // background-image: url(../src/images/emerge-bg.png);
+    background-image: linear-gradient(to bottom, $transoffwhite, $transoffwhite 85%, white), url(../src/images/emerge-bg.png);
     width: 100%;
     background-size: cover;
     height: 100vh;
@@ -179,24 +185,6 @@ header {
 }
 
 
-
-// HOME nav bar
-
-// .choose-nav-page {
-//     height: 100vh;
-//     width: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     background-image: url(../src/images/bottom-border.png);
-//     background-size: cover;
-//     position: relative;
-//     bottom: 0;
-//     top: 0;
-// }
-
-
 // Nav Bar 
 
 .nav-bar {
@@ -219,6 +207,7 @@ header {
 
         img {
             width: 60%;
+            filter: invert(100%);
         }
 
         @include tabletMQ {
@@ -289,7 +278,7 @@ header {
 
 .intro-video {
     height: 100vh;
-    // background-image: url(../src/images/blue-bg1.png);
+    // background-image: linear-gradient(to top, $yellow, $darkblue 40%, white);
     background-size: cover;
 
     intro-video-section {
@@ -336,7 +325,8 @@ header {
 
 .home-question-one {
     height: 140vh;
-    background-image: url(../src/images/yellow-bg1.png);
+    // background-image: url(../src/images/yellow-bg1.png);
+    // background-image: linear-gradient(to bottom, $yellow, $transoffwhite 10%, white), url(../src/images/yellow-bg1.png);
     background-size: cover;
     font-family: $josefin;
     background-position: center center;
@@ -412,7 +402,7 @@ header {
 
 .home-question-two {
     height: 140vh;
-    background-image: url(../src/images/yellow-bg2.png);
+    // background-image: url(../src/images/yellow-bg2.png);
     background-size: cover;
     background-position: center center;
     background-position-x: left;
@@ -426,7 +416,7 @@ header {
         justify-content: flex-start;
         width: 70%;
         margin: 0 auto;
-
+        position: relative;
         
         span {
             font-style: bolder;        
@@ -465,7 +455,46 @@ header {
 
         p {
             @include paragraphDM(3rem);
+
+            a {
+                color: $transblue;
+                cursor: pointer;
+                font-size: 5rem;
+                font-family: $josefin;
+            }
+
         }
+
+        button {
+            border: none;
+            background-color: $transblue;
+            border-radius: 8px;
+            color: $lightblue;
+            font-size: 3rem;
+            padding: 15px;
+            margin-left: 20px;
+            border: 2px solid $transblue;
+            cursor: pointer;
+            position: relative;
+            transition: all .2s ease-in-out;
+
+            &:hover,
+            &:focus {
+                opacity: .7;
+                color: white;
+            }
+
+            &:active {
+                opacity: .5;
+                top: 5px;
+            }
+        }
+
+        .get-started {
+            font-style: italic;
+        }
+        
+        
     }
 
     
