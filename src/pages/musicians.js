@@ -11,26 +11,26 @@ const Musicians = () => {
                     <div className="wrapper">
                         <ul className="recording-artist-container">
                             <li>
-                                <StaticImage onClick={() => scrollTo('#video-josh')} src="../images/artists/josh-korody.jpg" alt="Picture of Josh Korody" placeholder="blurred"/>
+                                <StaticImage onClick={() => scrollTo('#video-josh')} src="../images/artists/josh-korody.jpg" alt="Picture of Josh Korody" placeholder="blurred" loading="lazy"/>
                                 <h5>Josh Korody</h5>
                             </li>
                             <li>
-                            <StaticImage src="../images/artists/artist2.jpg" alt="Tim Dashney" placeholder="blurred"/>
+                            <StaticImage src="../images/artists/artist2.jpg" alt="Tim Dashney" placeholder="blurred" loading="lazy"/>
                                 <h5>Tim Dashney</h5>
                             </li>
                             <li>
-                                <StaticImage src="../images/artists/artist3.jpg" alt="Tim Dashney" placeholder="blurred"/>
+                                <StaticImage src="../images/artists/artist3.jpg" alt="Tim Dashney" placeholder="blurred" loading="lazy"/>
                                 <h5>Donald Drumpft</h5>
                             </li>
                             <li>
-                                <StaticImage src="../images/artists/artist2.jpg" alt="Tim Dashney" placeholder="blurred"/>
+                                <StaticImage src="../images/artists/artist2.jpg" alt="Tim Dashney" placeholder="blurred" loading="lazy"/>
                                 <h5>Carley Rae Jepson</h5>
                             </li>
                             <li>
-                                <StaticImage src="../images/artists/artist2.jpg" alt="Tim Dashney" placeholder="blurred"/>
+                                <StaticImage src="../images/artists/artist2.jpg" alt="Tim Dashney" placeholder="blurred" loading="lazy"/>
                             </li>
                             <li>
-                                <StaticImage src="../images/artists/artist2.jpg" alt="Tim Dashney" placeholder="blurred"/>
+                                <StaticImage src="../images/artists/artist2.jpg" alt="Tim Dashney" placeholder="blurred" loading="lazy"/>
                             </li>
                         </ul>
                         <h2>Extra tips from the pros</h2>
