@@ -3,6 +3,8 @@ import '../../styles/index.scss';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import { RiCloseFill } from 'react-icons/ri';
+
 
 const NavBar = () => {
 
@@ -12,6 +14,10 @@ const NavBar = () => {
     // hamburger state
     const [open, setOpen] = useState(false);
 
+    const handleClick = () => {
+        setOpen(!open);
+    }
+
     return (
         <nav className="nav-bar">
             <Link to="/">
@@ -20,6 +26,7 @@ const NavBar = () => {
                 </h2>
             </Link>
             <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>
+                <li><RiCloseFill onClick={() => handleClick()} /></li>
                 <li><Link activeClassName="nav-active" to="/">Home</Link></li> 
                 <li><Link activeClassName="nav-active" to="/musicians">Musicians</Link></li>
                 <li><Link activeClassName="nav-active" to="/finance">Finance</Link></li>
@@ -28,7 +35,11 @@ const NavBar = () => {
                 <li><Link activeClassName="nav-active" to="/royalties">Royalties</Link></li> 
                 <li><Link activeClassName="nav-active" to="/booking">Booking</Link></li> 
             </ul>
-            <GiHamburgerMenu className="burger" onClick={() => setOpen(!open)}/>
+            <div className="burger" onClick={() => handleClick()} style={{transform: open ? "scale(0.6)" : "", opacity: open ? "0.4" : ""}} >
+                <div className="menu" aria-label="hidden"></div>
+            </div>
+
+            {/* onClick={() => setOpen(!open)} */}
         </nav>
     )
 }
