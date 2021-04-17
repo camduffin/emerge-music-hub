@@ -27,6 +27,7 @@ const Booking = () => {
                     <div className="eric-warner-video">
                         <h4>Eric Warner - Music Consultant, Promoter, Artist Manager, President We Are Busy Bodies</h4>
                         <iframe
+                            data-sal="fade" data-sal-duration="1500"
                             id="eric-warner"
                             width="560"
                             height="315"
@@ -43,6 +44,7 @@ const Booking = () => {
                     <div className="denholm-video">
                         <h4>Denholm Whale - Promoter, Artist Manager</h4>
                         <iframe
+                            data-sal="fade" data-sal-duration="1500"
                             id="denholm"
                             width="560"
                             height="315"
@@ -59,6 +61,7 @@ const Booking = () => {
                     <div className="virginia-video">
                         <h4>Virginia Clark - Promoter, Venue Manager, Festival Director</h4>
                         <iframe
+                            data-sal="fade" data-sal-duration="1500"
                             id="virginia"
                             width="560"
                             height="315"

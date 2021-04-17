@@ -43,6 +43,7 @@ const IndexPage = () => {
                 <div className="wrapper intro-video-section">
                   <div className="intro-video-container">
                     <iframe
+                        data-sal="fade" data-sal-duration="1500"
                         width="0"
                         height="0"
                         src="https://www.youtube.com/embed/_o26HtOgnFY"

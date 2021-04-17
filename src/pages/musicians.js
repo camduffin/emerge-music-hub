@@ -42,6 +42,7 @@ const Musicians = () => {
                             <li>
                                 <h4>Tame Impala - InnerSpeaker Memories</h4>
                                 <iframe
+                                    data-sal="fade" data-sal-duration="1500"
                                     id="video-josh"
                                     width="560"
                                     height="315"
@@ -56,6 +57,7 @@ const Musicians = () => {
                             <li>
                                 <h4>Radiohead - SUE Festival 2018 Chile</h4>
                                 <iframe
+                                    data-sal="fade" data-sal-duration="1500"
                                     width="560"
                                     height="315"
                                     src="https://www.youtube.com/embed/3rs_3fe51GY"
