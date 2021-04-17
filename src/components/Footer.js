@@ -15,16 +15,16 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer-container">
-                <div className="to-top">
+                <div className="to-top" data-sal="fade" data-sal-duration="1500">
                     <IoIosArrowDropup  onClick={() => scrollTo('#header')} />
                     <p>back to top</p>
                 </div>
-                <div className="footer-copyright">
+                <div className="footer-copyright" data-sal="fade" data-sal-duration="1500">
                     <p>Emerge Music Hub ©2021</p>
                 </div>
                 <div className="footer-socials">
                     <nav>
-                        <ul className="social-container">
+                        <ul className="social-container" data-sal="fade" data-sal-duration="1500">
                             <li>
                                 <a 
                                 href={instagram}

@@ -28,12 +28,11 @@ const NavBar = () => {
             <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>
                 <li><RiCloseFill onClick={() => handleClick()} /></li>
                 <li><Link activeClassName="nav-active" to="/">Home</Link></li> 
-                <li><Link activeClassName="nav-active" to="/musicians">Musicians</Link></li>
-                <li><Link activeClassName="nav-active" to="/finance">Finance</Link></li>
-                <li><Link activeClassName="nav-active" to="/recording">Recording</Link></li>
-                <li><Link activeClassName="nav-active" to="/exports">Exports</Link></li>
-                <li><Link activeClassName="nav-active" to="/royalties">Royalties</Link></li> 
-                <li><Link activeClassName="nav-active" to="/booking">Booking</Link></li> 
+                <li><Link activeClassName="nav-active" to="/finance">Finances & Grants</Link></li>
+                <li><Link activeClassName="nav-active" to="/royalties">Royalties 101</Link></li> 
+                <li><Link activeClassName="nav-active" to="/booking">Putting Yourself Out There</Link></li> 
+                <li><Link activeClassName="nav-active" to="/recording">Your First Recording</Link></li>
+                <li><Link activeClassName="nav-active" to="/musicians">Tips From the Pros</Link></li>
             </ul>
             <div className="burger" onClick={() => handleClick()} style={{transform: open ? "scale(0.6)" : "", opacity: open ? "0.4" : ""}} >
                 <div className="menu" aria-label="hidden"></div>
