@@ -10,26 +10,36 @@ const Recording = () => {
                 <section className="first-recording-container">
                         <ul className="recording-artist-container">
                             <li>
+                                <StaticImage src="../images/artists/jill-zim.jpg" alt="Picture of Jill Zimmermann" placeholder="blurred"/>
+                                <h5>Jill Zimmermann</h5>
+                            </li>
+                            <li>
+                            <StaticImage src="../images/artists/erin-costelo.jpg" alt="Picture of Erin Costelo" placeholder="blurred"/>
+                                <h5>Erin Costelo</h5>
+                            </li>
+                            <li>
                                 <StaticImage src="../images/artists/josh-korody.jpg" alt="Picture of Josh Korody" placeholder="blurred"/>
                                 <h5>Josh Korody</h5>
                             </li>
                             <li>
-                            <StaticImage src="../images/artists/artist2.jpg" alt="Tim Dashney" placeholder="blurred"/>
-                                <h5>Tim Dashney</h5>
+                                <StaticImage src="../images/artists/chris-stringer.jpg" alt="Picture of Chris Stringer" placeholder="blurred"/>
+                                <h5>Chris Stringer</h5>
                             </li>
                             <li>
-                                <StaticImage src="../images/artists/artist3.jpg" alt="Tim Dashney" placeholder="blurred"/>
-                                <h5>Donald Drumpft</h5>
+                                <StaticImage src="../images/artists/aaron-goldstein.jpeg" alt="Picture of Aaron Goldstein" placeholder="blurred"/>
+                                <h5>Aaron Goldstein</h5>
                             </li>
                             <li>
-                                <StaticImage src="../images/artists/artist2.jpg" alt="Tim Dashney" placeholder="blurred"/>
-                                <h5>Carley Rae Jepson</h5>
+                                <StaticImage src="../images/artists/terra-lightfoot.jpg" alt="Picture of Terra Lightfoot" placeholder="blurred"/>
+                                <h5>Terra Lightfoot</h5>
                             </li>
                             <li>
-                                <StaticImage src="../images/artists/artist2.jpg" alt="Tim Dashney" placeholder="blurred"/>
+                                <StaticImage src="../images/artists/andy-shauf.png" alt="Photo of Andy Shauf" placeholder="blurred"/>
+                                <h5>Andy Shauf</h5>
                             </li>
                             <li>
-                                <StaticImage src="../images/artists/artist2.jpg" alt="Tim Dashney" placeholder="blurred"/>
+                                <StaticImage src="../images/artists/alysha.jpg" alt="Picture of Alysha Brilla" placeholder="blurred"/>
+                                <h5>Alysha Brilla</h5>
                             </li>
                         </ul>
                     <h2>Your First<span>Recording</span></h2>

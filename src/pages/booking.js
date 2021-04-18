@@ -10,25 +10,25 @@ const Booking = () => {
                 <section className="booking-container">
                     <ul className="booking-image-container">
                         <li>
-                            <StaticImage onClick={() => scrollTo('#eric-warner')} src="../images/artists/josh-korody.jpg" alt="Picture of Eric Warner" placeholder="blurred"/>
+                            <StaticImage className="eric-warner" onClick={() => scrollTo('#eric-warner')} src="../images/artists/eric-warner.jpg" alt="Picture of Eric Warner" placeholder="blurred"/>
                             <h5>Eric Warner</h5>
                         </li>
                         <li>
-                            <StaticImage onClick={() => scrollTo('#denholm')} src="../images/artists/artist2.jpg" alt="Tim Dashney" placeholder="blurred"/>
+                            <StaticImage className="denholm" onClick={() => scrollTo('#denholm')} src="../images/artists/denholm.jpg" alt="Photo of Denholm Whale" placeholder="blurred"/>
                             <h5>Denholm Whale</h5>
                         </li>
                         <li>
-                            <StaticImage onClick={() => scrollTo('#virginia')} src="../images/artists/artist3.jpg" alt="Tim Dashney" placeholder="blurred"/>
+                            <StaticImage className="virginia" onClick={() => scrollTo('#virginia')} src="../images/artists/virginia.jpg" alt="Photo of Virginia Clark" placeholder="blurred"/>
                             <h5>Virginia Clark</h5>
                         </li>
                     </ul>
+                    <h2>Putting yourself out there</h2>
                 </section>
                 <section className="wrapper">
                     <div className="eric-warner-video">
-                        <h4>Eric Warner - Music Consultant, Promoter, Artist Manager, President We Are Busy Bodies</h4>
+                        <h4 id="eric-warner">Eric Warner - Music Consultant, Promoter, Artist Manager, President We Are Busy Bodies</h4>
                         <iframe
                             data-sal="fade" data-sal-duration="1500"
-                            id="eric-warner"
                             width="560"
                             height="315"
                             src="https://www.youtube.com/embed/_o26HtOgnFY"
@@ -42,10 +42,9 @@ const Booking = () => {
                 </section>
                 <section className="wrapper">
                     <div className="denholm-video">
-                        <h4>Denholm Whale - Promoter, Artist Manager</h4>
+                        <h4 id="denholm">Denholm Whale - Promoter, Artist Manager</h4>
                         <iframe
                             data-sal="fade" data-sal-duration="1500"
-                            id="denholm"
                             width="560"
                             height="315"
                             src="https://www.youtube.com/embed/3rs_3fe51GY"
@@ -59,10 +58,9 @@ const Booking = () => {
                 </section>
                 <section className="wrapper">
                     <div className="virginia-video">
-                        <h4>Virginia Clark - Promoter, Venue Manager, Festival Director</h4>
+                        <h4 id="virginia">Virginia Clark - Promoter, Venue Manager, Festival Director</h4>
                         <iframe
                             data-sal="fade" data-sal-duration="1500"
-                            id="virginia"
                             width="560"
                             height="315"
                             src="https://www.youtube.com/embed/3rs_3fe51GY"

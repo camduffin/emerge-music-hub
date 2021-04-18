@@ -1,6 +1,5 @@
 import React, { useState} from 'react';
 import '../../styles/index.scss';
-import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { RiCloseFill } from 'react-icons/ri';
