@@ -144,6 +144,8 @@ const Musicians = () => {
                                     title="Radiohead - SUE Festival 2018 Chile"
                                 ></iframe>
                             </li>
+                            <p>“You kind of have to put yourself out there before you’re smart enough to know it's not a great idea.”</p>
+                            <p>Andy Shauf</p>
                             <li className="kyla-charter-video">
                                 <h4 id="kyla-charter">Kyla Charter - Artist, Activist</h4>
                                 <iframe
