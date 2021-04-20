@@ -20,6 +20,7 @@ const Recording = () => {
                             <StaticImage src="../images/artists/erin-costelo.jpg" alt="Picture of Erin Costelo" placeholder="blurred"/>
                                 <h5>Erin Costelo</h5>
                             </li>
+                            
                             <li onClick={() => scrollTo('#josh-korody-two')}>
                                 <StaticImage src="../images/artists/josh-korody.jpg" alt="Picture of Josh Korody" placeholder="blurred"/>
                                 <h5>Josh Korody</h5>
@@ -32,6 +33,7 @@ const Recording = () => {
                                 <StaticImage src="../images/artists/aaron-goldstein.jpeg" alt="Picture of Aaron Goldstein" placeholder="blurred"/>
                                 <h5>Aaron Goldstein</h5>
                             </li>
+                            <h2>Your <span>First</span> Recording</h2>
                             <li onClick={() => scrollTo('#terra')}>
                                 <StaticImage src="../images/artists/terra-lightfoot.jpg" alt="Picture of Terra Lightfoot" placeholder="blurred"/>
                                 <h5>Terra Lightfoot</h5>
@@ -44,8 +46,8 @@ const Recording = () => {
                                 <StaticImage src="../images/artists/alysha.jpg" alt="Picture of Alysha Brilla" placeholder="blurred"/>
                                 <h5>Alysha Brilla</h5>
                             </li>
+                            
                         </ul>
-                        <h2>Your First Recording</h2>
                 </section>
                 <section className="wrapper">
                     <div className="jill-zim-video">
