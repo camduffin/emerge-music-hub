@@ -67,15 +67,15 @@ const IndexPage = () => {
                 <div className="wrapper">
                   <div className="question-one-container">
                     <div>
-                      <p>“Don’t be afraid to be seen, in process, in public. The journey of creating yourself is such a beautiful thing.”</p>
+                      <p data-sal="slide-right" data-sal-duration="1000">“Don’t be afraid to be seen, in process, in public. The journey of creating yourself is such a beautiful thing.”</p>
                       <h2 data-sal="slide-left" data-sal-duration="1000">-<span>Kyla Charter</span>, Artist, Activist</h2>
                     </div>
                     <div>
-                      <p>“The younger generation are going to blow our minds. There is something magical about them because if they can dream it, it can happen!”</p>
+                      <p data-sal="slide-right" data-sal-duration="1000">“The younger generation are going to blow our minds. There is something magical about them because if they can dream it, it can happen!”</p>
                       <h2 data-sal="slide-left" data-sal-duration="1000">-<span>Serena Ryder</span>, Artist</h2>
                     </div>
                     <div>
-                      <p>“Be prepared for a real roller coaster, but it can be really rewarding if your heart is in it.”</p>
+                      <p data-sal="slide-right" data-sal-duration="1000">“Be prepared for a real roller coaster, but it can be really rewarding if your heart is in it.”</p>
                       <h2 data-sal="slide-left" data-sal-duration="1000">-<span>Aaron Goldstein</span>, Producer, Engineer, Artist, owner Baldwin Street Sound</h2>
                     </div>
                   </div>

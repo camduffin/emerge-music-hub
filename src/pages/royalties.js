@@ -7,7 +7,7 @@ const Royalties = () => {
             <Layout>
                 <section className="wrapper">
                     <ul className="royalties-video-list">
-                        <li>
+                        <li className="andrew-karis-video">
                             <h4>Andrew Karis - administrator ACTRA RACS</h4>
                             <iframe
                                 data-sal="fade" data-sal-duration="1500"
@@ -21,7 +21,7 @@ const Royalties = () => {
                                 title="Tame Impala - InnerSpeaker Memories"
                             ></iframe>
                         </li>
-                        <li>
+                        <li className="camille-matthews-video">
                             <h4>Camille Matthews - SOCAN</h4>
                             <iframe
                                 data-sal="fade" data-sal-duration="1500"

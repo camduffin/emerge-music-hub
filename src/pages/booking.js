@@ -13,15 +13,39 @@ const Booking = () => {
                     <h2>Putting yourself out there</h2>
                     <ul className="booking-image-container">
                         <li onClick={() => scrollTo('#eric-warner')}>
-                            <StaticImage className="eric-warner" src="../images/artists/eric-warner.jpg" alt="Picture of Eric Warner" placeholder="blurred"/>
+                            <StaticImage 
+                            className="eric-warner" 
+                            src="../images/artists/eric-warner.jpg" 
+                            alt="Picture of Eric Warner" 
+                            placeholder="blurred"
+                            loading="lazy"
+                            width={275}
+                            height={275}
+                            />
                             <h5>Eric Warner</h5>
                         </li>
                         <li onClick={() => scrollTo('#denholm')} >
-                            <StaticImage className="denholm" src="../images/artists/denholm.jpg" alt="Photo of Denholm Whale" placeholder="blurred"/>
+                            <StaticImage 
+                            className="denholm" 
+                            src="../images/artists/denholm.jpg" 
+                            alt="Photo of Denholm Whale" 
+                            placeholder="blurred"
+                            loading="lazy"
+                            width={275}
+                            height={275}
+                            />
                             <h5>Denholm Whale</h5>
                         </li>
                         <li onClick={() => scrollTo('#virginia')}>
-                            <StaticImage className="virginia"  src="../images/artists/virginia.jpg" alt="Photo of Virginia Clark" placeholder="blurred"/>
+                            <StaticImage 
+                            className="virginia" 
+                            src="../images/artists/virginia.jpg" 
+                            alt="Photo of Virginia Clark" 
+                            placeholder="blurred"
+                            loading="lazy"
+                            width={275}
+                            height={275}
+                            />
                             <h5>Virginia Clark</h5>
                         </li>
                     </ul>

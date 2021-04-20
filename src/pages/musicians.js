@@ -13,15 +13,36 @@ const Musicians = () => {
                     <div className="wrapper">
                         <ul className="recording-artist-container">
                             <li onClick={() => scrollTo('#wade-macneil')}>
-                                <StaticImage src="../images/artists/wade-macneil.jpg" alt="Picture of Wade Macneil" placeholder="blurred" loading="lazy"/>
+                                <StaticImage 
+                                src="../images/artists/wade-macneil.jpg" 
+                                alt="Picture of Wade Macneil" 
+                                placeholder="blurred" 
+                                loading="lazy"
+                                width={275}
+                                height={275}
+                                />
                                 <h5>Wade Macneil</h5>
                             </li>
                             <li onClick={() => scrollTo('#terra-lightfoot')}>
-                            <StaticImage src="../images/artists/terra-lightfoot.jpg" alt="Picture of Terra Lightfoot" placeholder="blurred" loading="lazy"/>
+                            <StaticImage 
+                            src="../images/artists/terra-lightfoot.jpg" 
+                            alt="Picture of Terra Lightfoot" 
+                            placeholder="blurred" 
+                            loading="lazy"
+                            width={275}
+                            height={275}
+                            />
                                 <h5>Terra Lightfoot</h5>
                             </li>
                             <li onClick={() => scrollTo('#andy-shauf')}>
-                                <StaticImage src="../images/artists/andy-shauf.png" alt="Picture of Andy Shauf" placeholder="blurred" loading="lazy"/>
+                                <StaticImage 
+                                src="../images/artists/andy-shauf.png" 
+                                alt="Picture of Andy Shauf" 
+                                placeholder="blurred" 
+                                loading="lazy"
+                                width={275}
+                                height={275}
+                                />
                                 <h5>Andy Shauft</h5>
                             </li>
                             <li onClick={() => scrollTo('#kyla-charter')}>
@@ -29,19 +50,47 @@ const Musicians = () => {
                                 <h5>Kyla Charter</h5>
                             </li>
                             <li onClick={() => scrollTo('#serena')}>
-                                <StaticImage src="../images/artists/serena-ryder.jpg" alt="Picture of Serena Ryder" placeholder="blurred" loading="lazy"/>
+                                <StaticImage 
+                                src="../images/artists/serena-ryder.jpg" 
+                                alt="Picture of Serena Ryder" 
+                                placeholder="blurred" 
+                                loading="lazy"
+                                width={275}
+                                height={275}
+                                />
                                 <h5>Serena Ryder</h5>
                             </li>
                             <li onClick={() => scrollTo('#moscow')}>
-                                <StaticImage src="../images/artists/moscow.jpg" alt="Picture of Moscow Apartment" placeholder="blurred" loading="lazy"/>
+                                <StaticImage 
+                                src="../images/artists/moscow.jpg" 
+                                alt="Picture of Moscow Apartment" 
+                                placeholder="blurred" 
+                                loading="lazy"
+                                width={275}
+                                height={275}
+                                />
                                 <h5>Moscow Apartment</h5>
                             </li>
                             <li onClick={() => scrollTo('#cadence')}>
-                                <StaticImage src="../images/artists/cadence.webp" alt="Picture of Cadence Weapon" placeholder="blurred" loading="lazy"/>
+                                <StaticImage 
+                                src="../images/artists/cadence.webp" 
+                                alt="Picture of Cadence Weapon" 
+                                placeholder="blurred" 
+                                loading="lazy"
+                                width={275}
+                                height={275}
+                                
+                                />
                                 <h5>Cadence Weapon</h5>
                             </li>
                             <li onClick={() => scrollTo('#bahamas')}>
-                                <StaticImage src="../images/artists/bahamas.jpg" alt="Picture of Bahamas (Afie Jurvanen)" placeholder="blurred" loading="lazy"/>
+                                <StaticImage src="../images/artists/bahamas.jpg" 
+                                alt="Picture of Bahamas (Afie Jurvanen)" 
+                                placeholder="blurred" 
+                                loading="lazy"
+                                width={275}
+                                height={275}
+                                />
                                 <h5>Afie Jurvanen</h5>
                             </li>
                             <h2>Extra tips from the pros</h2>
@@ -65,6 +114,8 @@ const Musicians = () => {
                                     title="Tame Impala - InnerSpeaker Memories"
                                 ></iframe>
                             </li>
+                            <p>“You don’t realize it at the time, but when things seem the worst and you’re struggling the most, those are the times you look back at the fondest.”</p>
+                            <p>-Wade MacNeil, Artist (Alexisonfire)</p>
                             <li className="terra-video">
                                 <h4 id="terra-lightfoot">Terra Lightfoot - Artist</h4>
                                 <iframe
