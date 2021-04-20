@@ -46,7 +46,14 @@ const Musicians = () => {
                                 <h5>Andy Shauft</h5>
                             </li>
                             <li onClick={() => scrollTo('#kyla-charter')}>
-                                <StaticImage src="../images/artists/kyla-charter.jpg" alt="Picture of Kyla Charter" placeholder="blurred" loading="lazy"/>
+                                <StaticImage 
+                                src="../images/artists/kyla-charter.jpg" 
+                                alt="Picture of Kyla Charter" 
+                                placeholder="blurred" 
+                                loading="lazy"
+                                width={275}
+                                height={275}
+                                />
                                 <h5>Kyla Charter</h5>
                             </li>
                             <li onClick={() => scrollTo('#serena')}>

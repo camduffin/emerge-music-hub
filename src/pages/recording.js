@@ -14,14 +14,14 @@ const Recording = () => {
                         <ul className="recording-artist-container">
                             <li onClick={() => scrollTo('#jill-zim')}>
                                 <StaticImage 
-                                src="../images/artists/jill-zim.jpg" 
+                                src="../images/artists/jill-zim.webp" 
                                 alt="Picture of Jill Zimmermann" 
                                 placeholder="blurred"
                                 loading="lazy"
                                 width={250}
                                 height={250}
                                 />
-                                <h5>Jill Zimmermann</h5>
+                                <h5 className="jill-zim-text">Jill Zimmermann</h5>
                             </li>
                             <li onClick={() => scrollTo('#erin-costelo')}>
                             <StaticImage 
@@ -105,7 +105,7 @@ const Recording = () => {
                             
                         </ul>
                 </section>
-                <section className="wrapper">
+                <section className="wrapper recording-video-container">
                     <div className="jill-zim-video">
                         <h4 id="jill-zim">Jill Zimmermann - Engineer, Jukasa Studios</h4>
                         <iframe
