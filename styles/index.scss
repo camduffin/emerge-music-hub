@@ -57,12 +57,21 @@ footer {
     background-color: $transblue;
     height: 30vh;
 
+    @include phoneMQ {
+        height: 60vh;
+    }
+
     .footer-container {
         display: flex;
         width: 100%;
         justify-content: space-around;
         align-items: center;
         height: 30vh;
+
+        @include phoneMQ {
+            flex-direction: column;
+            height: 60vh;
+        }
     }
 
     .to-top {
@@ -149,6 +158,14 @@ footer {
     position: relative;
     text-align: center;
 
+    @include smallTabletMQ {
+        width: 70%;
+    }
+
+    @include phoneMQ {
+        width: 90%;
+    }
+
     h1 {
         margin: 0;
         width: 100%;
@@ -158,12 +175,20 @@ footer {
             width: 100%;
             min-width: 400px;
             display: inline-block;
+
+            @include phoneMQ {
+                min-width: 200px;
+            }
         }
     }
 
     .main-header-text {
         position: absolute;
         top: 500px;
+
+        @include phoneMQ {
+            display: none;
+        }
     }
 
     p {
@@ -172,6 +197,13 @@ footer {
         width: 700px;
         min-width: 500px;
         text-align: center;
+
+        @include smallTabletMQ {
+            font-size: 2rem;
+            width: 10%;
+        }
+
+
     } 
 
     button {
@@ -381,6 +413,10 @@ header {
 .intro-video {
     height: 100vh;
 
+    @include smallTabletMQ {
+        height: auto;
+    }
+
     .intro-video-container {
         width: 100%;
         height: 100vh;
@@ -486,6 +522,11 @@ header {
     justify-content: space-around;
     margin-bottom: 200px;
 
+    @include phoneMQ {
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .home-bottom-nav {
         display: flex;
 
@@ -504,6 +545,11 @@ header {
             }
 
             .youtube {
+
+                @include phoneMQ {
+                    margin: 0;
+                    padding: 0;
+                }
                 
                 svg {
                     font-size: 5rem;
@@ -516,12 +562,21 @@ header {
 
     .group-members {
         width: 400px;
+
+        @include phoneMQ {
+            width: 100%;
+            padding-top: 150px;
+        }
     }
 
     .get-started-container {
         width: 400px;
         display: flex;
         flex-direction: column;
+
+        @include phoneMQ {
+            width: 200px;
+        }
     }
 
     .get-started {
@@ -707,14 +762,7 @@ h3 {
         }
 
         @include bigPhoneMQ {
-            display: flex;
-            flex-wrap: wrap;
-            height: 100vh;
-        }
-
-        @include phoneMQ {
-            align-items: center;
-            justify-content: center;
+            grid-template-columns: 1fr 1fr;
         }
 
 
@@ -788,13 +836,15 @@ h3 {
                 padding: 10px;
                 border-radius: 40px;
             }
+
+            @include smallPhoneMQ {
+                padding: 20px;
+            }
         }
 
     }
 
 }
-
-
 
 .jill-zim-video, .erin-costelo-video, .josh-korody-video, .chris-stringer-video, .aaron-goldstein-video, .terra-video, .andy-video, .alysha-video {
     width: 100%;
@@ -871,7 +921,7 @@ h3 {
         justify-content: center;
         align-items: center;
         margin: 60px 0;
-        padding-left: 15%;
+        padding-left: 10%;
         flex-wrap: wrap;
 
         @include bigTabletMQ {
@@ -911,9 +961,6 @@ h3 {
             margin-top: 0;
             padding-bottom: 30px;
             
-            @include bigPhoneMQ {
-                grid-template-columns: 1fr 1fr;
-            }
 
             @include phoneMQ {
                 margin-bottom: 500px;
@@ -1010,6 +1057,16 @@ h3 {
 
     .wade-macneil-video, .bahamas-video, .andy-video {
         margin-bottom: 150px;
+
+        @include phoneMQ {
+            margin-bottom: 200px;
+        }
+    }
+
+    .bahamas-video {
+        @include phoneMQ {
+            margin-bottom: 300px;
+        }
     }
 }
 

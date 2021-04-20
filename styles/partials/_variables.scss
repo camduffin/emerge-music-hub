@@ -81,4 +81,10 @@ $dmSans: 'DM Sans', sans-serif;
     }
 }
 
+@mixin smallPhoneMQ {
+    @media (max-width: 525px) {
+        @content;
+    }
+}
+
     
