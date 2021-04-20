@@ -117,8 +117,8 @@ const IndexPage = () => {
                   </div>
                   <div className="get-started-container">
                     <p className="get-started" data-sal="slide-left" data-sal-duration="2000">Get started here with
-                    <Link to="/musicians">
-                      <button>Tips from the Pros <FaRegLightbulb/></button>
+                    <Link to="/finance/">
+                      <button>Finances & Grants<FaRegLightbulb/></button>
                     </Link>
                     </p>
                   </div>

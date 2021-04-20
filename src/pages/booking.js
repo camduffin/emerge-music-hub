@@ -2,27 +2,29 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import { IoIosArrowDropup } from 'react-icons/io';
 
 const Booking = () => {
     return (
         <div className="booking">
             <Layout>
+                <IoIosArrowDropup className="scroll-top" onClick={() => scrollTo('#header')} />
                 <section className="booking-container">
+                    <h2>Putting yourself out there</h2>
                     <ul className="booking-image-container">
-                        <li>
-                            <StaticImage className="eric-warner" onClick={() => scrollTo('#eric-warner')} src="../images/artists/eric-warner.jpg" alt="Picture of Eric Warner" placeholder="blurred"/>
+                        <li onClick={() => scrollTo('#eric-warner')}>
+                            <StaticImage className="eric-warner" src="../images/artists/eric-warner.jpg" alt="Picture of Eric Warner" placeholder="blurred"/>
                             <h5>Eric Warner</h5>
                         </li>
-                        <li>
-                            <StaticImage className="denholm" onClick={() => scrollTo('#denholm')} src="../images/artists/denholm.jpg" alt="Photo of Denholm Whale" placeholder="blurred"/>
+                        <li onClick={() => scrollTo('#denholm')} >
+                            <StaticImage className="denholm" src="../images/artists/denholm.jpg" alt="Photo of Denholm Whale" placeholder="blurred"/>
                             <h5>Denholm Whale</h5>
                         </li>
-                        <li>
-                            <StaticImage className="virginia" onClick={() => scrollTo('#virginia')} src="../images/artists/virginia.jpg" alt="Photo of Virginia Clark" placeholder="blurred"/>
+                        <li onClick={() => scrollTo('#virginia')}>
+                            <StaticImage className="virginia"  src="../images/artists/virginia.jpg" alt="Photo of Virginia Clark" placeholder="blurred"/>
                             <h5>Virginia Clark</h5>
                         </li>
                     </ul>
-                    <h2>Putting yourself out there</h2>
                 </section>
                 <section className="wrapper">
                     <div className="eric-warner-video">
@@ -39,10 +41,8 @@ const Booking = () => {
                             title="Tame Impala - InnerSpeaker Memories"
                         ></iframe>
                     </div>
-                </section>
-                <section className="wrapper">
-                    <div className="denholm-video">
-                        <h4 id="denholm">Denholm Whale - Promoter, Artist Manager</h4>
+                    <div className="denholm-video" id="denholm">
+                        <h4>Denholm Whale - Promoter, Artist Manager</h4>
                         <iframe
                             data-sal="fade" data-sal-duration="1500"
                             width="560"
@@ -55,8 +55,6 @@ const Booking = () => {
                             title="Radiohead - SUE Festival 2018 Chile"
                         ></iframe>
                     </div>
-                </section>
-                <section className="wrapper">
                     <div className="virginia-video">
                         <h4 id="virginia">Virginia Clark - Promoter, Venue Manager, Festival Director</h4>
                         <iframe

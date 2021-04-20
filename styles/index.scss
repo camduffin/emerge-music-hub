@@ -22,6 +22,28 @@ body {
     padding: 0;
 }
 
+.scroll-top {
+    position: fixed;
+    bottom: 0;
+    background-color: transparent;
+    border-radius: 70%;
+    font-size: 5rem;
+    transition: all .3s ease-in-out;
+    left: 15px;
+    bottom: 10px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: $red;
+        font-size: 6rem;
+    }
+
+    &:active {
+        
+    }
+}
+
 footer {
     width: 100%;
     background-color: $transblue;
@@ -577,7 +599,7 @@ h3 {
 // Recording 
 
 .recording {
-    height: 150vh;
+    height: 100vh;
 
     &::after {
         content: "";
@@ -588,7 +610,7 @@ h3 {
         top: 0;
         left: 0;
         width: 100%;
-        height: 150vh;
+        height: 100vh;
         z-index: -100;
     }
 }
@@ -602,7 +624,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 200px 0;
+    margin: 100px 0;
     
     &::after {
         content: ""; 
@@ -610,7 +632,7 @@ h3 {
         top: 0;
         left: 0;
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         background: white;
         opacity: .4;
         z-index: -23;
@@ -629,6 +651,7 @@ h3 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         z-index: 1;
+        margin-top: 0;
 
         li {
             transition: all .2s ease-in-out;
@@ -659,6 +682,7 @@ h3 {
             h5 {
                 visibility: visible;
                 opacity: 1;
+                margin-top: 0;
             }
         }
         
@@ -675,10 +699,33 @@ h3 {
 
     }
 
+
+}
+
+.jill-zim-video, .erin-costelo-video, .josh-korody-video, .chris-stringer-video, .aaron-goldstein-video, .terra-video, .andy-video, .alysha-video {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+
+    iframe {
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        box-shadow: 2px 2px 10px $darkblue;
+        border: 4px solid $darkblue;
+    }
 }
 
 .recording-text {
-    margin: 400px 0;
+    margin: 50px 0;
 }
 
 // Musicians 
@@ -716,26 +763,26 @@ h3 {
         height: 100%;
         z-index: -100;
         opacity: .8;
+        margin: 0;
     }
 
     .booking-container {
         width: 100%;
-        margin: 150px auto;
+        margin: 150px 0;
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        padding: 0 40px;
+        // width: 100%;
         
         &::after {
             content: ""; 
             position: absolute;
+            margin: 0 auto;
             top: 0;
-            left: 0;
-            width: 100%;
-            height: 80vh;
+            width: 80%;
+            height: 100vh;
             background: white;
             opacity: .4;
             z-index: -23;
@@ -744,6 +791,8 @@ h3 {
         h2 {
             @include subHeading(4rem);
             text-transform: uppercase;
+            margin-bottom: 0;
+            margin-top: 100px;
     
             span {
                 display: block;
@@ -751,11 +800,11 @@ h3 {
         }
     
         .booking-image-container {
-            display: flex;
-            width: 100%;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            width: 80%;
             flex-wrap: wrap;
-            padding-left: 10%;            
+            padding-left: 5%;            
             z-index: 1;
             padding-top: 100px;
     
@@ -784,18 +833,19 @@ h3 {
                 transform: scale(1.07);
                 opacity: .7;
                 cursor: pointer;
-    
+                
                 h5 {
                     visibility: visible;
                     opacity: 1;
+                    margin-top: 0;
                 }
             }
             
             img {
-                width: 75%;
+                width: 300px;
                 height: 300px;
                 overflow: hidden;
-                min-width: 200px;
+                min-width: 100px;
                 padding: 20px;
                 border-radius: 40px;
                 object-fit: cover;
@@ -803,15 +853,19 @@ h3 {
             }
 
             .virginia {
-                width: 400px;
+                width: 100%;
+                min-width: 100px;
+                margin: 0;
             }
 
             .eric-warner {
-                width: 400px;
+                width: 100%;
+                margin: 0;
             }
 
             .denholm {
-                width: 400px;
+                width: 100%;
+                margin: 0;
             }
     
         }

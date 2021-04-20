@@ -35,7 +35,7 @@ const Royalties = () => {
                                 title="Radiohead - SUE Festival 2018 Chile"
                             ></iframe>
                         </li>
-                    </ul>    
+                    </ul>  
                 </section>
                 <section className="royalty-text">
                     <div className="wrapper royalty-text-container">
