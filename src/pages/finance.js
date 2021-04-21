@@ -8,6 +8,7 @@ import yellowBG from '../images/yellow-bg3.png';
 import yellowBGtwo from '../images/yellow-bg4.png';
 import lightBlueBG from '../images/light-blue-bg.jpg';
 import { IoIosArrowDropdown } from 'react-icons/io';
+import subHeader from '../images/subheader-blue1.png';
 
 const Finance = () => {
 
@@ -32,6 +33,11 @@ const Finance = () => {
                         </button>
                     </section>
                 </Parallax>
+                <Parallax 
+                bgImage={subHeader} 
+                strength={500}
+                blur={{ min: -15, max: 15 }}
+                >
                 <section className="wrapper">
                     <ul className="finance-video-list">
                         <li className="video video1" id="sunny" data-sal="fade" data-sal-duration="1500">
@@ -50,6 +56,7 @@ const Finance = () => {
                         </li>
                     </ul>
                 </section>
+                </Parallax>
                 <Parallax 
                 bgImage={yellowBGtwo}
                 strength={500}
@@ -58,8 +65,8 @@ const Finance = () => {
                 <section className="grant-tips-section">
                     <div className="wrapper grant-text-container" data-sal="fade" data-sal-duration="1500">
                         <h2>Grant Writing Tips</h2>
-                        <h3>Margaret O'Toole</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat obcaecati enim voluptatem officiis blanditiis fugit earum ea omnis recusandae minus eligendi delectus sint soluta, itaque aut amet possimus repellendus! Aspernatur doloribus dolorem deleniti eaque! Quidem aut impedit vero, facilis earum a tempora velit incidunt accusantium obcaecati perspiciatis itaque veniam odit quaerat est, expedita, ullam fugiat porro sed sint eos vel. Ipsam iure quidem dolorem sequi illum a laborum. Non sequi dolor aliquam soluta quos. Quibusdam quidem nostrum voluptatibus numquam illum dolores, eius labore autem sapiente, animi molestiae nihil mollitia. Fuga soluta saepe, sed alias maxime, commodi omnis eligendi sit similique dicta minima nam ab officiis nulla consequatur, ratione reiciendis mollitia hic. Id officiis porro, qui quaerat autem sapiente totam quidem nisi, nulla libero quasi cum consequatur ex soluta animi quisquam fugiat nesciunt dolorem veritatis accusamus laborum placeat aspernatur maiores! A ratione veniam maxime officiis beatae consequatur inventore amet. Blanditiis eaque officia, quia provident itaque tempore molestiae quisquam neque alias minus. Repellendus facere quo animi quasi earum autem minus dolor soluta illo! Quam ab optio impedit corrupti ipsam odit aspernatur quos quo autem est praesentium nam consequatur at modi tenetur fugiat hic cum in natus, facere perspiciatis! Accusamus, doloribus! Ad sapiente possimus est asperiores consequuntur dolorum exercitationem obcaecati minima voluptatum earum. Minus ducimus, quos corporis eius quo natus in pariatur nostrum ut amet voluptatum perferendis aperiam consectetur. Minima odit exercitationem sapiente nemo, ut provident quis, natus tempore architecto dicta ad iure atque? Iste earum voluptate asperiores nisi, harum eaque saepe! Incidunt ipsa dolorum fugit iure, provident id sunt amet, repellendus praesentium aspernatur odit hic. Id alias reprehenderit corporis vero quae voluptatibus dignissimos quaerat deserunt aspernatur deleniti doloribus molestiae rerum vitae, ut nihil quos labore nemo sed, asperiores quasi iusto. Itaque earum sequi voluptatibus aliquid quis ipsam saepe fugiat assumenda blanditiis ullam.</p>
+                        <p>-Margaret O'Toole</p>
                     </div>
                 </section>
                 </Parallax>

@@ -13,6 +13,7 @@ import { Parallax } from 'react-parallax';
 import landing from '../images/emerge-bg.png';
 import lightBlueBG from '../images/lightblue-bg1.png';
 import lightBlueBGtwo from '../images/light-blue-bg.jpg';
+import subHeader from '../images/subheader-blue1.png';
 
 const IndexPage = () => {
 
@@ -49,7 +50,11 @@ const IndexPage = () => {
                   </div>
                 </Parallax>
               </section>
-              
+              <Parallax 
+                bgImage={subHeader} 
+                strength={500}
+                blur={{ min: -15, max: 15 }}
+                >
               <section className="intro-video" id="intro-video">
                 <div className="wrapper intro-video-section">
                   <div className="intro-video-container">
@@ -67,6 +72,7 @@ const IndexPage = () => {
                   </div>
                 </div>
               </section>
+              </Parallax>
               <Parallax 
               bgImage={lightBlueBGtwo}
               bgImage={lightBlueBG}

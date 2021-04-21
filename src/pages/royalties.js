@@ -68,11 +68,11 @@ const Royalties = () => {
                 strength={500}
                 blur={{ min: -15, max: 15 }}
                 >
-                <section className="wrapper">
+                <section className="wrapper royalties-videos">
                     <ul className="royalties-video-list">
                         <div className="video-container">
                             <li className="andrew-karis-video" id="andrew">
-                                <h4>Andrew Karis - administrator ACTRA RACS</h4>
+                                <h4>Andrew Karis <span>administrator ACTRA RACS</span></h4>
                                 <iframe
                                     data-sal="fade" data-sal-duration="1500"
                                     width="560"
@@ -88,7 +88,7 @@ const Royalties = () => {
                         </div>
                         <div className="video-container">
                             <li className="camille-matthews-video" id="camille">
-                                <h4>Camille Matthews - SOCAN</h4>
+                                <h4>Camille Matthews<span>SOCAN</span></h4>
                                 <iframe
                                     data-sal="fade" data-sal-duration="1500"
                                     width="560"
