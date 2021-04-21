@@ -46,7 +46,7 @@ body {
 
     &:hover,
     &:focus {
-        color: $red;
+        color: $aqua;
         font-size: 6rem;
     }
 
@@ -54,7 +54,7 @@ body {
 
 footer {
     width: 100%;
-    background-color: $transblue;
+    background-color: $transdarkred;
     height: 30vh;
 
     @include phoneMQ {
@@ -92,16 +92,16 @@ footer {
     
     p {
         @include paragraph(2rem);
-        color: $lightblue;
+        color: $darkblue;
     }
 
     svg {
-        color: $lightblue;
+        color: $darkblue;
         transition: all .2s ease-in-out;
     }
 
     svg:hover {
-        color: $red;
+        color: $lightblue;
         transform: scale(1.3);
     }
 
@@ -204,7 +204,6 @@ footer {
             width: 10%;
         }
 
-
     } 
 
     button {
@@ -212,7 +211,9 @@ footer {
         border: none;
         background-color: transparent;
         cursor: pointer;
-        padding-top: 140px;
+        padding-top: 100px;
+        outline: none;
+
         svg {
             animation: bounce 3s infinite;
             color: $red;
@@ -270,8 +271,9 @@ header {
         width: 300px;
 
         img {
-            width: 75%;
+            width: 30%;
             opacity: .7;
+            padding-top: 20px;
         }
 
         @include tabletMQ {
@@ -324,8 +326,8 @@ header {
             height: 6px;
             border-radius: 5px;
             transition: all .5 ease-in-out;
-            background: black;
-            opacity: .9;
+            background: $aqua;
+            box-shadow: 5px 5px 5px black;
         }
 
         .menu:before, .menu:after {
@@ -333,10 +335,9 @@ header {
             position: absolute;
             width: 50px;
             height: 6px;
-            background: black;
+            background: $aqua;
             border-radius: 5px;
-            opacity: .8;
-    
+            box-shadow: 5px 5px 5px black;
             transition: all .5s ease-in-out;
         }
 
@@ -506,6 +507,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+    background: $red;
 
     h2 {
         color: $darkblue;
@@ -539,17 +541,12 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: $lightblue;
 
     .question-one-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 70%;
-        margin: 0 auto;
-        background-color: $red;
-        padding: 30px;
-        box-shadow: 20px 20px 5px $yellow;
-        border-radius: 10px;
+
+        background: $body;
+        padding: 50px;
 
         span {
             font-style: bolder;        
@@ -561,10 +558,16 @@ h3 {
         }
         
         p {
-            @include paragraphDM(1.8rem);
+            @include paragraphDM(2rem);
+            padding: 20px;
         }
     }
 
+}
+
+.group-member-background {
+    height: 100vh;
+    background: $darkblue;
 }
 
 .group-member-section {
@@ -572,7 +575,6 @@ h3 {
     height: 100vh;
     justify-content: space-around;
     align-items: center;
-    background-color: $body;
 
     @include phoneMQ {
         flex-direction: column;
@@ -587,13 +589,13 @@ h3 {
 
             svg {
                 font-size: 3rem;
-                color: $darkblue;
+                color: $red;
                 transition: all .2s ease-in-out;
             }
 
             svg:hover, svg:focus {
                 transform: scale(1.2);
-                color: $red;
+                color: $transdarkred;
             }
 
             .youtube {
@@ -615,6 +617,11 @@ h3 {
     .group-members {
         width: 400px;
 
+        p {
+            @include paragraphDM(2rem);
+            color: $red;
+        }
+
         @include phoneMQ {
             width: 100%;
             padding-top: 150px;
@@ -626,6 +633,11 @@ h3 {
         display: flex;
         flex-direction: column;
 
+        p {
+            @include paragraphDM(3rem);
+            color: $red;
+        }
+
         @include phoneMQ {
             width: 200px;
         }
@@ -633,19 +645,18 @@ h3 {
 
     .get-started {
         font-style: italic;
-
     }
 
 }
 
 button {
+    margin-top: 30px;
     border: none;
     background-color: $transblue;
     border-radius: 8px;
     color: $lightblue;
     font-size: 3rem;
     padding: 15px;
-    margin-left: 20px;
     border: 2px solid $transblue;
     cursor: pointer;
     position: relative;
@@ -666,6 +677,11 @@ button {
 // Finance Section
 
 .finance {
+    margin: 0;
+
+    .finance-yellow {
+        background: $lightblue;
+    }
 
     .finance-image {
         height: 100vh;
@@ -673,6 +689,7 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0;
 
         button {
             background: transparent;
@@ -682,6 +699,7 @@ button {
             position: absolute;
             bottom: 0;
             left: 90%;
+            margin: 0;
         }
 
         .finance-image-container {
@@ -743,14 +761,18 @@ button {
     }
 }
 
+.sunny-section {
+    height: 140vh;
+    margin: 0;
+    background-color: $lightblue;
+}
+
 .finance-video-list {
-    max-width: 900px;
-    display: grid;
-    width: 80%;
-    margin: 200px auto;
-    padding: 20px;
-    padding-bottom: 200px;
-    background: $body;
+    height: 100vh;
+    width: 100%;
+    margin: -100px 0;
+    background-color: $lightblue;
+    padding-top: 100px;
     
     .video {
         width: 100%;
@@ -761,6 +783,7 @@ button {
 
         h2 {
             color: $darkblue;
+            margin: 0;
         }
 
         iframe {
@@ -965,24 +988,29 @@ button {
 }
 
 .erin-costelo-video, .josh-korody-video, .chris-stringer-video, .aaron-goldstein-video, .terra-video, .andy-video, .alysha-video {
+    
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
     position: relative;
+    padding-bottom: 56.25%;
+    padding-left: 15%;
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin: 100px 0;
+    justify-content: center;
     align-items: center;
+    margin: 0 auto;
+        margin-left: 15%;
 
     @include bigTabletMQ {
-        margin: 160px 0;
+        margin-left: 0;
     }
 
-    
     h4 {
         padding-top: 90px;
         @include paragraphDM(3rem);
-        color: $darkblue;
+        color: $red;
 
         span {
             font-size: 2rem;
@@ -995,23 +1023,89 @@ button {
 
     iframe {
         position: absolute;
-        width: 80%;
-        height: 80%;
+        width: 60%;
+        height: 60%;
         box-shadow: 2px 2px 10px $darkblue;
         border: 4px solid $darkblue;
     }
 
 }
 
+.erin-costelo-video {
+    margin: 0;
+
+    h4 {
+        color: $darkblue;
+        padding-top: 200px;
+    }
+}
+
+.terra-video {
+    margin: 0;
+
+    h4 {
+        padding-top: 200px;
+    }
+}
+
+.josh-korody-video {
+    background: $offwhite;
+    margin: 0;
+
+    h4 {
+        color: $darkblue;
+        padding-top: 200px;
+    }
+}
+
+.chris-stringer-video {
+    background: $red;
+    margin: 0;
+
+    h4 {
+        color: $darkblue;
+        padding-top: 200px;
+    }
+}
+
+.aaron-goldstein-video {
+    background: $yellow;
+    margin: 0;
+
+    h4 {
+        color: $darkblue;
+        padding-top: 200px;
+    }
+}
+
+.andy-video {
+    background: $red;
+    margin: 0;
+
+    h4 {
+        color: $darkblue;
+        padding-top: 200px;
+    }
+}
+
+.alysha-video {
+    background: $lightblue;
+    margin: 0;
+
+    h4 {
+        color: $darkblue;
+        padding-top: 200px;
+    }
+}
+
 .jill-zim-video {
     height: 100vh;
     width: 100%;
-    margin-bottom: 100px;
+    margin-left: 15%;
 
     @include bigTabletMQ {
         margin: 160px 0;
     }
-
 
     h4 {
         padding-top: 90px;
@@ -1029,8 +1123,8 @@ button {
 
     iframe {
         position: absolute;
-        width: 80%;
-        height: 80%;
+        width: 60%;
+        height: 60%;
         box-shadow: 2px 2px 10px $darkblue;
         border: 4px solid $darkblue;
     }
@@ -1075,49 +1169,37 @@ button {
 
 .musicians {
     width: 100%;
-    
-    &::after {
-        content: "";
-        background-image: linear-gradient(to bottom, $transoffwhite, $transoffwhite 85%, white), url(../src/images/emerge-bg.png);
-        background-size: cover;
-        content: ""; 
-        position: absolute;
-        top: 0;
-        left: 0;
+
+    .musician-videos {
+        background: $darkblue;
+        margin: 0;
         width: 100%;
-        height: 100%;
-        z-index: -100;
-        opacity: .8;
+    }
+
+    .musician-video-list {
+        width: 100%;
+        margin: 0;
     }
 
     .first-recording-container {
         width: 100%;
         margin: 0 auto;
-        height: 100vh;
+        height: 130vh;
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 60px 0;
         padding-left: 10%;
+        padding-top: 20%;
+        padding-bottom: 20%;
         flex-wrap: wrap;
 
         @include bigTabletMQ {
             padding-left: 5%;
-            padding-top: 10%;
+            padding-top: 60%;
         }
         
-        &::after {
-            content: ""; 
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 120vh;
-            opacity: .4;
-            z-index: -23;
-        }
     
         h2 {
             @include subHeading(4.8rem);
@@ -1139,7 +1221,9 @@ button {
             z-index: 1;
             margin-top: 0;
             padding-bottom: 30px;
-            
+            width: 90%;
+            background: $body;
+            padding: 40px;
 
             @include phoneMQ {
                 margin-bottom: 500px;
@@ -1194,8 +1278,6 @@ button {
                 border-radius: 40px;
                 object-fit: cover;
                 display: inline-block;
-
-            
             }
     
         }
@@ -1203,12 +1285,11 @@ button {
     
     }
 
-    .wade-macneil-video, .terra-video, .andy-video, .kyla-charter-video, .serena-video, .moscow-video, .cadence-video, .bahamas-video {
+    .wade-macneil-video, .kyla-charter-video, .serena-video, .moscow-video, .cadence-video, .bahamas-video, .andy-shauf-video, .terra-lightfoot-video  {
         width: 100%;
         height: 0;
         padding-bottom: 56.25%;
         position: relative;
-        margin-top: 100px;
         margin-bottom: 20px;
         margin-left: 10%;
         margin-right: 10%;
@@ -1221,8 +1302,17 @@ button {
         }
 
         h4 {
-            padding-bottom: 40px;
             padding-top: 90px;
+            @include paragraphDM(3rem);
+            color: $red;
+
+            span {
+                font-size: 2rem;
+                display: block;
+                padding-top: 10px;
+                opacity: .8;
+                font-style: italic;
+            }
         }
     
         iframe {
@@ -1233,6 +1323,7 @@ button {
             border: 4px solid $darkblue;
         }
     }
+
 
     .wade-macneil-video, .bahamas-video, .andy-video {
         margin-bottom: 150px;
@@ -1246,7 +1337,29 @@ button {
         @include phoneMQ {
             margin-bottom: 300px;
         }
+
+        margin-bottom: 0;
     }
+        
+    h4 {
+        margin: 0;
+        margin-bottom: 30px;
+        padding-top: 100px;
+        padding-left: 10%;
+
+        span {
+            font-size: 2rem;
+            display: block;
+            padding-top: 10px;
+            opacity: .8;
+            font-style: italic;
+        }
+    }
+
+    .wade-macneil, .terra-lightfoot, .andy-shauf {
+        color: $darkblue;
+    }
+    
 }
 
 // Booking 
@@ -1488,7 +1601,7 @@ button {
     }
 
     .royalties-videos {
-        margin-top: 250px;
+        margin-top: 100px;
         margin-bottom: 0;
     }
 
@@ -1548,6 +1661,7 @@ button {
         flex-direction: column;
         justify-content: center;
         height: 100vh;
+        margin-top: 250px;
 
         h2 {
             color: $darkblue;

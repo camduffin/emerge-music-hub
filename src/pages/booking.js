@@ -13,7 +13,6 @@ const Booking = () => {
             <Parallax
                 bgImage={darkBlue}
                 strength={500}
-                blur={{ min: -15, max: 15 }}
                 >
                 <IoIosArrowDropup className="scroll-top" onClick={() => scrollTo('#header')} />
                 <section className="booking-container">
@@ -65,7 +64,6 @@ const Booking = () => {
                 <Parallax
                 bgImage={darkBlue}
                 strength={500}
-                blur={{ min: -15, max: 15 }}
                 >
                 <section className="wrapper">
                     <div className="eric-warner-video">

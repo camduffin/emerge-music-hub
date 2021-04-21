@@ -9,6 +9,7 @@ const NavBar = () => {
 
     // images
     const emergeLogo = "../images/emerge-logo.png";
+    const iceberg = '../images/iceberg.png';
 
     // hamburger state
     const [open, setOpen] = useState(false);
@@ -21,7 +22,7 @@ const NavBar = () => {
         <nav className="nav-bar">
             <Link to="/">
                 <h2>
-                    <StaticImage src={emergeLogo} alt="Emerge Music Hub logo" placeholder="blurred"/>
+                    <StaticImage src={iceberg} alt="Emerge Music Hub logo" placeholder="blurred"/>
                 </h2>
             </Link>
             <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>

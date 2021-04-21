@@ -17,7 +17,6 @@ const Royalties = () => {
                 <Parallax
                 bgImage={redBG}
                 strength={500}
-                blur={{ min: -15, max: 15 }}
                 >
                     <section className="royalties-header">
                         <div className="royalties-header-container">
@@ -53,7 +52,6 @@ const Royalties = () => {
                 <Parallax
                 bgImage={redBG}
                 strength={500}
-                blur={{ min: -15, max: 15 }}
                 >
                 <section className="royalty-text">
                     <div className="wrapper royalty-text-container">
@@ -62,12 +60,6 @@ const Royalties = () => {
                         <p>-Ben</p>
                     </div>
                 </section>
-                </Parallax>
-                <Parallax
-                bgImage={redBG}
-                strength={500}
-                blur={{ min: -15, max: 15 }}
-                >
                 <section className="wrapper royalties-videos">
                     <ul className="royalties-video-list">
                         <div className="video-container">

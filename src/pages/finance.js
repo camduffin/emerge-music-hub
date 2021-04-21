@@ -18,6 +18,7 @@ const Finance = () => {
         <div className="finance">
             <Layout>
                 <Parallax 
+                className="finance-yellow"
                 bgImage={yellowBG}
                 strength={500}
                 blur={{ min: -15, max: 15 }}
@@ -33,12 +34,8 @@ const Finance = () => {
                         </button>
                     </section>
                 </Parallax>
-                <Parallax 
-                bgImage={subHeader} 
-                strength={500}
-                blur={{ min: -15, max: 15 }}
-                >
-                <section className="wrapper">
+                <section className="sunny-section">
+                    <div className="wrapper">
                     <ul className="finance-video-list">
                         <li className="video video1" id="sunny" data-sal="fade" data-sal-duration="1500">
                             <h2>Sunny Widerman</h2>
@@ -55,8 +52,8 @@ const Finance = () => {
                         ></iframe>
                         </li>
                     </ul>
+                    </div>
                 </section>
-                </Parallax>
                 <Parallax 
                 bgImage={yellowBGtwo}
                 strength={500}

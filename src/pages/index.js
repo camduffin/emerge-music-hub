@@ -73,12 +73,6 @@ const IndexPage = () => {
                 </div>
               </section>
               </Parallax>
-              <Parallax 
-              bgImage={lightBlueBGtwo}
-              bgImage={lightBlueBG}
-              strength={500}
-              blur={{ min: -15, max: 15 }}
-              >
               <section className="home-intro-section">
                 <div className="wrapper home-intro-text" data-sal="slide-right" data-sal-duration="1500">
                   <h2>Welcome to Emerge Music Hub!</h2>
@@ -86,7 +80,6 @@ const IndexPage = () => {
                   <p>-Anna</p>
                 </div>
               </section>
-              </Parallax>
               <section className="home-question-one" id="question-one">
                 <div className="wrapper">
                   <div className="question-one-container" data-sal="slide-left" data-sal-duration="1500">
@@ -105,12 +98,7 @@ const IndexPage = () => {
                   </div>
                 </div>
               </section>
-              <Parallax 
-              bgImage={lightBlueBG}
-              strength={500}
-              blur={{ min: -15, max: 15 }}
-              >
-              <section>
+              <section className="group-member-background">
                 <div className="wrapper group-member-section" data-sal="fade" data-sal-duration="1500">
                   <div className="group-members">
                     <h2>Get to know our team, and check out our socials!</h2>
@@ -153,7 +141,6 @@ const IndexPage = () => {
                   </div>
                 </div>
               </section>
-              </Parallax>
             </main>
           </Layout>
   )

@@ -173,6 +173,7 @@ const Recording = () => {
                             ></iframe>
                         </div>
                     </div>
+                    </Parallax>
                     <div className="josh-korody-video">
                         <div className="wrapper">
                             <h4 id="josh-korody-two">Josh Korody <span>- Producer, Engineer, Artist, owner Candle Recording</span></h4>
@@ -189,12 +190,6 @@ const Recording = () => {
                             ></iframe>
                         </div>
                     </div>
-                    </Parallax>
-                    <Parallax
-                        bgImage={blueBG}
-                        strength={500}
-                        blur={{ min: -15, max: 15 }}
-                        >
                     <div className="chris-stringer-video">
                         <div className="wrapper">
                             <h4 id="chris-stringer">Chris Stringer <span>- Producer, Engineer, owner Union Sound Company</span></h4>
@@ -211,18 +206,12 @@ const Recording = () => {
                             ></iframe>
                         </div>
                     </div>
-                    </Parallax>
                     <div className="quote-container-two">
                         <div className="wrapper">
                             <p>“Managing sonic expectations and working with what’s coming out at any given moment… Those are the biggest hurdles for young bands.”</p>
                             <p>-Chris Stringer</p>
                         </div>
                     </div>
-                    <Parallax
-                        bgImage={subHeadBG}
-                        strength={500}
-                        blur={{ min: -15, max: 15 }}
-                        >
                     <div className="aaron-goldstein-video">
                         <div className="wrapper">
                             <h4 id="aaron-goldstein">Aaron Goldstein <span>- Producer, Engineer, Artist, owner Baldwin Street Sound</span></h4>
@@ -255,12 +244,6 @@ const Recording = () => {
                             ></iframe>
                         </div>
                     </div>
-                    </Parallax>
-                    <Parallax
-                        bgImage={blueBG}
-                        strength={500}
-                        blur={{ min: -15, max: 15 }}
-                        >
                     <div className="andy-video">
                         <div className="wrapper">
                             <h4 id="andy">Andy Shauf <span>- Artist</span></h4>
@@ -293,7 +276,6 @@ const Recording = () => {
                             ></iframe>
                         </div>
                     </div>
-                    </Parallax>
                 </section>
         </Layout>
     </div>    
