@@ -33,7 +33,7 @@ const NavBar = () => {
                 <li><Link activeClassName="nav-active" to="/recording">Your First Recording</Link></li>
                 <li><Link activeClassName="nav-active" to="/musicians">Tips From the Pros</Link></li>
             </ul>
-            <div className="burger" onClick={() => handleClick()} style={{transform: open ? "scale(0.6)" : "", opacity: open ? "0.4" : ""}} >
+            <div className="burger" onClick={() => handleClick()} style={{opacity: open ? "0" : ""}} >
                 <div className="menu" aria-label="hidden"></div>
             </div>
 

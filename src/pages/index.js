@@ -1,6 +1,7 @@
 import * as React from "react";
 import '../../styles/index.scss';
-import { FaArrowCircleRight, FaRegLightbulb } from 'react-icons/fa';
+import { FaRegLightbulb } from 'react-icons/fa';
+import { IoIosArrowDropdown } from 'react-icons/io';
 import Layout from '../components/Layout';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -10,8 +11,8 @@ import { FaRegPaperPlane } from 'react-icons/fa';
 import { ImYoutube2 } from 'react-icons/im';
 import { Parallax } from 'react-parallax';
 import landing from '../images/emerge-bg.png';
-import lightBlueBG from '../images/light-blue-bg.jpg';
-import lightBlueBGtwo from '../images/lightblue-bg1.png';
+import lightBlueBG from '../images/lightblue-bg1.png';
+import lightBlueBGtwo from '../images/light-blue-bg.jpg';
 
 const IndexPage = () => {
 
@@ -42,17 +43,13 @@ const IndexPage = () => {
                     <div className="main-header-text">
                       <p data-sal="slide-right" data-sal-duration="1000">A professional development online hub for emerging artists</p>
                       <button onClick={() => scrollTo('#intro-video')}>
-                        <FaArrowCircleRight/>
+                        <IoIosArrowDropdown />
                       </button>
                     </div>
                   </div>
                 </Parallax>
               </section>
-              <Parallax 
-              bgImage={lightBlueBG}
-              strength={500}
-              blur={{ min: -15, max: 15 }}
-              >
+              
               <section className="intro-video" id="intro-video">
                 <div className="wrapper intro-video-section">
                   <div className="intro-video-container">
@@ -70,8 +67,12 @@ const IndexPage = () => {
                   </div>
                 </div>
               </section>
-              </Parallax>
-              <Parallax bgImage={lightBlueBGtwo}>
+              <Parallax 
+              bgImage={lightBlueBGtwo}
+              bgImage={lightBlueBG}
+              strength={500}
+              blur={{ min: -15, max: 15 }}
+              >
               <section className="home-intro-section">
                 <div className="wrapper home-intro-text" data-sal="slide-right" data-sal-duration="1500">
                   <h2>Welcome to Emerge Music Hub!</h2>
@@ -98,6 +99,11 @@ const IndexPage = () => {
                   </div>
                 </div>
               </section>
+              <Parallax 
+              bgImage={lightBlueBG}
+              strength={500}
+              blur={{ min: -15, max: 15 }}
+              >
               <section>
                 <div className="wrapper group-member-section" data-sal="fade" data-sal-duration="1500">
                   <div className="group-members">
@@ -141,6 +147,7 @@ const IndexPage = () => {
                   </div>
                 </div>
               </section>
+              </Parallax>
             </main>
           </Layout>
   )

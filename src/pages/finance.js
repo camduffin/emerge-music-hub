@@ -1,10 +1,13 @@
 import React from 'react';
 import '../../styles/index.scss';
 import Layout from '../components/Layout';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import { Parallax } from 'react-parallax';
 import { StaticImage } from 'gatsby-plugin-image'; 
 import yellowBG from '../images/yellow-bg3.png';
+import yellowBGtwo from '../images/yellow-bg4.png';
 import lightBlueBG from '../images/light-blue-bg.jpg';
+import { IoIosArrowDropdown } from 'react-icons/io';
 
 const Finance = () => {
 
@@ -24,11 +27,14 @@ const Finance = () => {
                             <h1>Finances</h1>
                             <h2>Friendly advice from the pros.</h2>
                         </div>
+                        <button onClick={() => scrollTo('#sunny')}>
+                            <IoIosArrowDropdown />
+                        </button>
                     </section>
                 </Parallax>
                 <section className="wrapper">
                     <ul className="finance-video-list">
-                        <li className="video video1" data-sal="fade" data-sal-duration="1500">
+                        <li className="video video1" id="sunny" data-sal="fade" data-sal-duration="1500">
                             <h2>Sunny Widerman</h2>
                             <h3>Tax Preparer and Advisor, CEO Personal Tax Advisors</h3>
                             <iframe
@@ -45,7 +51,7 @@ const Finance = () => {
                     </ul>
                 </section>
                 <Parallax 
-                bgImage={lightBlueBG}
+                bgImage={yellowBGtwo}
                 strength={500}
                 blur={{ min: -15, max: 15 }}
                 >
