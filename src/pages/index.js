@@ -8,6 +8,10 @@ import { Link } from 'gatsby';
 import { FiInstagram } from 'react-icons/fi';
 import { FaRegPaperPlane } from 'react-icons/fa';
 import { ImYoutube2 } from 'react-icons/im';
+import { Parallax } from 'react-parallax';
+import landing from '../images/emerge-bg.png';
+import lightBlueBG from '../images/light-blue-bg.jpg';
+import lightBlueBGtwo from '../images/lightblue-bg1.png';
 
 const IndexPage = () => {
 
@@ -20,7 +24,12 @@ const IndexPage = () => {
         <Layout>
           <main>
             <section className="home-header">
-                <div className="landing-image" >
+                <Parallax 
+                bgImage={landing} 
+                className="landing-image"
+                strength={500}
+                blur={{ min: -15, max: 15 }}
+                >
                   <div className="landing-header-container wrapper">
                     <h1>
                       <div className="sr-only">
@@ -37,8 +46,13 @@ const IndexPage = () => {
                       </button>
                     </div>
                   </div>
-                </div>
+                </Parallax>
               </section>
+              <Parallax 
+              bgImage={lightBlueBG}
+              strength={500}
+              blur={{ min: -15, max: 15 }}
+              >
               <section className="intro-video" id="intro-video">
                 <div className="wrapper intro-video-section">
                   <div className="intro-video-container">
@@ -56,27 +70,30 @@ const IndexPage = () => {
                   </div>
                 </div>
               </section>
+              </Parallax>
+              <Parallax bgImage={lightBlueBGtwo}>
               <section className="home-intro-section">
-                <div className="wrapper home-intro-text" data-sal="fade" data-sal-duration="1500">
+                <div className="wrapper home-intro-text" data-sal="slide-right" data-sal-duration="1500">
                   <h2>Welcome to Emerge Music Hub!</h2>
                   <p>We came up with this initiative after thinking about our own career beginnings. Most musicians can agree there’s a lot of stuff we wish someone would have told us when we were finishing music school, writing songs, forming bands, playing our first shows and dreaming of a future where we could spend all of our time immersed in the one thing we love the most: music. Music is not only a fun, exciting, rewarding and challenging way to express ourselves and find our place in the world, it can also be a real career. With the right tools, research and preparation, a few good tricks of the trade up our sleeves, and of course, the talent and hard work necessary to persevere, this can actually be the way you make a living. It is possible, and we are here to help you achieve your goals with practical, real-life tips and advice from some of Canada’s most successful musicians and industry professionals.</p>
                   <p>-Anna</p>
                 </div>
               </section>
+              </Parallax>
               <section className="home-question-one" id="question-one">
                 <div className="wrapper">
-                  <div className="question-one-container">
+                  <div className="question-one-container" data-sal="slide-left" data-sal-duration="1500">
                     <div>
-                      <p data-sal="slide-right" data-sal-duration="1000">“Don’t be afraid to be seen, in process, in public. The journey of creating yourself is such a beautiful thing.”</p>
-                      <h2 data-sal="slide-left" data-sal-duration="1000">-<span>Kyla Charter</span>, Artist, Activist</h2>
+                      <p>“Don’t be afraid to be seen, in process, in public. The journey of creating yourself is such a beautiful thing.”</p>
+                      <h2>-<span>Kyla Charter</span>, Artist, Activist</h2>
                     </div>
                     <div>
-                      <p data-sal="slide-right" data-sal-duration="1000">“The younger generation are going to blow our minds. There is something magical about them because if they can dream it, it can happen!”</p>
-                      <h2 data-sal="slide-left" data-sal-duration="1000">-<span>Serena Ryder</span>, Artist</h2>
+                      <p>“The younger generation are going to blow our minds. There is something magical about them because if they can dream it, it can happen!”</p>
+                      <h2>-<span>Serena Ryder</span>, Artist</h2>
                     </div>
                     <div>
-                      <p data-sal="slide-right" data-sal-duration="1000">“Be prepared for a real roller coaster, but it can be really rewarding if your heart is in it.”</p>
-                      <h2 data-sal="slide-left" data-sal-duration="1000">-<span>Aaron Goldstein</span>, Producer, Engineer, Artist, owner Baldwin Street Sound</h2>
+                      <p>“Be prepared for a real roller coaster, but it can be really rewarding if your heart is in it.”</p>
+                      <h2>-<span>Aaron Goldstein</span>, Producer, Engineer, Artist, owner Baldwin Street Sound</h2>
                     </div>
                   </div>
                 </div>
