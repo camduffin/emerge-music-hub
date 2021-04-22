@@ -100,7 +100,7 @@ $dmSans: 'DM Sans', sans-serif;
 }
 
 @mixin midPhoneMQ {
-    @media (max-width: 410px) {
+    @media (max-width: 426px) {
         @content;
     }
 }

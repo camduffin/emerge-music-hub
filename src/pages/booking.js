@@ -26,8 +26,8 @@ const Booking = () => {
                                 alt="Picture of Eric Warner" 
                                 placeholder="blurred"
                                 loading="lazy"
-                                width={250}
-                                height={250}
+                                width={300}
+                                height={300}
                                 />
                                 <h5>Eric Warner</h5>
                             </li>
@@ -38,8 +38,8 @@ const Booking = () => {
                                 alt="Photo of Denholm Whale" 
                                 placeholder="blurred"
                                 loading="lazy"
-                                width={250}
-                                height={250}
+                                width={300}
+                                height={300}
                                 />
                                 <h5>Denholm Whale</h5>
                             </li>
@@ -50,8 +50,8 @@ const Booking = () => {
                                 alt="Photo of Virginia Clark" 
                                 placeholder="blurred"
                                 loading="lazy"
-                                width={275}
-                                height={275}
+                                width={300}
+                                height={300}
                                 />
                                 <h5>Virginia Clark</h5>
                             </li>
