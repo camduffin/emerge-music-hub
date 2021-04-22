@@ -11,7 +11,7 @@ import { IoIosArrowDropdown } from 'react-icons/io';
 
 const Finance = () => {
 
-    const sunnyImage = '../images/artists/sunny-widerman.jpg';
+    const sunnyImage = '../images/artists/sunny-widerman-two.jpg';
 
     return (
         <div className="finance">
@@ -24,7 +24,14 @@ const Finance = () => {
                 >
                     <section className="finance-image">
                         <div className="finance-image-container">
-                            <StaticImage src={sunnyImage} alt="Picture of Sunny Widerman"/>
+                            <StaticImage 
+                            src={sunnyImage} 
+                            alt="Picture of Sunny Widerman"
+                            loading="lazy"
+                            placeholder="blurred"
+                            width={300}
+                            height={300}
+                            />
                             <h1>Finances</h1>
                             <h2>Friendly advice from the pros.</h2>
                         </div>

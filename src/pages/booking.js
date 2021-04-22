@@ -26,8 +26,8 @@ const Booking = () => {
                                 alt="Picture of Eric Warner" 
                                 placeholder="blurred"
                                 loading="lazy"
-                                width={300}
-                                height={300}
+                                width={275}
+                                height={275}
                                 />
                                 <h5>Eric Warner</h5>
                             </li>
@@ -38,20 +38,20 @@ const Booking = () => {
                                 alt="Photo of Denholm Whale" 
                                 placeholder="blurred"
                                 loading="lazy"
-                                width={300}
-                                height={300}
+                                width={275}
+                                height={275}
                                 />
                                 <h5>Denholm Whale</h5>
                             </li>
                             <li onClick={() => scrollTo('#virginia')}>
                                 <StaticImage 
                                 className="virginia" 
-                                src="../images/artists/virginia.jpg" 
+                                src="../images/artists/virginia-two.jpg" 
                                 alt="Photo of Virginia Clark" 
                                 placeholder="blurred"
                                 loading="lazy"
-                                width={300}
-                                height={300}
+                                width={275}
+                                height={275}
                                 />
                                 <h5>Virginia Clark</h5>
                             </li>

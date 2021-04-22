@@ -8,7 +8,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Royalties = () => {
 
-    const andrew = '../images/artists/andrew-karis.jpg';
+    const andrew = '../images/artists/andrew-karis-two.jpg';
     const camille = '../images/artists/camille.jpeg';
 
     return (
@@ -25,8 +25,8 @@ const Royalties = () => {
                                     <StaticImage 
                                     src={andrew}
                                     alt="Photo of Andrew Karis"
-                                    width={250}
-                                    height={250}
+                                    width={300}
+                                    height={300}
                                     placeholder="blurred"
                                     loading="lazy"
                                     />
@@ -36,8 +36,8 @@ const Royalties = () => {
                                     <StaticImage 
                                     src={camille}
                                     alt="Photo of Camille Matthews"
-                                    width={250}
-                                    height={250}
+                                    width={300}
+                                    height={300}
                                     placeholder="blurred"
                                     loading="lazy"
                                 />
