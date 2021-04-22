@@ -24,7 +24,7 @@ const Recording = () => {
                         <ul className="recording-artist-container">
                             <li onClick={() => scrollTo('#jill-zim')}>
                                 <StaticImage 
-                                src="../images/artists/image-one.jpg" 
+                                src="../images/artists/image-one.JPG" 
                                 alt="Picture of Jill Zimmermann" 
                                 placeholder="blurred"
                                 loading="lazy"
