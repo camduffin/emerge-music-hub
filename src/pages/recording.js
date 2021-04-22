@@ -25,12 +25,12 @@ const Recording = () => {
                         <ul className="recording-artist-container">
                             <li onClick={() => scrollTo('#jill-zim')}>
                                 <StaticImage 
-                                src="../images/artists/jill-zim.webp" 
+                                src="../images/artists/jill-zim.jpg" 
                                 alt="Picture of Jill Zimmermann" 
                                 placeholder="blurred"
                                 loading="lazy"
-                                width={250}
-                                height={250}
+                                width={255}
+                                height={255}
                                 />
                                 <h5 className="jill-zim-text">Jill Zimmermann</h5>
                             </li>
@@ -40,8 +40,8 @@ const Recording = () => {
                             alt="Picture of Erin Costelo" 
                             placeholder="blurred"
                             loading="lazy"
-                            width={250}
-                            height={250}
+                            width={255}
+                            height={255}
                             />
                                 <h5>Erin Costelo</h5>
                             </li>
@@ -52,8 +52,8 @@ const Recording = () => {
                                 alt="Picture of Josh Korody" 
                                 placeholder="blurred"
                                 loading="lazy"
-                                width={250}
-                                height={250}
+                                width={255}
+                                height={255}
                                 />
                                 <h5>Josh Korody</h5>
                             </li>
@@ -63,8 +63,8 @@ const Recording = () => {
                                 alt="Picture of Chris Stringer" 
                                 placeholder="blurred"
                                 loading="lazy"
-                                width={250}
-                                height={250}
+                                width={255}
+                                height={255}
                                 />
                                 <h5>Chris Stringer</h5>
                             </li>
@@ -74,8 +74,8 @@ const Recording = () => {
                                 alt="Picture of Aaron Goldstein" 
                                 placeholder="blurred"
                                 loading="lazy"
-                                width={250}
-                                height={250}
+                                width={255}
+                                height={255}
                                 />
                                 <h5>Aaron Goldstein</h5>
                             </li>
@@ -86,8 +86,8 @@ const Recording = () => {
                                 alt="Picture of Terra Lightfoot" 
                                 placeholder="blurred"
                                 loading="lazy"
-                                width={250}
-                                height={250}
+                                width={255}
+                                height={255}
                                 />
                                 <h5>Terra Lightfoot</h5>
                             </li>
@@ -97,8 +97,8 @@ const Recording = () => {
                                 alt="Photo of Andy Shauf" 
                                 placeholder="blurred"
                                 loading="lazy"
-                                width={250}
-                                height={250}
+                                width={255}
+                                height={255}
                                 />
                                 <h5>Andy Shauf</h5>
                             </li>
@@ -108,8 +108,8 @@ const Recording = () => {
                                 alt="Picture of Alysha Brilla" 
                                 placeholder="blurred"
                                 loading="lazy"
-                                width={250}
-                                height={250}
+                                width={255}
+                                height={255}
                                 />
                                 <h5>Alysha Brilla</h5>
                             </li>  

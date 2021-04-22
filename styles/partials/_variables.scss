@@ -70,7 +70,7 @@ $dmSans: 'DM Sans', sans-serif;
 }
 
 @mixin tabletMQ {
-    @media (max-width: 950px) {
+    @media (max-width: 1015px) {
     @content;
     }
 }
@@ -98,5 +98,19 @@ $dmSans: 'DM Sans', sans-serif;
         @content;
     }
 }
+
+@mixin midPhoneMQ {
+    @media (max-width: 410px) {
+        @content;
+    }
+}
+
+@mixin tinyPhoneMQ {
+    @media (max-width: 363px) {
+        @content;
+    }
+}
+
+
 
     

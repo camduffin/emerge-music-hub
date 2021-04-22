@@ -3,7 +3,6 @@ import Layout from '../components/Layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { IoIosArrowDropup } from 'react-icons/io';
-import { IoIosArrowDropdown } from 'react-icons/io';
 import { Parallax } from 'react-parallax';
 import darkBlue from '../images/darkblue-bg2.png';
 import red from '../images/red-bg1.png';
@@ -26,8 +25,8 @@ const Musicians = () => {
                                 alt="Picture of Wade Macneil" 
                                 placeholder="blurred" 
                                 loading="lazy"
-                                width={275}
-                                height={275}
+                                width={255}
+                                height={255}
                                 />
                                 <h5>Wade Macneil</h5>
                             </li>
@@ -37,8 +36,8 @@ const Musicians = () => {
                             alt="Picture of Terra Lightfoot" 
                             placeholder="blurred" 
                             loading="lazy"
-                            width={275}
-                            height={275}
+                            width={255}
+                            height={255}
                             />
                                 <h5>Terra Lightfoot</h5>
                             </li>
@@ -48,10 +47,10 @@ const Musicians = () => {
                                 alt="Picture of Andy Shauf" 
                                 placeholder="blurred" 
                                 loading="lazy"
-                                width={275}
-                                height={275}
+                                width={255}
+                                height={255}
                                 />
-                                <h5>Andy Shauft</h5>
+                                <h5>Andy Shauf</h5>
                             </li>
                             <li onClick={() => scrollTo('#kyla-charter')}>
                                 <StaticImage 
@@ -59,8 +58,8 @@ const Musicians = () => {
                                 alt="Picture of Kyla Charter" 
                                 placeholder="blurred" 
                                 loading="lazy"
-                                width={275}
-                                height={275}
+                                width={255}
+                                height={255}
                                 />
                                 <h5>Kyla Charter</h5>
                             </li>
@@ -70,8 +69,8 @@ const Musicians = () => {
                                 alt="Picture of Serena Ryder" 
                                 placeholder="blurred" 
                                 loading="lazy"
-                                width={275}
-                                height={275}
+                                width={255}
+                                height={255}
                                 />
                                 <h5>Serena Ryder</h5>
                             </li>
@@ -81,20 +80,19 @@ const Musicians = () => {
                                 alt="Picture of Moscow Apartment" 
                                 placeholder="blurred" 
                                 loading="lazy"
-                                width={275}
-                                height={275}
+                                width={255}
+                                height={255}
                                 />
                                 <h5>Moscow Apartment</h5>
                             </li>
                             <li onClick={() => scrollTo('#cadence')}>
                                 <StaticImage 
-                                src="../images/artists/cadence.webp" 
+                                src="../images/artists/cadence.jpg" 
                                 alt="Picture of Cadence Weapon" 
                                 placeholder="blurred" 
                                 loading="lazy"
-                                width={275}
-                                height={275}
-                                
+                                width={255}
+                                height={255}
                                 />
                                 <h5>Cadence Weapon</h5>
                             </li>
@@ -103,8 +101,8 @@ const Musicians = () => {
                                 alt="Picture of Bahamas (Afie Jurvanen)" 
                                 placeholder="blurred" 
                                 loading="lazy"
-                                width={275}
-                                height={275}
+                                width={255}
+                                height={255}
                                 />
                                 <h5>Afie Jurvanen</h5>
                             </li>
@@ -116,7 +114,7 @@ const Musicians = () => {
                 <section className="tips-text">
                     <div className="wrapper tips-text-container">
                         <h2>Tips from the pros</h2>
-                        <p data-sal="fade" data-sal-duration="1500">The best way to learn about anything is to get advice from the people that have already figured it all out- the professionals. In interviewing all of the incredible, accomplished and generous Canadian artists who volunteered their time to this initiative we learned a lot we didn’t know, but mostly that even they don’t actually have it all figured out. One of our biggest takeaways has been that a musician never stops learning. We remain students our whole lives. In this module we will learn about the successes, failures, challenges, struggles, achievements and the life in general of some of Canada’s brightest stars. These people have worked so hard and made many sacrifices to be where they are. They know about how to develop the best type of career, one with longevity, and they want to give you some of that wisdom. The Canadian music industry thrives on everyone supporting each other and working together and one of the best ways for the industry to thrive and keep music alive is to keep you, the next generation of young artists, musicians and industry professionals informed and support your goals!</p>
+                        <p>The best way to learn about anything is to get advice from the people that have already figured it all out- the professionals. In interviewing all of the incredible, accomplished and generous Canadian artists who volunteered their time to this initiative we learned a lot we didn’t know, but mostly that even they don’t actually have it all figured out. One of our biggest takeaways has been that a musician never stops learning. We remain students our whole lives. In this module we will learn about the successes, failures, challenges, struggles, achievements and the life in general of some of Canada’s brightest stars. These people have worked so hard and made many sacrifices to be where they are. They know about how to develop the best type of career, one with longevity, and they want to give you some of that wisdom. The Canadian music industry thrives on everyone supporting each other and working together and one of the best ways for the industry to thrive and keep music alive is to keep you, the next generation of young artists, musicians and industry professionals informed and support your goals!</p>
                         <p>-Anna</p>
                     </div>
                 </section>
