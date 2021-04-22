@@ -5,9 +5,11 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 import { IoIosArrowDropup } from 'react-icons/io';
 import { Parallax } from 'react-parallax';
 import mainBG from '../images/emerge-bg.png';
-import blueBG from '../images/blue-bg1.png';
-import subHeadBG from '../images/subheader-blue1.png';
+import darkBlue from '../images/dark-blue-bg.png';
+import darkBluetwo from '../images/darkblue-bg2.png';
+
 const Recording = () => {
+
     return (
     <div className="recording">
         <Layout>
@@ -276,6 +278,143 @@ const Recording = () => {
                             ></iframe>
                         </div>
                     </div>
+                </section>
+                <section className="lm-recording">
+                        <div className="lm-recording-text-head">
+                            <div className="wrapper">
+                                <h2>Home Recording Starter Kit</h2>
+                                <p>Recommendations from Long & McQuade</p>
+                            </div>
+                        </div>
+                        <ul className="lm-main-list">
+                        <Parallax
+                            bgImage={darkBlue}
+                            strength={500}
+                            >
+                            <li className="microphone">
+                                <div className="wrapper">
+                                    <h3>Microphone</h3>
+                                    <p>One of the most important pieces of equipment if you want to record any instrument, voice, or sound into your music project.</p>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.long-mcquade.com/49224/Pro-Audio---Recording/Microphones/Apex-Electronics/Compact-Studio-Condenser-Mic-with-Case---Black.htm" target="_blank" rel="noreferrer noopener">Apex 435B ($109)</a>
+                                            <p>This is a great budget condenser microphone. This will give a lush & detailed sound and is an all-purpose mic that can be used to record anything from vocals, to acoustic instruments, to recording electric guitar amp, etc. It has a fixed cardioid pattern meaning it only picks up sound from one side of the microphone.</p>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.long-mcquade.com/485/Pro-Audio---Recording/Microphones/Audio-Technica/AT2020-Condenser-Microphone.htm" target="_blank" rel="noreferrer noopener">Audio Technica AT2020 ($149)</a>
+                                            <p>This is a slightly higher end version of the same type of microphone from a world-renowned brand. The AT2020 sounds fuller and has less self-noise.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li className="usb">
+                                <div className="wrapper">
+                                    <h3>USB Interface</h3>
+                                    <p>This is an essential piece of equipment for recording. It will amplify the signal from your microphone, and convert that sound to a digital file that your computer can read and record. Without a USB Interface your microphone is pretty much useless!</p>
+                                    <div className="usb-container">
+                                        <a href="https://www.long-mcquade.com/146292/Pro-Audio---Recording/Audio-Interfaces/Focusrite/Scarlett-Solo-3rd-Gen-USB-Audio-Interface.htm" target="_blank" rel="noreferrer noopener">Scarlett Solo MK3 ($169)</a>
+                                        <p>The Scarlett Solo is an affordable product from a well respected brand (Focusrite). This will allow you to record up to one microphone and one guitar/instrument with 1/4" output. It also allows you to control the volume of your speakers, and/or headphones.</p>
+                                    </div> 
+                                </div>
+                            </li>
+                        </Parallax>
+                        <div className="lm-background-one">
+                            <li className="cables">
+                                <div className="wrapper">
+                                    <h3>Cables</h3>
+                                    <p>Microphones don't typically include a mic cable, so you will need an XLR cable. Likewise most studio speakers do not include cables to connect them. If you decide to purchase studio speakers you will also need some TRS cables which are listed below.</p>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.long-mcquade.com/1610/Pro_Audio_Recording/Cables/Yorkville_Sound/Link_Audio_Economy_Mic_Cable_-_10_foot.htm" target="_blank" rel="noreferrer noopener">A110MC ($14.99)</a>
+                                            <p>This is a 10ft XLR microphone cable which is a good length for most home recording applications.</p>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.long-mcquade.com/20282/Pro-Audio---Recording/Cables/Yorkville-Sound/1-4-TRS-to-1-4-TRS-Angled---8-foot.htm" target="_blank" rel="noreferrer noopener">LP108SSA TRS CABLE ($17.99)</a>
+                                            <p>This is a cable that will allow you to connect your interface to your speakers, if you decide to purchase speakers. You will need two cables, one for each speaker.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li className="microphone-stand">
+                                <div className="wrapper">
+                                    <h3>Microphone Stand</h3>
+                                    <p>Condenser microphones cannot be held in your hand when recording. They are so sensitive that they will pickup a lot of unpleasant handling noise. Hence it is a good idea to include a mic stand in your setup.</p>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.long-mcquade.com/8769/Pro-Audio---Recording/Stands/Yorkville-Sound/Tripod-Boom-Stand---Black.htm" target="_blank" rel="noreferrer noopener">MS206B ($39.99)</a>
+                                            <p>This is a boom stand which means it has an arm that you can angle upwards/downwards, and it allows you to place a microphone over or under an instrument. If you're recording anything other than just vocals, this is your best option.</p>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.long-mcquade.com/1752/Pro-Audio---Recording/Stands/Yorkville-Sound/Round-Based-Mic-Stand---Black.htm" target="_blank" rel="noreferrer noopener">MS603B ($38.99)</a>
+                                            <p>This is a straight microphone stand that moves only up and down, this is only really useful for recording vocals.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        <Parallax
+                            bgImage={darkBluetwo}
+                            strength={500}
+                            >
+                            <li className="headphones">
+                                <div className="wrapper">
+                                    <h3>Headphones</h3>
+                                    <p>Headphones are essential so you can hear what the microphone is picking up as you are recording.</p>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.long-mcquade.com/8728/Pro-Audio---Recording/Headphones/Apex-Electronics/HP35-Closed-Ear-Folding-Headphones.htm" target="_blank" rel="noreferrer noopener">Apex HP35 ($49.99)</a>
+                                            <p>This is the most budget friendly option, and they do the job just fine.</p>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.long-mcquade.com/23588/Pro-Audio---Recording/Headphones/Apex-Electronics/Folding-Deluxe-Studio-Monitor-Headphones.htm" target="_blank" rel="noreferrer noopener">Apex HP100 ($129)</a>
+                                            <p>These have added comfort in the quality of the earpads which is nice if you're wearing them for an extended period of time, as well has increased overall sound quality.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li className="midi">
+                                <div className="wrapper">
+                                    <h3>MIDI Keyboard</h3>
+                                    <p>A MIDI keyboard connects to your computer with a USB cable and allows you to control sounds from your computer with a hardware piano keyboard. This is essential for anyone who wants to make music using virtual instruments, or electronic instruments with computer software.</p>
+                                    <div className="midi-container">
+                                        <a href="https://www.long-mcquade.com/188288/Keyboards/MIDI-Controllers/Akai/MPK-Mini-MKIII-25-Note-Keyboard-Drum-Pad-Controller.htm" target="_blank" rel="noreferrer noopener">AKAI MPK MINI MKIII ($129)</a>
+                                        <p>This gives you two octaves on a piano keyboard, as well as some drum pads. You really can't do better at this price point for a MIDI keyboard.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </Parallax>
+                        <div className="lm-background-two">
+                            <li className="speakers">
+                                <div className="wrapper">
+                                    <h3>Speakers</h3>
+                                    <p>Sometimes you want to be able to hear your music back on speakers and give your ears a break from wearing headphones.</p>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.long-mcquade.com/167016/Pro-Audio---Recording/Studio-Monitors/Mackie/CR3-X-3---Multimedia-Monitors--Pair.htm" target="_blank" rel="noreferrer noopener">MACKIE CR3X ($134.99)</a>
+                                            <p>This are fantastic small speakers that will fit on any desk. They have a good amount of bass for their small size as well.</p>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.long-mcquade.com/?page=search&SearchTxt=ysm5" target="_blank" rel="noreferrer noopener">YORKVILLE YSM5 ($189 each, $378 for a pair)</a>
+                                            <p>This are much larger than the CR3X and closer to what you might find in a professional studio. These have significantly louder output, and are able to output lower bass frequencies than the Mackie speakers, allowing you to better hear what is happening in the bass of your song.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        </ul>
+                        <div className="lm-logo">
+                            <div className="wrapper lm-logo-container">
+                                <StaticImage 
+                                src="../images/lm-logo.png" 
+                                alt="Long & McQuade logo" 
+                                />
+                                <StaticImage 
+                                className="emerge-lm"
+                                src="../images/emerge-logo.png" 
+                                alt="Long & McQuade logo" 
+                                />
+                            </div>
+                        </div>
                 </section>
         </Layout>
     </div>    

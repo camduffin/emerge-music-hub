@@ -8,8 +8,8 @@ import { RiCloseFill } from 'react-icons/ri';
 const NavBar = () => {
 
     // images
-    const emergeLogo = "../images/emerge-logo.png";
     const iceberg = '../images/iceberg.png';
+
 
     // hamburger state
     const [open, setOpen] = useState(false);
@@ -37,8 +37,6 @@ const NavBar = () => {
             <div className="burger" onClick={() => handleClick()} style={{opacity: open ? "0" : ""}} >
                 <div className="menu" aria-label="hidden"></div>
             </div>
-
-            {/* onClick={() => setOpen(!open)} */}
         </nav>
     )
 }

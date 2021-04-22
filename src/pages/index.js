@@ -11,16 +11,14 @@ import { FaRegPaperPlane } from 'react-icons/fa';
 import { ImYoutube2 } from 'react-icons/im';
 import { Parallax } from 'react-parallax';
 import landing from '../images/emerge-bg.png';
-import lightBlueBG from '../images/lightblue-bg1.png';
-import lightBlueBGtwo from '../images/light-blue-bg.jpg';
 import subHeader from '../images/subheader-blue1.png';
 
 const IndexPage = () => {
 
   const emergeLogo = "../images/emerge-logo.png";
   const instagram = "https://www.instagram.com/emergemusichub/";
-  const email = "mailto:camduffin@gmail.com";
-  const youtube = "https://www.youtube.com/";
+  const email = "mailto:emergemusichub2021@gmail.com";
+  const youtube = "https://www.youtube.com/channel/UC96E1mvcQ82MQmu_auvceGQ";
   
   return (
         <Layout>

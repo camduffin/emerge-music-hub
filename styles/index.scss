@@ -109,12 +109,18 @@ footer {
         display: flex;
 
         li {
-            padding: 10px;
+            padding: 20px;
             font-size: 3rem;
         }
 
         li:hover, li:focus {
             color: $red;
+        }
+
+        .youtube-footer {
+            font-size: 6rem;
+            position: relative;
+            bottom: 14px;
         }
     }
 }
@@ -729,24 +735,24 @@ button {
     }
 
     .grant-tips-section {
-        height: 140vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        height: 100vh;
+    
     }
 
     .grant-text-container {
-        height: 100vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 70%;
         background-color: $transbackgroundlight;
-        padding: 40px;
-        height: 130vh;
+        padding: 30px;
 
         h2 {
-            color: $red;
+            color: $darkblue;
         }
 
         p {
@@ -759,6 +765,33 @@ button {
             font-style: italic;
         }
     }
+
+    .grant-tips-section-two {
+
+        width: 100%;
+        margin: 200px 0;
+
+        h2 {
+            color: $darkblue;
+        }
+
+        .grant-text-container-two {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 70%;
+            background-color: $transbackgroundlight;
+            padding: 30px;
+            
+            li {
+                color: $red;
+            }
+
+            p {
+                color: $darkblue;
+            }
+        }
+    }
 }
 
 .sunny-section {
@@ -768,11 +801,12 @@ button {
 }
 
 .finance-video-list {
-    height: 100vh;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     margin: -100px 0;
     background-color: $lightblue;
-    padding-top: 100px;
+    padding-top: 200px;
+    margin-left: 10%;
     
     .video {
         width: 100%;
@@ -795,12 +829,129 @@ button {
         }
     }
 
+
 }
 
 // Recording 
 
 .recording {
     height: 100vh;
+
+    .lm-recording {
+
+        h3 {
+            font-size: 3.5rem;
+            color: $lightblue;
+            margin: 0;
+        }
+
+        p {
+            color: $darkblue;
+        }
+
+        .lm-recording-text-head {
+            margin-bottom: -30px;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lm-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .lm-logo-container {
+                display: flex;
+                width: 100%;
+                margin: 0 auto;
+                justify-content: center;
+                align-items: center;
+            }
+
+            img {
+                width: 40%;
+                height: 100%;
+            }
+
+            .emerge-lm {
+                width: 30%;
+            }
+        }
+
+        .lm-background-one, .lm-background-two {
+            width: 100%;
+            background-color: $darkblue;
+            padding: 100px 0;
+        }
+
+        .lm-background-one {
+            margin-top: -100px;
+        }
+
+        .microphone, .cables, .speakers, .usb, .headphones, .midi, .microphone-stand {
+
+            background-color: $body;
+            margin: 100px 0;
+            padding: 100px 0;
+
+            li {
+                width: 60%;
+                padding-left: 4%;
+            }
+
+            a {
+                color: $yellow;
+                transition: all .2s ease-in-out;
+
+                &:hover,
+                &:focus {
+                    color: $red;
+                }
+            }
+
+            p {
+                // color: $offwhite;
+            }
+        }
+
+        .midi {
+
+            .midi-container {
+                width: 60%;
+                padding-left: 4%;
+            }
+        }
+
+        .usb {
+
+            .usb-container {
+                width: 60%;
+                padding-left: 4%;
+            }
+        }
+    }
+
+
+    .lm-recording-text-head {
+        background-color: $darkblue;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 5rem;
+        }
+
+        p {
+            color: $red;
+            font-size: 3rem;
+            font-style: italic;
+        }
+    }
 }
 
 .first-recording-container {
@@ -1282,7 +1433,34 @@ button {
     
         }
     
-    
+    }
+
+    .tips-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        background-color: $red;
+
+        h2 {
+            color: $darkblue;
+        }
+
+        p {
+            @include paragraphDM(2rem);
+            color: $darkblue;
+        }
+
+        p:last-child {
+            color: $darkbrown;
+            font-style: italic;
+        }
+    }
+
+    .tips-text-container {
+        width: 70%;
+        background-color: $body;
+        padding: 100px;
     }
 
     .wade-macneil-video, .kyla-charter-video, .serena-video, .moscow-video, .cadence-video, .bahamas-video, .andy-shauf-video, .terra-lightfoot-video  {

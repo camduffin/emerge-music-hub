@@ -3,14 +3,15 @@ import '../../styles/index.scss';
 import { FiInstagram } from 'react-icons/fi';
 import { FaFacebookF, FaRegPaperPlane } from 'react-icons/fa';
 import { IoIosArrowDropup } from 'react-icons/io';
+import { ImYoutube2 } from 'react-icons/im';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 
 const Footer = () => {
 
     const instagram = "https://www.instagram.com/emergemusichub/";
-    const facebook = "https://www.facebook.com/";
-    const email = "mailto:camduffin@gmail.com";
+    const youtube = "https://www.youtube.com/channel/UC96E1mvcQ82MQmu_auvceGQ";
+    const email = "mailto:emergemusichub2021@gmail.com";
 
     return (
         <footer>
@@ -36,11 +37,12 @@ const Footer = () => {
                             </li>
                             <li>
                                 <a 
-                                href={facebook}
+                                className="youtube-footer"
+                                href={youtube}
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 >
-                                    <FaFacebookF/>
+                                    <ImYoutube2/>
                                 </a>
                             </li>
                             <li>
