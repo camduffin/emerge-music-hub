@@ -3,7 +3,6 @@ import Layout from '../components/Layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { IoIosArrowDropup } from 'react-icons/io';
-import { IoIosArrowDropdown } from 'react-icons/io';
 import { Parallax } from 'react-parallax';
 import mainBG from '../images/emerge-bg.png';
 import darkBlue from '../images/dark-blue-bg.png';
@@ -25,7 +24,7 @@ const Recording = () => {
                         <ul className="recording-artist-container">
                             <li onClick={() => scrollTo('#jill-zim')}>
                                 <StaticImage 
-                                src="../images/artists/jill-zim.jpg" 
+                                src="../images/artists/image-one.jpg" 
                                 alt="Picture of Jill Zimmermann" 
                                 placeholder="blurred"
                                 loading="lazy"

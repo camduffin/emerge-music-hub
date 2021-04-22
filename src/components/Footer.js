@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/index.scss';
 import { FiInstagram } from 'react-icons/fi';
-import { FaFacebookF, FaRegPaperPlane } from 'react-icons/fa';
+import { FaRegPaperPlane } from 'react-icons/fa';
 import { IoIosArrowDropup } from 'react-icons/io';
 import { ImYoutube2 } from 'react-icons/im';
 import scrollTo from 'gatsby-plugin-smoothscroll';
