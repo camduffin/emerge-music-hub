@@ -601,7 +601,7 @@ h3 {
 
             svg:hover, svg:focus {
                 transform: scale(1.2);
-                color: $transdarkred;
+                color: $lightblue;
             }
 
             .youtube {
@@ -631,6 +631,17 @@ h3 {
         @include phoneMQ {
             width: 100%;
             padding-top: 150px;
+        }
+
+        a {
+            @include paragraphDM(2rem);
+            color: $lightblue;
+            transition: all .2s ease-in-out;
+
+            &:hover,
+            &:focus {
+                color: $yellow;
+            }
         }
     }
 
@@ -1699,6 +1710,38 @@ button {
             border: 4px solid $darkblue;
         }
 
+    }
+
+    button {
+        background: none;
+        border: none;
+    }
+
+    .booking-text {
+        height: 100vh;
+        background-color: $red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        .booking-text-container {
+            background: $body;
+            padding: 50px;
+    
+            h2 {
+                @include paragraphDM(3rem);
+                color: $darkblue;
+            }
+    
+            p {
+                color: $darkblue;
+            }
+    
+            p:last-child {
+                color: $darkbrown;
+                font-style: italic;
+            }
+        }
     }
 
 }

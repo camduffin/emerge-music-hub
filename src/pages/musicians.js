@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { IoIosArrowDropup } from 'react-icons/io';
+import { IoIosArrowDropdown } from 'react-icons/io';
 import { Parallax } from 'react-parallax';
 import darkBlue from '../images/darkblue-bg2.png';
 import red from '../images/red-bg1.png';
@@ -115,8 +116,8 @@ const Musicians = () => {
                 <section className="tips-text">
                     <div className="wrapper tips-text-container">
                         <h2>Tips from the pros</h2>
-                        <p data-sal="fade" data-sal-duration="1500">We put our lives into our work. When our songs and performances are heard on the radio, at a restaurant, in a bar, at a spin cycle class, or a retail store, it adds value to everyone’s experience in those places! Music enhances how we feel and interact in these places. The places that use our music benefit from it –  we may be more likely to order another drink or go back to that spin cycle class because the music motivated you to cycle harder! It’s important that we are fairly compensated for the use of our work. When an artist is paid for the use of their work in this way, it is called a “royalty.” In this module you’ll learn about how you can get paid for the use of your music. You’ll learn about how easy it is to sign up and why it’s important. Royalties could mean the difference between getting a part-time job or being able to focus on cultivating your art.</p>
-                        <p>-Ben</p>
+                        <p data-sal="fade" data-sal-duration="1500">The best way to learn about anything is to get advice from the people that have already figured it all out- the professionals. In interviewing all of the incredible, accomplished and generous Canadian artists who volunteered their time to this initiative we learned a lot we didn’t know, but mostly that even they don’t actually have it all figured out. One of our biggest takeaways has been that a musician never stops learning. We remain students our whole lives. In this module we will learn about the successes, failures, challenges, struggles, achievements and the life in general of some of Canada’s brightest stars. These people have worked so hard and made many sacrifices to be where they are. They know about how to develop the best type of career, one with longevity, and they want to give you some of that wisdom. The Canadian music industry thrives on everyone supporting each other and working together and one of the best ways for the industry to thrive and keep music alive is to keep you, the next generation of young artists, musicians and industry professionals informed and support your goals!</p>
+                        <p>-Anna</p>
                     </div>
                 </section>
                 <section className="musician-videos">
@@ -155,7 +156,7 @@ const Musicians = () => {
                             <div className="wrapper">
                                 <h4 className="terra-lightfoot" id="terra-lightfoot">Terra Lightfoot <span>- Artist</span></h4>
                                 <li className="terra-lightfoot-video">
-                                    <iframe
+                                    {/* <iframe
                                         data-sal="fade" data-sal-duration="1500"
                                         width="560"
                                         height="315"
@@ -165,13 +166,14 @@ const Musicians = () => {
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen
                                         title="Radiohead - SUE Festival 2018 Chile"
-                                    ></iframe>
+                                    ></iframe> */}
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LeXsySu3Y3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </li>
                             </div>
                             <div className="wrapper">
                                 <h4 className="andy-shauf" id="andy-shauf">Andy Shauf <span>- Artist</span></h4>
                                 <li className="andy-shauf-video">
-                                    <iframe
+                                    {/* <iframe
                                         data-sal="fade" data-sal-duration="1500"
                                         width="560"
                                         height="315"
@@ -181,7 +183,8 @@ const Musicians = () => {
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen
                                         title="Radiohead - SUE Festival 2018 Chile"
-                                    ></iframe>
+                                    ></iframe> */}
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AOfBsenI98Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </li>
                             </div>
                         </Parallax>
@@ -198,7 +201,7 @@ const Musicians = () => {
                             <div className="wrapper">
                                 <h4 id="kyla-charter">Kyla Charter <span>- Artist, Activist</span></h4>
                                 <li className="kyla-charter-video">
-                                    <iframe
+                                    {/* <iframe
                                         data-sal="fade" data-sal-duration="1500"
                                         width="560"
                                         height="315"
@@ -208,13 +211,14 @@ const Musicians = () => {
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen
                                         title="Radiohead - SUE Festival 2018 Chile"
-                                    ></iframe>
+                                    ></iframe> */}
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/huxfn-dELU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </li>
                             </div>
                             <div className="wrapper">
                                 <h4 id="serena">Serena Ryder <span>- Artist</span></h4>
                                 <li className="serena-video">
-                                    <iframe
+                                    {/* <iframe
                                         data-sal="fade" data-sal-duration="1500"
                                         width="560"
                                         height="315"
@@ -224,7 +228,8 @@ const Musicians = () => {
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen
                                         title="Radiohead - SUE Festival 2018 Chile"
-                                    ></iframe>
+                                    ></iframe> */}
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6SQOtndE-tw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </li>
                             </div>
                         </Parallax>
@@ -235,7 +240,7 @@ const Musicians = () => {
                             <div className="wrapper">
                                 <h4 id="moscow">Moscow Apartment <span>- Artist</span></h4>
                                 <li className="moscow-video">
-                                    <iframe
+                                    {/* <iframe
                                         data-sal="fade" data-sal-duration="1500"
                                         width="560"
                                         height="315"
@@ -245,13 +250,14 @@ const Musicians = () => {
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen
                                         title="Radiohead - SUE Festival 2018 Chile"
-                                    ></iframe>
+                                    ></iframe> */}
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kZuAIWAY9D4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </li>
                             </div>
                             <div className="wrapper">
                                 <h4 id="cadence">Cadence Weapon <span>- Artist</span></h4>
                                 <li className="cadence-video">
-                                    <iframe
+                                    {/* <iframe
                                         data-sal="fade" data-sal-duration="1500"
                                         width="560"
                                         height="315"
@@ -261,14 +267,15 @@ const Musicians = () => {
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen
                                         title="Radiohead - SUE Festival 2018 Chile"
-                                    ></iframe>
+                                    ></iframe> */}
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PUWHNFiFh1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </li>
                             </div>
                         
                             <div className="wrapper">
                                 <h4 id="bahamas">Afie Jurvanen (Bahamas) <span>- Artist</span></h4>
                                 <li className="bahamas-video">
-                                    <iframe
+                                    {/* <iframe
                                         data-sal="fade" data-sal-duration="1500"
                                         width="560"
                                         height="315"
@@ -278,7 +285,8 @@ const Musicians = () => {
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen
                                         title="Radiohead - SUE Festival 2018 Chile"
-                                    ></iframe>
+                                    ></iframe> */}
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZDnBwJhulLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </li>
                             </div>
                             </Parallax>

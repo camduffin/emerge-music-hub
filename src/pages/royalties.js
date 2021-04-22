@@ -65,7 +65,7 @@ const Royalties = () => {
                         <div className="video-container">
                             <li className="andrew-karis-video" id="andrew">
                                 <h4>Andrew Karis <span>administrator ACTRA RACS</span></h4>
-                                <iframe
+                                {/* <iframe
                                     data-sal="fade" data-sal-duration="1500"
                                     width="560"
                                     height="315"
@@ -75,13 +75,14 @@ const Royalties = () => {
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen
                                     title="Tame Impala - InnerSpeaker Memories"
-                                ></iframe>
+                                ></iframe> */}
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/FZ38LtW5BFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </li>
                         </div>
                         <div className="video-container">
                             <li className="camille-matthews-video" id="camille">
                                 <h4>Camille Matthews<span>SOCAN</span></h4>
-                                <iframe
+                                {/* <iframe
                                     data-sal="fade" data-sal-duration="1500"
                                     width="560"
                                     height="315"
@@ -91,7 +92,8 @@ const Royalties = () => {
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen
                                     title="Radiohead - SUE Festival 2018 Chile"
-                                ></iframe>
+                                ></iframe> */}
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/m3tbGFc8xz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </li>
                         </div>
                     </ul>  

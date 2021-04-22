@@ -39,7 +39,7 @@ const Finance = () => {
                         <li className="video video1" id="sunny" data-sal="fade" data-sal-duration="1500">
                             <h2>Sunny Widerman</h2>
                             <h3>Tax Preparer and Advisor, CEO Personal Tax Advisors</h3>
-                            <iframe
+                            {/* <iframe
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/7A4sT8fF2zE"
@@ -48,7 +48,8 @@ const Finance = () => {
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                                 title="Sunny Widerman - Tax Preparer and Advisor, CEO Personal Tax Advisors"
-                        ></iframe>
+                        ></iframe> */}
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7A4sT8fF2zE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </li>
                     </ul>
                     </div>

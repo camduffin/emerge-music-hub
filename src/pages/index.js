@@ -56,7 +56,7 @@ const IndexPage = () => {
               <section className="intro-video" id="intro-video">
                 <div className="wrapper intro-video-section">
                   <div className="intro-video-container">
-                    <iframe
+                    {/* <iframe
                         data-sal="fade" data-sal-duration="1500"
                         width="0"
                         height="0"
@@ -66,7 +66,9 @@ const IndexPage = () => {
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                         title="Tame Impala - InnerSpeaker Memories"
-                    ></iframe>
+                    ></iframe> */}
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eA7KPkXNZLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                 </div>
               </section>
@@ -100,7 +102,7 @@ const IndexPage = () => {
                 <div className="wrapper group-member-section" data-sal="fade" data-sal-duration="1500">
                   <div className="group-members">
                     <h2>Get to know our team, and check out our socials!</h2>
-                    <p>Group Member, Group Member, Group Member, Group Member</p>
+                    <p>Anna Ruddick, Ben Reinhartz, Margaret O’Toole, Paula Morales, Andres Arroyo and Sophia Lajkosz. Contact us at <a href="mailto:emergemusichub2021@gmail.com">emergemusichub2021@gmail.com</a> </p>
                     <nav>
                       <ul className="home-bottom-nav">
                         <li>

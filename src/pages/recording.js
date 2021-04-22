@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { IoIosArrowDropup } from 'react-icons/io';
+import { IoIosArrowDropdown } from 'react-icons/io';
 import { Parallax } from 'react-parallax';
 import mainBG from '../images/emerge-bg.png';
 import darkBlue from '../images/dark-blue-bg.png';
@@ -116,7 +117,7 @@ const Recording = () => {
                 </section>
                 </div>
                 </Parallax>
-                <section className="recording-text">
+                <section className="recording-text" id="recording-text">
                     <div className="wrapper">
                         <div className="wrapper recording-text-container">
                             <h2>Recording</h2>
@@ -134,7 +135,7 @@ const Recording = () => {
                     <div className="wrapper">
                         <div className="jill-zim-video">
                             <h4 id="jill-zim">Jill Zimmermann <span>- Engineer, Jukasa Studios</span></h4>
-                            <iframe
+                            {/* <iframe
                                 data-sal="fade" data-sal-duration="1500"
                                 width="560"
                                 height="315"
@@ -144,7 +145,8 @@ const Recording = () => {
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                                 title="Tame Impala - InnerSpeaker Memories"
-                            ></iframe>
+                            ></iframe> */}
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/oualu6onQkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div> 
                     </Parallax>  
@@ -162,7 +164,7 @@ const Recording = () => {
                     <div className="erin-costelo-video">
                         <div className="wrapper">
                             <h4 id="erin-costelo">Erin Costelo <span>- Engineer, Producer, Artist</span></h4>
-                            <iframe
+                            {/* <iframe
                                 data-sal="fade" data-sal-duration="1500"
                                 width="560"
                                 height="315"
@@ -172,14 +174,15 @@ const Recording = () => {
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                                 title="Tame Impala - InnerSpeaker Memories"
-                            ></iframe>
+                            ></iframe> */}
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/AxJUUIt0RHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     </Parallax>
                     <div className="josh-korody-video">
                         <div className="wrapper">
                             <h4 id="josh-korody-two">Josh Korody <span>- Producer, Engineer, Artist, owner Candle Recording</span></h4>
-                            <iframe
+                            {/* <iframe
                                 data-sal="fade" data-sal-duration="1500"
                                 width="560"
                                 height="315"
@@ -189,7 +192,8 @@ const Recording = () => {
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                                 title="Tame Impala - InnerSpeaker Memories"
-                            ></iframe>
+                            ></iframe> */}
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/XOr_Qtn-UvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div className="chris-stringer-video">
@@ -217,7 +221,7 @@ const Recording = () => {
                     <div className="aaron-goldstein-video">
                         <div className="wrapper">
                             <h4 id="aaron-goldstein">Aaron Goldstein <span>- Producer, Engineer, Artist, owner Baldwin Street Sound</span></h4>
-                            <iframe
+                            {/* <iframe
                                 data-sal="fade" data-sal-duration="1500"
                                 width="560"
                                 height="315"
@@ -227,13 +231,14 @@ const Recording = () => {
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                                 title="Tame Impala - InnerSpeaker Memories"
-                            ></iframe>
+                            ></iframe> */}
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_3IwzkLp3Mk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>    
                     </div>
                     <div className="terra-video">
                         <div className="wrapper">
                             <h4 id="terra">Terra Lightfoot <span>- Artist</span></h4>
-                            <iframe
+                            {/* <iframe
                                 data-sal="fade" data-sal-duration="1500"
                                 width="560"
                                 height="315"
@@ -243,13 +248,14 @@ const Recording = () => {
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                                 title="Tame Impala - InnerSpeaker Memories"
-                            ></iframe>
+                            ></iframe> */}
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LeXsySu3Y3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div className="andy-video">
                         <div className="wrapper">
                             <h4 id="andy">Andy Shauf <span>- Artist</span></h4>
-                            <iframe
+                            {/* <iframe
                                 data-sal="fade" data-sal-duration="1500"
                                 width="560"
                                 height="315"
@@ -259,13 +265,14 @@ const Recording = () => {
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                                 title="Tame Impala - InnerSpeaker Memories"
-                            ></iframe>
+                            ></iframe> */}
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/AOfBsenI98Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div className="alysha-video">
                         <div className="wrapper">
                             <h4 id="alysha">Alysha Brilla <span>- Artist, Producer</span></h4>
-                            <iframe
+                            {/* <iframe
                                 data-sal="fade" data-sal-duration="1500"
                                 width="560"
                                 height="315"
@@ -275,11 +282,12 @@ const Recording = () => {
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                                 title="Tame Impala - InnerSpeaker Memories"
-                            ></iframe>
+                            ></iframe> */}
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/egZ_1nEv608" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </section>
-                <section className="lm-recording">
+                <section className="lm-recording" id="lm-recording">
                         <div className="lm-recording-text-head">
                             <div className="wrapper">
                                 <h2>Home Recording Starter Kit</h2>
