@@ -57,7 +57,7 @@ const Finance = () => {
                 blur={{ min: -15, max: 15 }}
                 >
                 <section className="grant-tips-section">
-                    <div className="wrapper grant-text-container" data-sal="fade" data-sal-duration="1500">
+                    <div className="wrapper grant-text-container">
                         <h2>Finances & Grants</h2>
                         <p>Being a musician these days is essentially like running a small business. You’re required to do many jobs within one, and you might not have the knowledge or expertise for all those different roles. When it comes to personal finances many people are unsure where to begin when it comes to managing the finances for their artistic endeavours. There’s also the important matter of securing funding to make your projects happen. In this module you will hear simple advice on preparing your taxes and can read through our Top 10 Grant Writing Tips.</p>
                         <p>-Margaret O'Toole</p>

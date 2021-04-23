@@ -393,6 +393,9 @@ header {
             @include paragraph(2rem);
             padding: 20px;
 
+            @include tabletMQ {
+                padding: 15px;
+            }
 
             svg {
                 color: $lightblue;

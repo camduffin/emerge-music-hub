@@ -112,7 +112,7 @@ const Musicians = () => {
                 </section>
                 </Parallax>
                 <section className="tips-text">
-                    <div className="wrapper tips-text-container" data-sal="fade" data-sal-duration="1500">
+                    <div className="wrapper tips-text-container">
                         <h2>Tips from the pros</h2>
                         <p>The best way to learn about anything is to get advice from the people that have already figured it all out- the professionals. In interviewing all of the incredible, accomplished and generous Canadian artists who volunteered their time to this initiative we learned a lot we didn’t know, but mostly that even they don’t actually have it all figured out. One of our biggest takeaways has been that a musician never stops learning. We remain students our whole lives. In this module we will learn about the successes, failures, challenges, struggles, achievements and the life in general of some of Canada’s brightest stars. These people have worked so hard and made many sacrifices to be where they are. They know about how to develop the best type of career, one with longevity, and they want to give you some of that wisdom. The Canadian music industry thrives on everyone supporting each other and working together and one of the best ways for the industry to thrive and keep music alive is to keep you, the next generation of young artists, musicians and industry professionals informed and support your goals!</p>
                         <p>-Anna</p>

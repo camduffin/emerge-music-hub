@@ -66,7 +66,7 @@ const Booking = () => {
                 </Parallax>
                     <section className="booking-text" id="booking">
                         <div className="wrapper">
-                            <div className="wrapper booking-text-container" data-sal="fade" data-sal-duration="1500">
+                            <div className="wrapper booking-text-container">
                                 <h2>Putting Yourself Out There</h2>
                                 <p>We know it can be hard to get out there and endlessly self promote. And we know that these days everyone is really missing shows. Playing your own shows, going out to one as a fan, running into friends and meeting new people are all really fun parts of being in the music industry. So we want to make sure you have the tools to hit the ground running once shows are back on. As a musician building a career it can be really important to make connections, build your network and engage in the music community. In this module you will hear tips on doing just that, as well as how to navigate booking shows and working with promoters.</p>
                                 <p>-Margaret</p>
