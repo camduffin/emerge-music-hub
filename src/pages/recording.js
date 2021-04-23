@@ -118,7 +118,7 @@ const Recording = () => {
         </Parallax>
             <section className="recording-text" id="recording-text">
                 <div className="wrapper">
-                    <div className="wrapper recording-text-container">
+                    <div className="wrapper recording-text-container" data-sal="fade" data-sal-duration="1500">
                         <h2>Recording</h2>
                         <p>Making your first record is one of the most exciting moments of your life. Everything you have ever done, all of the writing, rehearsing, collaborating, putting yourself out there and working day and night to finesse your musical vision has led to this moment. Put it this way- you’ll never again have had that much time to prepare for a record (your whole life up until now!). I remember when my first band made our first record. We had already signed a zillion page (approximately) record deal that we didn’t even realize (or care) would ensure we wouldn’t make a cent off the actual record itself. That didn’t matter. Walking into the control room of that big expensive studio for the first time, I knew I had never been so happy, so consumed by, so in love with whatever was about to happen. For many musicians making records is a spectacular, unparalleled experience. We want you to know that you can hire a producer and rent a studio, but there’s a lot of other important stuff you will want to think about and do before you enter that studio to ensure you make the most of that experience and make the best record you can. We spoke to some of our favourite Canadian producers and engineers about their own careers and experiences and what the most important things are that young artists can do to be prepared for their first recording.</p>
                         <p>-Anna</p>
@@ -132,13 +132,13 @@ const Recording = () => {
             blur={{ min: -15, max: 15 }}
             >
                 <div className="wrapper">
-                    <div className="jill-zim-video">
+                    <div className="jill-zim-video" data-sal="fade" data-sal-duration="1000">
                         <h4 id="jill-zim">Jill Zimmermann <span>- Engineer, Jukasa Studios</span></h4>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/oualu6onQkY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div> 
             </Parallax>  
-                <div className="quote-container-one">
+                <div className="quote-container-one" data-sal="fade" data-sal-duration="1000">
                     <div className="wrapper">
                         <p>“Plan more time in the studio. You will need more time.”</p>
                         <p>-Jill Zimmermann</p>
@@ -149,50 +149,50 @@ const Recording = () => {
                 strength={500}
                 blur={{ min: -15, max: 15 }}
                 >
-                <div className="erin-costelo-video">
+                <div className="erin-costelo-video" data-sal="fade" data-sal-duration="1000">
                     <div className="wrapper">
                         <h4 id="erin-costelo">Erin Costelo <span>- Engineer, Producer, Artist</span></h4>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/AxJUUIt0RHI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
             </Parallax>
-                <div className="josh-korody-video">
+                <div className="josh-korody-video" data-sal="fade" data-sal-duration="1000">
                     <div className="wrapper">
                         <h4 id="josh-korody-two">Josh Korody <span>- Producer, Engineer, Artist, owner Candle Recording</span></h4>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/XOr_Qtn-UvM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
-                <div className="chris-stringer-video">
+                <div className="chris-stringer-video" data-sal="fade" data-sal-duration="1000">
                     <div className="wrapper">
                         <h4 id="chris-stringer">Chris Stringer <span>- Producer, Engineer, owner Union Sound Company</span></h4>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/sFOHfW5P7R0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
-                <div className="quote-container-two">
+                <div className="quote-container-two" data-sal="fade" data-sal-duration="1000">
                     <div className="wrapper">
                         <p>“Managing sonic expectations and working with what’s coming out at any given moment… Those are the biggest hurdles for young bands.”</p>
                         <p>-Chris Stringer</p>
                     </div>
                 </div>
-                <div className="aaron-goldstein-video">
+                <div className="aaron-goldstein-video" data-sal="fade" data-sal-duration="1000">
                     <div className="wrapper">
                         <h4 id="aaron-goldstein">Aaron Goldstein <span>- Producer, Engineer, Artist, owner Baldwin Street Sound</span></h4>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/_3IwzkLp3Mk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>    
                 </div>
-                <div className="terra-video">
+                <div className="terra-video" data-sal="fade" data-sal-duration="1000">
                     <div className="wrapper">
                         <h4 id="terra">Terra Lightfoot <span>- Artist</span></h4>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/LeXsySu3Y3k" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
-                <div className="andy-video">
+                <div className="andy-video" data-sal="fade" data-sal-duration="1000">
                     <div className="wrapper">
                         <h4 id="andy">Andy Shauf <span>- Artist</span></h4>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/AOfBsenI98Q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
-                <div className="alysha-video">
+                <div className="alysha-video" data-sal="fade" data-sal-duration="1000">
                     <div className="wrapper">
                         <h4 id="alysha">Alysha Brilla <span>- Artist, Producer</span></h4>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/egZ_1nEv608" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

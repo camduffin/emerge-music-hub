@@ -61,7 +61,7 @@ const IndexPage = () => {
               </section>
               </Parallax>
               <section className="home-intro-section">
-                <div className="wrapper home-intro-text">
+                <div className="wrapper home-intro-text" data-sal="slide-right" data-sal-duration="1500">
                   <h2>Welcome to Emerge Music Hub!</h2>
                   <p>We came up with this initiative after thinking about our own career beginnings. Most musicians can agree there’s a lot of stuff we wish someone would have told us when we were finishing music school, writing songs, forming bands, playing our first shows and dreaming of a future where we could spend all of our time immersed in the one thing we love the most: music. Music is not only a fun, exciting, rewarding and challenging way to express ourselves and find our place in the world, it can also be a real career. With the right tools, research and preparation, a few good tricks of the trade up our sleeves, and of course, the talent and hard work necessary to persevere, this can actually be the way you make a living. It is possible, and we are here to help you achieve your goals with practical, real-life tips and advice from some of Canada’s most successful musicians and industry professionals.</p>
                   <p>-Anna</p>

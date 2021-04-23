@@ -112,7 +112,7 @@ const Musicians = () => {
                 </section>
                 </Parallax>
                 <section className="tips-text">
-                    <div className="wrapper tips-text-container">
+                    <div className="wrapper tips-text-container" data-sal="fade" data-sal-duration="1500">
                         <h2>Tips from the pros</h2>
                         <p>The best way to learn about anything is to get advice from the people that have already figured it all out- the professionals. In interviewing all of the incredible, accomplished and generous Canadian artists who volunteered their time to this initiative we learned a lot we didn’t know, but mostly that even they don’t actually have it all figured out. One of our biggest takeaways has been that a musician never stops learning. We remain students our whole lives. In this module we will learn about the successes, failures, challenges, struggles, achievements and the life in general of some of Canada’s brightest stars. These people have worked so hard and made many sacrifices to be where they are. They know about how to develop the best type of career, one with longevity, and they want to give you some of that wisdom. The Canadian music industry thrives on everyone supporting each other and working together and one of the best ways for the industry to thrive and keep music alive is to keep you, the next generation of young artists, musicians and industry professionals informed and support your goals!</p>
                         <p>-Anna</p>
@@ -142,7 +142,7 @@ const Musicians = () => {
                                 </li>
                             </div> */}
                         </Parallax>
-                            <div className="quote-container-one" id="wade-macneil">
+                            <div className="quote-container-one" id="wade-macneil" data-sal="fade" data-sal-duration="1000">
                                 <div className="wrapper">
                                     <p>“You don’t realize it at the time, but when things seem the worst and you’re struggling the most, those are the times you look back at the fondest.”</p>
                                     <p>-Wade MacNeil, Artist (Alexisonfire)</p>
@@ -152,20 +152,20 @@ const Musicians = () => {
                                 bgImage={red}
                                 strength={500}
                                 >
-                            <div className="wrapper">
+                            <div className="wrapper" data-sal="fade" data-sal-duration="1000">
                                 <h4 className="terra-lightfoot" id="terra-lightfoot">Terra Lightfoot <span>- Artist</span></h4>
                                 <li className="terra-lightfoot-video">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/LeXsySu3Y3k" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </li>
                             </div>
-                            <div className="wrapper">
+                            <div className="wrapper" data-sal="fade" data-sal-duration="1000">
                                 <h4 className="andy-shauf" id="andy-shauf">Andy Shauf <span>- Artist</span></h4>
                                 <li className="andy-shauf-video">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/AOfBsenI98Q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </li>
                             </div>
                         </Parallax>
-                            <div className="quote-container-two">
+                            <div className="quote-container-two" data-sal="fade" data-sal-duration="1000">
                                 <div className="wrapper">
                                     <p>“You kind of have to put yourself out there before you’re smart enough to know it's not a great idea.”</p>
                                     <p>-Andy Shauf</p>
@@ -175,13 +175,13 @@ const Musicians = () => {
                             bgImage={darkBlue}
                             strength={500}
                             >
-                            <div className="wrapper">
+                            <div className="wrapper" data-sal="fade" data-sal-duration="1000">
                                 <h4 id="kyla-charter">Kyla Charter <span>- Artist, Activist</span></h4>
                                 <li className="kyla-charter-video">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/huxfn-dELU0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </li>
                             </div>
-                            <div className="wrapper">
+                            <div className="wrapper" data-sal="fade" data-sal-duration="1000">
                                 <h4 id="serena">Serena Ryder <span>- Artist</span></h4>
                                 <li className="serena-video">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/6SQOtndE-tw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -192,19 +192,19 @@ const Musicians = () => {
                             bgImage={darkBlue}
                             strength={500}
                             >
-                            <div className="wrapper">
+                            <div className="wrapper" data-sal="fade" data-sal-duration="1000">
                                 <h4 id="moscow">Moscow Apartment <span>- Artist</span></h4>
                                 <li className="moscow-video">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/kZuAIWAY9D4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </li>
                             </div>
-                            <div className="wrapper">
+                            <div className="wrapper" data-sal="fade" data-sal-duration="1000">
                                 <h4 id="cadence">Cadence Weapon <span>- Artist</span></h4>
                                 <li className="cadence-video">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/PUWHNFiFh1s" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </li>
                             </div>
-                            <div className="wrapper">
+                            <div className="wrapper" data-sal="fade" data-sal-duration="1000">
                                 <h4 id="bahamas">Afie Jurvanen (Bahamas) <span>- Artist</span></h4>
                                 <li className="bahamas-video">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZDnBwJhulLI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

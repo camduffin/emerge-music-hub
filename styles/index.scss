@@ -50,6 +50,10 @@ body {
         font-size: 6rem;
     }
 
+    @include phoneMQ {
+        font-size: 3rem;
+    }
+
 }
 
 footer {
@@ -219,11 +223,16 @@ footer {
         svg {
             animation: bounce 3s infinite;
             color: $red;
+            outline: none;
+            background: transparent;
         }
     }
 
-    button:hover {
+    button:hover, button:focus {
         color: $red;
+        outline: none;
+        background: none;
+        border: none;
     }
         
 }
@@ -372,6 +381,7 @@ header {
         @include tabletMQ {
             align-items: center;
             width: 100%;
+            padding: 0;
         }
 
         @include smallPhoneMQ {
@@ -512,8 +522,8 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
     background: $red;
+    padding: 200px 0;
 
     h2 {
         color: $darkblue;
@@ -541,41 +551,22 @@ h3 {
 
         @include smallTabletMQ {
             width: 90%;
-            height: 160vh;
         }
 
         @include bigPhoneMQ {
-            height: 400vh;
-            padding-top: 900px;
             width: 100%;
         }
 
-        @include tinyPhoneMQ {
-            padding-top: 1200px;
-            
-        }
     }
 }
 
 .home-question-one {
     font-family: $josefin;
-    height: 100vh;
+    padding: 200px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: $lightblue;
-
-    @include bigPhoneMQ {
-        height: 200vh;
-    }
-
-    @include smallPhoneMQ {
-        height: 300vh;
-    }
-
-    @include tinyPhoneMQ {
-        height: 400vh;
-    }
 
     .question-one-container {
 
@@ -600,13 +591,12 @@ h3 {
 }
 
 .group-member-background {
-    height: 100vh;
+    padding: 30px 0;
     background: $darkblue;
 }
 
 .group-member-section {
     display: flex;
-    height: 100vh;
     justify-content: space-around;
     align-items: center;
 
@@ -622,7 +612,7 @@ h3 {
             padding: 50px 70px 0 0;
 
             svg {
-                font-size: 3rem;
+                font-size: 4rem;
                 color: $red;
                 transition: all .2s ease-in-out;
             }
@@ -640,9 +630,9 @@ h3 {
                 }
                 
                 svg {
-                    font-size: 5rem;
+                    font-size: 7.4rem;
                     position: relative;
-                    bottom: 10px;
+                    bottom: 15px;
                 }
             }
         }
@@ -657,8 +647,7 @@ h3 {
         }
 
         @include phoneMQ {
-            width: 100%;
-            padding-top: 150px;
+            width: 97%;
         }
 
         a {
@@ -709,8 +698,10 @@ button {
 
     &:hover,
     &:focus {
-        opacity: .7;
-        color: white;
+        opacity: .5;
+        color: $yellow;
+        background-color: $darkblue;
+        border: 3px solid $yellow;
     }
 
     &:active {
@@ -778,16 +769,11 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100vh;
-
-        @include smallPhoneMQ {
-            height: 150vh;
-        }
+        padding: 200px 0;
     
     }
 
     .grant-text-container {
-        height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -796,8 +782,8 @@ button {
         padding: 30px;
 
         @include smallPhoneMQ {
-            height: 100vh;
             width: 90%;
+            padding: 10px;
         }
 
         h2 {
@@ -848,17 +834,17 @@ button {
 }
 
 .sunny-section {
-    height: 140vh;
+    position: relative;
     margin: 0;
+    padding: 50px 0;
+    padding-bottom: 200px;
     background-color: $lightblue;
 }
 
 .finance-video-list {
     height: 80%;
     width: 80%;
-    margin: -100px 0;
     background-color: $lightblue;
-    padding-top: 200px;
     margin-left: 10%;
     
     .video {
@@ -888,7 +874,6 @@ button {
 // Recording 
 
 .recording {
-    height: 100vh;
 
     .lm-recording {
 
@@ -1149,7 +1134,7 @@ button {
 }
 
 .quote-container-one {
-    height: 70vh;
+    padding: 100px 0;
     background-color: $red;
     margin: 0 auto;
     width: 100%;
@@ -1173,17 +1158,13 @@ button {
 }
 
 .quote-container-two {
-    height: 70vh;
+    padding: 100px 0;
     background-color: $red;
     margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    @include tinyPhoneMQ {
-        height: 100vh;
-    }
 
     p {
         @include paragraphDM(4rem);
@@ -1200,171 +1181,15 @@ button {
     }
 }
 
-.erin-costelo-video, .josh-korody-video, .chris-stringer-video, .aaron-goldstein-video, .terra-video, .andy-video, .alysha-video {
-    
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    position: relative;
-    padding-left: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-
-
-    @include bigTabletMQ {
-        margin-left: 0;
-    }
-
-    @include smallTabletMQ {
-        margin-left: 0;
-    }
-
-    h4 {
-        padding-top: 90px;
-        @include paragraphDM(3rem);
-        color: $red;
-
-        span {
-            font-size: 2rem;
-            display: block;
-            padding-top: 10px;
-            opacity: .8;
-            font-style: italic;
-        }
-    }
-
-    iframe {
-        position: absolute;
-        width: 70%;
-        height: 70%;
-        box-shadow: 2px 2px 10px $darkblue;
-        border: 4px solid $darkblue;
-
-        @include smallTabletMQ {
-            border: none;
-        }
-    }
-
-}
-
 .erin-costelo-video {
     margin: 0;
-    
-    @include smallTabletMQ {
-        height: 100vh;
-        padding-bottom: 800px;
-    }
-
-    h4 {
-        color: $darkblue;
-        padding-top: 200px;
-    }
-}
-
-.terra-video {
-    margin: 0;
-
-    @include smallTabletMQ {
-        height: 100vh;
-        padding-bottom: 800px;
-    }
-
-    h4 {
-        padding-top: 200px;
-    }
-}
-
-.josh-korody-video {
-    background: $offwhite;
-    margin: 0;
-
-    @include smallTabletMQ {
-        height: 100vh;
-        padding-bottom: 800px;
-    }
-
-    h4 {
-        color: $darkblue;
-        padding-top: 200px;
-    }
-}
-
-.chris-stringer-video {
-    background: $red;
-    margin: 0;
-
-    @include smallTabletMQ {
-        padding-bottom: 450px;
-        padding-bottom: 800px;
-    }
-
-    h4 {
-        color: $darkblue;
-        padding-top: 200px;
-    }
-
-}
-
-.aaron-goldstein-video {
-    background: $yellow;
-    margin: 0;
-    
-    @include smallTabletMQ {
-        height: 100vh;
-        padding-bottom: 800px;
-    }
-
-    h4 {
-        color: $darkblue;
-        padding-top: 200px;
-    }
-}
-
-.andy-video {
-    background: $red;
-    margin: 0;
-
-    @include smallTabletMQ {
-        height: 100vh;
-        padding-bottom: 800px;
-    }
-
-    h4 {
-        color: $darkblue;
-        padding-top: 200px;
-    }
-}
-
-.alysha-video {
-    background: $lightblue;
-    margin: 0;
-
-    @include smallTabletMQ {
-        height: 100vh;
-        padding-bottom: 800px;
-    }
-
-    h4 {
-        color: $darkblue;
-        padding-top: 200px;
-    }
-}
-
-.jill-zim-video {
-    height: 100vh;
+    padding-left: 10%;
+    position: relative;
     width: 100%;
-    padding-left: 8%;
+    padding-bottom: 56.25%;
 
-    @include bigTabletMQ {
-        margin: 160px 0;
-    }
-
-    @include smallPhoneMQ {
-        margin: 20px 0;
-        // height: 70vh;
+    @include smallTabletMQ {
+        margin: 100px 0;
     }
 
     h4 {
@@ -1389,7 +1214,148 @@ button {
     iframe {
         position: absolute;
         width: 70%;
-        height: 70%;
+        height: 50%;
+        box-shadow: 2px 2px 10px $darkblue;
+        border: 4px solid $darkblue;
+
+        @include smallTabletMQ {
+            border: none;
+        }
+    }
+}
+
+.terra-video {
+    padding-left: 10%;
+    position: relative;
+    bottom: 15px;
+    width: 100%;
+    padding-bottom: 56.25%;
+
+    @include smallPhoneMQ {
+        padding-top: 20px;
+    }
+
+    h4 {
+        padding-top: 90px;
+        @include paragraphDM(3rem);
+        color: $darkblue;
+
+        @include smallPhoneMQ {
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        span {
+            font-size: 2rem;
+            display: block;
+            padding-top: 10px;
+            opacity: .8;
+            font-style: italic;
+        }
+    }
+
+    iframe {
+        position: absolute;
+        width: 70%;
+        height: 50%;
+        box-shadow: 2px 2px 10px $darkblue;
+        border: 4px solid $darkblue;
+
+        @include smallTabletMQ {
+            border: none;
+        }
+    }
+}
+
+.josh-korody-video {
+    background: $offwhite;
+    padding-left: 10%;
+    position: relative;
+    width: 100%;
+    bottom: 100px;
+    padding-bottom: 56.25%;
+
+    @include smallPhoneMQ {
+        padding-top: 20px;
+    }
+
+    #josh-korody {
+        margin: 0;
+    }
+
+    h4 {
+        padding-top: 90px;
+        @include paragraphDM(3rem);
+        color: $darkblue;
+
+        @include smallPhoneMQ {
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        span {
+            font-size: 2rem;
+            display: block;
+            padding-top: 10px;
+            opacity: .8;
+            font-style: italic;
+        }
+    }
+
+    iframe {
+        position: absolute;
+        width: 70%;
+        height: 50%;
+        box-shadow: 2px 2px 10px $darkblue;
+        border: 4px solid $darkblue;
+
+        @include smallTabletMQ {
+            border: none;
+        }
+    }
+}
+
+.chris-stringer-video {
+    background: $red;
+    padding-left: 10%;
+    position: relative;
+    bottom: 15px;
+    width: 100%;
+    padding-bottom: 56.25%;
+    margin-top: -100px;
+    margin-bottom: -50px;
+    
+    @include smallPhoneMQ {
+        padding-top: 20px;
+    }
+
+    #chris-stringer {
+        margin: 0;
+    }
+
+    h4 {
+        padding-top: 90px;
+        @include paragraphDM(3rem);
+        color: $darkblue;
+
+        @include smallPhoneMQ {
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        span {
+            font-size: 2rem;
+            display: block;
+            padding-top: 10px;
+            opacity: .8;
+            font-style: italic;
+        }
+    }
+
+    iframe {
+        position: absolute;
+        width: 70%;
+        height: 50%;
         box-shadow: 2px 2px 10px $darkblue;
         border: 4px solid $darkblue;
 
@@ -1398,27 +1364,201 @@ button {
         }
     }
 
-    @include bigPhoneMQ {
-        margin-top: 600px;
+}
+
+.aaron-goldstein-video {
+    background: $yellow;
+    padding-left: 10%;
+    position: relative;
+    bottom: 15px;
+    width: 100%;
+    padding-bottom: 56.25%;
+
+    @include smallPhoneMQ {
+        padding-top: 20px;
     }
 
-    @include phoneMQ {
-        margin-bottom: 230px;
+    #aaron-goldstein {
+        margin: 0;
+    }
+
+    h4 {
+        padding-top: 90px;
+        @include paragraphDM(3rem);
+        color: $darkblue;
+
+        @include smallPhoneMQ {
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        span {
+            font-size: 2rem;
+            display: block;
+            padding-top: 10px;
+            opacity: .8;
+            font-style: italic;
+        }
+    }
+
+    iframe {
+        position: absolute;
+        width: 70%;
+        height: 50%;
+        box-shadow: 2px 2px 10px $darkblue;
+        border: 4px solid $darkblue;
+
+        @include smallTabletMQ {
+            border: none;
+        }
+    }
+}
+
+.andy-video {
+    background: $red;
+    padding-left: 10%;
+    position: relative;
+    bottom: 15px;
+    width: 100%;
+    padding-bottom: 56.25%;
+
+    @include smallPhoneMQ {
+        padding-top: 20px;
+    }
+
+
+    h4 {
+        padding-top: 90px;
+        @include paragraphDM(3rem);
+        color: $darkblue;
+
+        @include smallPhoneMQ {
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        span {
+            font-size: 2rem;
+            display: block;
+            padding-top: 10px;
+            opacity: .8;
+            font-style: italic;
+        }
+    }
+
+    iframe {
+        position: absolute;
+        width: 70%;
+        height: 50%;
+        box-shadow: 2px 2px 10px $darkblue;
+        border: 4px solid $darkblue;
+
+        @include smallTabletMQ {
+            border: none;
+        }
+    }
+}
+
+.alysha-video {
+    background: $lightblue;
+    padding-left: 10%;
+    position: relative;
+    bottom: 15px;
+    width: 100%;
+    padding-bottom: 56.25%;
+    margin-bottom: -50px;
+
+    @include smallPhoneMQ {
+        padding-top: 20px;
+    }
+
+    #alysha {
+        margin: 0;
+    }
+
+
+    h4 {
+        padding-top: 90px;
+        @include paragraphDM(3rem);
+        color: $darkblue;
+
+        @include smallPhoneMQ {
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        span {
+            font-size: 2rem;
+            display: block;
+            padding-top: 10px;
+            opacity: .8;
+            font-style: italic;
+        }
+    }
+
+    iframe {
+        position: absolute;
+        width: 70%;
+        height: 50%;
+        box-shadow: 2px 2px 10px $darkblue;
+        border: 4px solid $darkblue;
+
+        @include smallTabletMQ {
+            border: none;
+        }
     }
 
 }
 
+.jill-zim-video {
+    padding-left: 10%;
+    position: relative;
+    bottom: 15px;
+    width: 100%;
+    padding-bottom: 56.25%;
+
+    @include smallTabletMQ {
+        margin: 100px 0;
+    }
+
+    h4 {
+        padding-top: 90px;
+        @include paragraphDM(3rem);
+        color: $darkblue;
+
+        @include smallPhoneMQ {
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        span {
+            font-size: 2rem;
+            display: block;
+            padding-top: 10px;
+            opacity: .8;
+            font-style: italic;
+        }
+    }
+
+    iframe {
+        position: absolute;
+        width: 80%;
+        height: 60%;
+        box-shadow: 2px 2px 10px $darkblue;
+        border: 4px solid $darkblue;
+
+        @include smallTabletMQ {
+            border: none;
+        }
+    }
+}
+
 .recording-text {
-    height: 100vh;
+    padding: 200px 0;
     background-color: $red;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    @include bigPhoneMQ {
-        height: 300vh;
-
-    }
 
     .recording-text-container {
         background: $body;
@@ -1470,36 +1610,14 @@ button {
         padding-bottom: 20%;
         flex-wrap: wrap;
 
-        @include bigTabletMQ {
-            padding: 100px;
-        }
 
         @include smallTabletMQ {
-            padding-left: 0;
-
-        }
-
-        @include bigPhoneMQ {
-            height: 100vh;
-            padding-top: 20%;
-            margin-bottom: 40px;
-        }
-
-        @include tinyPhoneMQ {
-            padding-top: 1200px;
-            padding-bottom: 1200px;
+            padding-bottom: 300px;
         }
 
         @include smallPhoneMQ {
-            padding-top: 90%;
-            padding-bottom: 1300px;
+            padding-left: 5%;
         }
-
-        @include phoneMQ {
-            padding-bottom: 50%;
-            padding-top: 90%;
-        }
-        
     
         h2 {
             @include subHeading(4.8rem);
@@ -1510,10 +1628,6 @@ button {
                 color: $offwhite;
                 margin: 0 auto;
                 padding-left: 30px;
-            }
-
-            @include smallPhoneMQ {
-                display: none;
             }
     
             span {
@@ -1527,14 +1641,9 @@ button {
             z-index: 1;
             margin-top: 0;
             padding-bottom: 30px;
+            padding-top: 30px;
             width: 80%;
             background: $body;
-            height: 95vh;
-
-
-            @include tabletMQ {
-                width: 95%;
-            }
 
             @include smallTabletMQ {
                 background: transparent;
@@ -1542,17 +1651,6 @@ button {
 
             @include bigPhoneMQ {
                 grid-template-columns: 1fr 1fr;
-                margin-bottom: 200px;
-            }
-
-            @include tinyPhoneMQ {
-                padding-top: 1200px;
-            }
-
-            @include midPhoneMQ {
-                grid-template-columns: 1fr 1fr;
-                height: 140vh;
-                padding-top: 300px;;
             }
 
     
@@ -1605,6 +1703,10 @@ button {
                 border-radius: 40px;
                 object-fit: cover;
                 display: inline-block;
+
+                @include smallPhoneMQ {
+                    min-width: 150px;
+                }
             }
     
         }
@@ -1615,19 +1717,9 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100vh;
+        padding: 120px 0;
         background-color: $red;
 
-        @include bigPhoneMQ {
-            padding-top: 200%;
-            padding-bottom: 200%;
-            height: 20vh;
-        }
-
-        @include tinyPhoneMQ {
-            padding-top: 250%;
-            padding-bottom: 180%;
-        }
 
         h2 {
             color: $darkblue;
@@ -1736,14 +1828,6 @@ button {
     .wade-macneil, .terra-lightfoot, .andy-shauf {
         color: $darkblue;
     }
-
-    .quote-container-one {
-
-        @include bigPhoneMQ {
-            padding-top: 450px;
-            padding-bottom: 400px;
-        }
-    }
     
 }
 
@@ -1826,6 +1910,7 @@ button {
 
             @include bigPhoneMQ {
                 grid-template-columns: 1fr 1fr;
+                padding-top: 150px;
             }
 
             li {
@@ -1845,6 +1930,12 @@ button {
                     opacity: 0;
                     transition: all .2s ease-in;
                     width: 10%;
+
+                    @include phoneMQ {
+                        visibility: visible;
+                        opacity: .8;
+                        font-size: 2rem;
+                    }
                 }
                 
             }
@@ -1877,12 +1968,14 @@ button {
 
             .eric-warner {
                 width: 100%;
+                min-width: 100px;
                 margin: 0;
             }
 
             .denholm {
                 width: 100%;
                 margin: 0;
+                min-width: 100px;
             }
 
     
@@ -1895,11 +1988,9 @@ button {
         height: 0;
         padding-bottom: 56.25%;
         position: relative;
-        margin: 100px 10%;
+        margin: 200px 10%;
 
-        @include phoneMQ {
-            margin: 300px 20%;
-        }
+    
 
         h4 {
             padding-top: 90px;
@@ -1927,7 +2018,7 @@ button {
     }
 
     .virginia-video {
-        margin-bottom: 200px;
+        margin-bottom: 400px;
     }
 
     button {
@@ -1936,16 +2027,11 @@ button {
     }
 
     .booking-text {
-        height: 100vh;
+        padding: 150px 0;
         background-color: $red;
         display: flex;
         flex-direction: column;
         justify-content: center;
-
-        @include smallPhoneMQ {
-            padding-top: 700px;
-            padding-bottom: 600px;
-        }
     
         .booking-text-container {
             background: $body;
@@ -2008,7 +2094,7 @@ button {
         img {
             width: 100%;
             border-radius: 10px;
-            min-width: 150px;
+            min-width: 180px;
 
             @include smallTabletMQ {
                 padding: 20px;
@@ -2034,6 +2120,12 @@ button {
                 opacity: 0;
                 transition: all .2s ease-in;
                 width: 10%;
+
+                @include bigPhoneMQ {
+                    visibility: visible;
+                    font-size: 2rem;
+                    opacity: .8;
+                }
             }
 
         }
@@ -2067,14 +2159,19 @@ button {
         }
 
         .video-container {
-            height: 90vh;
+            padding: 100px 0;
+            margin: 100px 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: $body;
             width: 80%;
-            margin-bottom: 20%;
+
+            @include phoneMQ {
+                padding: 100px 0;
+                padding-bottom: 200px;
+            }
         }
 
         .andrew-karis-video, .camille-matthews-video {
@@ -2082,6 +2179,11 @@ button {
             height: 0;
             padding-bottom: 56.25%;
             position: relative;
+            bottom: 40px;
+
+            @include smallPhoneMQ {
+                bottom: 60px;
+            }
 
             iframe {
                 position: absolute;
@@ -2111,22 +2213,8 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100vh;
-        margin-top: 250px;
-
-        @include bigPhoneMQ {
-            margin-top: 400px;
-            margin-bottom: 500px;
-        }
-
-        @include phoneMQ {
-            margin-bottom: 600px;
-        }
-
-        @include midPhoneMQ {
-            margin-top: 1000px;
-            margin-bottom: 1000px;
-        }
+        align-items: center;
+        padding: 300px 0;
 
         h2 {
             color: $darkblue;
@@ -2141,6 +2229,11 @@ button {
             color: $darkbrown;
             font-style: italic;
         }
+
+        @include phoneMQ {
+            padding: 20px 0;
+        }
+
     }
 
     .royalty-text-container {
@@ -2148,8 +2241,9 @@ button {
         background-color: $body;
         padding: 100px;
 
-        @include phoneMQ {
+        @include bigPhoneMQ {
             width: 100%;
+            padding: 40px 40px;
         }
     }
 }

@@ -66,9 +66,9 @@ const Booking = () => {
                 </Parallax>
                     <section className="booking-text" id="booking">
                         <div className="wrapper">
-                            <div className="wrapper booking-text-container">
+                            <div className="wrapper booking-text-container" data-sal="fade" data-sal-duration="1500">
                                 <h2>Putting Yourself Out There</h2>
-                                <p data-sal="fade" data-sal-duration="1500">We know it can be hard to get out there and endlessly self promote. And we know that these days everyone is really missing shows. Playing your own shows, going out to one as a fan, running into friends and meeting new people are all really fun parts of being in the music industry. So we want to make sure you have the tools to hit the ground running once shows are back on. As a musician building a career it can be really important to make connections, build your network and engage in the music community. In this module you will hear tips on doing just that, as well as how to navigate booking shows and working with promoters.</p>
+                                <p>We know it can be hard to get out there and endlessly self promote. And we know that these days everyone is really missing shows. Playing your own shows, going out to one as a fan, running into friends and meeting new people are all really fun parts of being in the music industry. So we want to make sure you have the tools to hit the ground running once shows are back on. As a musician building a career it can be really important to make connections, build your network and engage in the music community. In this module you will hear tips on doing just that, as well as how to navigate booking shows and working with promoters.</p>
                                 <p>-Margaret</p>
                             </div>
                         </div>
@@ -81,15 +81,15 @@ const Booking = () => {
                 strength={500}
                 >
                     <section className="wrapper">
-                        <div className="eric-warner-video">
+                        <div className="eric-warner-video" data-sal="fade" data-sal-duration="1500">
                             <h4 id="eric-warner">Eric Warner <span>Music Consultant, Promoter, Artist Manager, President We Are Busy Bodies</span></h4>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/a3VQUmMr6Ak" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
-                        <div className="denholm-video" id="denholm">
+                        <div className="denholm-video" id="denholm" data-sal="fade" data-sal-duration="1500">
                             <h4>Denholm Whale <span>Promoter, Artist Manager</span></h4>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/Cy_9iRLNEiE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
-                        <div className="virginia-video">
+                        <div className="virginia-video" data-sal="fade" data-sal-duration="1500">
                             <h4 id="virginia">Virginia Clark <span>Promoter, Venue Manager, Festival Director</span></h4>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/GAt36PbCH_U" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
