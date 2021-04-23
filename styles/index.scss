@@ -374,6 +374,10 @@ header {
             width: 100%;
         }
 
+        @include smallPhoneMQ {
+            display: block;
+        }
+
         li {
             padding: 20px;
             @include paragraph(2rem);
@@ -1908,6 +1912,7 @@ button {
                 padding-top: 10px;
                 opacity: .8;
                 font-style: italic;
+                width: 80%;
             }
         }
 

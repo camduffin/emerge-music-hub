@@ -18,7 +18,6 @@ const paragraphStyles = {
   marginBottom: 48,
 }
 
-// markup
 const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
@@ -43,4 +42,4 @@ const NotFoundPage = () => {
   )
 }
 
-export default NotFoundPage
+export default NotFoundPage;

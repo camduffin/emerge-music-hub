@@ -124,7 +124,8 @@ const Musicians = () => {
                         bgImage={red}
                         strength={500}
                         >
-                            <div className="wrapper">
+{/* WADE MACNEIL VID */}
+                            {/* <div className="wrapper">
                                 <h4 className="wade-macneil" id="wade-macneil">Wade Macneil <span>- Artist</span></h4>
                                 <li className="wade-macneil-video">
                                     <iframe
@@ -139,9 +140,9 @@ const Musicians = () => {
                                         title="Tame Impala - InnerSpeaker Memories"
                                     ></iframe>
                                 </li>
-                            </div>
+                            </div> */}
                         </Parallax>
-                            <div className="quote-container-one">
+                            <div className="quote-container-one" id="wade-macneil">
                                 <div className="wrapper">
                                     <p>“You don’t realize it at the time, but when things seem the worst and you’re struggling the most, those are the times you look back at the fondest.”</p>
                                     <p>-Wade MacNeil, Artist (Alexisonfire)</p>
@@ -154,35 +155,13 @@ const Musicians = () => {
                             <div className="wrapper">
                                 <h4 className="terra-lightfoot" id="terra-lightfoot">Terra Lightfoot <span>- Artist</span></h4>
                                 <li className="terra-lightfoot-video">
-                                    {/* <iframe
-                                        data-sal="fade" data-sal-duration="1500"
-                                        width="560"
-                                        height="315"
-                                        src="https://www.youtube.com/embed/3rs_3fe51GY"
-                                        srcDoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:#0A2F58;opacity:0.9;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/3rs_3fe51GY?autoplay=1><img src=https://img.youtube.com/vi/3rs_3fe51GY/hqdefault.jpg alt=Radiohead - SUE Festival 2018 Chile><span>▶</span></a>"
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen
-                                        title="Radiohead - SUE Festival 2018 Chile"
-                                    ></iframe> */}
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LeXsySu3Y3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LeXsySu3Y3k" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </li>
                             </div>
                             <div className="wrapper">
                                 <h4 className="andy-shauf" id="andy-shauf">Andy Shauf <span>- Artist</span></h4>
                                 <li className="andy-shauf-video">
-                                    {/* <iframe
-                                        data-sal="fade" data-sal-duration="1500"
-                                        width="560"
-                                        height="315"
-                                        src="https://www.youtube.com/embed/3rs_3fe51GY"
-                                        srcDoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:#0A2F58;opacity:0.9;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/3rs_3fe51GY?autoplay=1><img src=https://img.youtube.com/vi/3rs_3fe51GY/hqdefault.jpg alt=Radiohead - SUE Festival 2018 Chile><span>▶</span></a>"
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen
-                                        title="Radiohead - SUE Festival 2018 Chile"
-                                    ></iframe> */}
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AOfBsenI98Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AOfBsenI98Q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </li>
                             </div>
                         </Parallax>
@@ -199,35 +178,13 @@ const Musicians = () => {
                             <div className="wrapper">
                                 <h4 id="kyla-charter">Kyla Charter <span>- Artist, Activist</span></h4>
                                 <li className="kyla-charter-video">
-                                    {/* <iframe
-                                        data-sal="fade" data-sal-duration="1500"
-                                        width="560"
-                                        height="315"
-                                        src="https://www.youtube.com/embed/3rs_3fe51GY"
-                                        srcDoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:#0A2F58;opacity:0.9;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/3rs_3fe51GY?autoplay=1><img src=https://img.youtube.com/vi/3rs_3fe51GY/hqdefault.jpg alt=Radiohead - SUE Festival 2018 Chile><span>▶</span></a>"
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen
-                                        title="Radiohead - SUE Festival 2018 Chile"
-                                    ></iframe> */}
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/huxfn-dELU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/huxfn-dELU0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </li>
                             </div>
                             <div className="wrapper">
                                 <h4 id="serena">Serena Ryder <span>- Artist</span></h4>
                                 <li className="serena-video">
-                                    {/* <iframe
-                                        data-sal="fade" data-sal-duration="1500"
-                                        width="560"
-                                        height="315"
-                                        src="https://www.youtube.com/embed/3rs_3fe51GY"
-                                        srcDoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:#0A2F58;opacity:0.9;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/3rs_3fe51GY?autoplay=1><img src=https://img.youtube.com/vi/3rs_3fe51GY/hqdefault.jpg alt=Radiohead - SUE Festival 2018 Chile><span>▶</span></a>"
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen
-                                        title="Radiohead - SUE Festival 2018 Chile"
-                                    ></iframe> */}
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6SQOtndE-tw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6SQOtndE-tw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </li>
                             </div>
                         </Parallax>
@@ -238,53 +195,19 @@ const Musicians = () => {
                             <div className="wrapper">
                                 <h4 id="moscow">Moscow Apartment <span>- Artist</span></h4>
                                 <li className="moscow-video">
-                                    {/* <iframe
-                                        data-sal="fade" data-sal-duration="1500"
-                                        width="560"
-                                        height="315"
-                                        src="https://www.youtube.com/embed/3rs_3fe51GY"
-                                        srcDoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:#0A2F58;opacity:0.9;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/3rs_3fe51GY?autoplay=1><img src=https://img.youtube.com/vi/3rs_3fe51GY/hqdefault.jpg alt=Radiohead - SUE Festival 2018 Chile><span>▶</span></a>"
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen
-                                        title="Radiohead - SUE Festival 2018 Chile"
-                                    ></iframe> */}
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kZuAIWAY9D4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kZuAIWAY9D4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </li>
                             </div>
                             <div className="wrapper">
                                 <h4 id="cadence">Cadence Weapon <span>- Artist</span></h4>
                                 <li className="cadence-video">
-                                    {/* <iframe
-                                        data-sal="fade" data-sal-duration="1500"
-                                        width="560"
-                                        height="315"
-                                        src="https://www.youtube.com/embed/3rs_3fe51GY"
-                                        srcDoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:#0A2F58;opacity:0.9;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/3rs_3fe51GY?autoplay=1><img src=https://img.youtube.com/vi/3rs_3fe51GY/hqdefault.jpg alt=Radiohead - SUE Festival 2018 Chile><span>▶</span></a>"
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen
-                                        title="Radiohead - SUE Festival 2018 Chile"
-                                    ></iframe> */}
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PUWHNFiFh1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PUWHNFiFh1s" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </li>
                             </div>
-                        
                             <div className="wrapper">
                                 <h4 id="bahamas">Afie Jurvanen (Bahamas) <span>- Artist</span></h4>
                                 <li className="bahamas-video">
-                                    {/* <iframe
-                                        data-sal="fade" data-sal-duration="1500"
-                                        width="560"
-                                        height="315"
-                                        src="https://www.youtube.com/embed/3rs_3fe51GY"
-                                        srcDoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:#0A2F58;opacity:0.9;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/3rs_3fe51GY?autoplay=1><img src=https://img.youtube.com/vi/3rs_3fe51GY/hqdefault.jpg alt=Radiohead - SUE Festival 2018 Chile><span>▶</span></a>"
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen
-                                        title="Radiohead - SUE Festival 2018 Chile"
-                                    ></iframe> */}
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZDnBwJhulLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZDnBwJhulLI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </li>
                             </div>
                             </Parallax>

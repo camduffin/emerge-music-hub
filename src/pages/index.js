@@ -22,7 +22,6 @@ const IndexPage = () => {
   
   return (
         <Layout>
-          <main>
             <section className="home-header">
                 <Parallax 
                 bgImage={landing} 
@@ -56,19 +55,7 @@ const IndexPage = () => {
               <section className="intro-video" id="intro-video">
                 <div className="wrapper intro-video-section">
                   <div className="intro-video-container">
-                    {/* <iframe
-                        data-sal="fade" data-sal-duration="1500"
-                        width="0"
-                        height="0"
-                        src="https://www.youtube.com/embed/_o26HtOgnFY"
-                        srcDoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:80px/1.5 sans-serif;color:#0A2F58;text-shadow:0 0 .2em black}</style><a href=https://www.youtube.com/embed/_o26HtOgnFY?autoplay=1><img src=https://img.youtube.com/vi/_o26HtOgnFY/hqdefault.jpg alt=Tame Impala - InnerSpeaker Memories><span>▶</span></a>"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        title="Tame Impala - InnerSpeaker Memories"
-                    ></iframe> */}
-
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eA7KPkXNZLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eA7KPkXNZLo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                   </div>
                 </div>
               </section>
@@ -141,7 +128,6 @@ const IndexPage = () => {
                   </div>
                 </div>
               </section>
-            </main>
           </Layout>
   )
 }

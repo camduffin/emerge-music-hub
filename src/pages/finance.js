@@ -32,7 +32,7 @@ const Finance = () => {
                             width={300}
                             height={300}
                             />
-                            <h1>Finances</h1>
+                            <h1>Finances & Grants</h1>
                             <h2>Friendly advice from the pros.</h2>
                         </div>
                         <button onClick={() => scrollTo('#sunny')}>
@@ -46,17 +46,7 @@ const Finance = () => {
                         <li className="video video1" id="sunny" data-sal="fade" data-sal-duration="1500">
                             <h2>Sunny Widerman</h2>
                             <h3>Tax Preparer and Advisor, CEO Personal Tax Advisors</h3>
-                            {/* <iframe
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/7A4sT8fF2zE"
-                                srcDoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:#0A2F58;opacity:0.9;text-shadow:0 0 .2em black}</style><a href=https://www.youtube.com/embed/7A4sT8fF2zE?autoplay=1><img src=https://img.youtube.com/vi/7A4sT8fF2zE/hqdefault.jpg alt=Sunny Widerman, Tax Preparer and Advisor, CEO Personal Tax Advisors><span>▶</span></a>"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                                title="Sunny Widerman - Tax Preparer and Advisor, CEO Personal Tax Advisors"
-                        ></iframe> */}
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7A4sT8fF2zE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/7A4sT8fF2zE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </li>
                     </ul>
                     </div>
@@ -68,7 +58,7 @@ const Finance = () => {
                 >
                 <section className="grant-tips-section">
                     <div className="wrapper grant-text-container" data-sal="fade" data-sal-duration="1500">
-                        <h2>Grant Writing</h2>
+                        <h2>Finances & Grants</h2>
                         <p>Being a musician these days is essentially like running a small business. You’re required to do many jobs within one, and you might not have the knowledge or expertise for all those different roles. When it comes to personal finances many people are unsure where to begin when it comes to managing the finances for their artistic endeavours. There’s also the important matter of securing funding to make your projects happen. In this module you will hear simple advice on preparing your taxes and can read through our Top 10 Grant Writing Tips.</p>
                         <p>-Margaret O'Toole</p>
                     </div>
