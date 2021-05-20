@@ -5,7 +5,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 import redBG from '../images/red-bg1.png';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
-
 const Royalties = () => {
 
     const andrew = '../images/artists/andrew-karis-two.jpg';

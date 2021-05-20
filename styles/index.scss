@@ -1,6 +1,8 @@
 @import './partials/setup';
 @import './partials/variables';
 
+// MAIN STYLES
+
 body {
     background-color: $transoffwhite;
     font-family: 'DM Sans', sans-serif;
@@ -17,6 +19,8 @@ body {
     }
 }
 
+// LAYOUT COMPONENT STYLES
+
 .layout-container {
     display: flex;
     flex-direction: column;
@@ -31,6 +35,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+// NAV BAR SCROLL STYLES
 
 .scroll-top {
     position: fixed;
@@ -55,6 +61,8 @@ body {
     }
 
 }
+
+// FOOTER STYLES
 
 footer {
     width: 100%;
@@ -128,6 +136,8 @@ footer {
         }
     }
 }
+
+// LANDING PAGE STYLES
 
 .landing-image {
     width: 100%;
@@ -257,8 +267,7 @@ header {
 
 }
 
-
-// Nav Bar 
+// NAV BAR STYLES
 
 .nav-bar {
     margin: 0 auto;
@@ -428,8 +437,7 @@ header {
     }
 }
 
-
-// General font styles
+// GENERAL FONT STYLES
 
 p {
     @include paragraphDM(2rem);
@@ -450,7 +458,7 @@ h3 {
     color: $red;
 }
 
-// Intro Video Section
+// MAIN INTRO VIDEO SECTION
 
 .intro-video {
     

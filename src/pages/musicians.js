@@ -8,7 +8,9 @@ import darkBlue from '../images/darkblue-bg2.png';
 import red from '../images/red-bg1.png';
 
 const Musicians = () => {
+
     return(
+        
         <div className="musicians">
             <Layout>
                 <Parallax
@@ -124,23 +126,6 @@ const Musicians = () => {
                         bgImage={red}
                         strength={500}
                         >
-{/* WADE MACNEIL VID */}
-                            {/* <div className="wrapper">
-                                <h4 className="wade-macneil" id="wade-macneil">Wade Macneil <span>- Artist</span></h4>
-                                <li className="wade-macneil-video">
-                                    <iframe
-                                        data-sal="fade" data-sal-duration="1500"
-                                        width="560"
-                                        height="315"
-                                        src="https://www.youtube.com/embed/_o26HtOgnFY"
-                                        srcDoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:#0A2F58;opacity:0.9;text-shadow:0 0 .2em black}</style><a href=https://www.youtube.com/embed/_o26HtOgnFY?autoplay=1><img src=https://img.youtube.com/vi/_o26HtOgnFY/hqdefault.jpg alt=Tame Impala - InnerSpeaker Memories><span>▶</span></a>"
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen
-                                        title="Tame Impala - InnerSpeaker Memories"
-                                    ></iframe>
-                                </li>
-                            </div> */}
                         </Parallax>
                             <div className="quote-container-one" id="wade-macneil" data-sal="fade" data-sal-duration="1000">
                                 <div className="wrapper">

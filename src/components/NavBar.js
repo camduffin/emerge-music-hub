@@ -9,8 +9,7 @@ const NavBar = () => {
 
     // images
     const iceberg = '../images/iceberg.png';
-
-
+    
     // hamburger state
     const [open, setOpen] = useState(false);
 
