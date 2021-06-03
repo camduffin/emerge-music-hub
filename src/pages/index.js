@@ -1,5 +1,6 @@
 import * as React from "react";
 import '../../styles/index.scss';
+import SEO from '../components/Seo';
 import { FaRegLightbulb } from 'react-icons/fa';
 import { IoIosArrowDropdown } from 'react-icons/io';
 import Layout from '../components/Layout';
@@ -22,6 +23,7 @@ const IndexPage = () => {
   
   return (
         <Layout>
+          <SEO />
             <section className="home-header">
                 <Parallax 
                 bgImage={landing} 

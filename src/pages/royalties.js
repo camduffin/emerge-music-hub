@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import SEO from '../components/Seo';
 import { Parallax } from 'react-parallax';
 import { StaticImage } from 'gatsby-plugin-image';
 import redBG from '../images/red-bg1.png';
@@ -13,6 +14,7 @@ const Royalties = () => {
     return (
         <div className="royalties">
             <Layout>
+            <SEO />
                 <Parallax
                 bgImage={redBG}
                 strength={500}

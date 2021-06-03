@@ -1,4 +1,5 @@
 import * as React from "react"
+import SEO from '../components/Seo';
 import { Link } from "gatsby"
 import '../../styles/index.scss';
 
@@ -21,6 +22,7 @@ const paragraphStyles = {
 const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
+      <SEO />
       <title>Not found</title>
       <h1 style={headingStyles}>Oh no!</h1>
       <p style={paragraphStyles}>

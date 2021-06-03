@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import SEO from '../components/Seo';
 import { StaticImage } from 'gatsby-plugin-image';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { IoIosArrowDropup } from 'react-icons/io';
@@ -13,6 +14,7 @@ const Musicians = () => {
         
         <div className="musicians">
             <Layout>
+                <SEO />
                 <Parallax
                 bgImage={red}
                 strength={500}

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/index.scss';
+import SEO from '../components/Seo';
 import Layout from '../components/Layout';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { Parallax } from 'react-parallax';
@@ -16,6 +17,7 @@ const Finance = () => {
     return (
         <div className="finance">
             <Layout>
+                <SEO />
                 <Parallax 
                 className="finance-yellow"
                 bgImage={yellowBG}

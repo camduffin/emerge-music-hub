@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "emerge-music-hub",
+    title: "Emerge Music Hub",
+    description: "A professional development online hub for emerging artists",
+    siteUrl: `https://www.emergemusichub.ca`,
+    keywords: `emerge music hub, young musician, young musicians, canadian music industry, music interviews, humber college, arts management`,
+    image: `/emerge-bg.png`,
   },
   plugins: [
     "gatsby-plugin-smoothscroll",
