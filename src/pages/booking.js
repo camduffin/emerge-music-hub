@@ -87,6 +87,7 @@ const Booking = () => {
                             <h4 id="eric-warner">Eric Warner <span>Music Consultant, Promoter, Artist Manager, President We Are Busy Bodies</span></h4>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/a3VQUmMr6Ak" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
+                        
                         {/* <div className="denholm-video" id="denholm" data-sal="fade" data-sal-duration="1500">
                             <h4>Denholm Whale <span>Promoter, Artist Manager</span></h4>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/Cy_9iRLNEiE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
